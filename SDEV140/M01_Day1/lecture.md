@@ -23,9 +23,28 @@ Week 1 Day 1 Lecture
 
 - ## ***Slideshow***
   - Algorithms
-  - 
-
+  - Hardware VS Software
+  - Application Software Vs System Software
+  - High Level Programming Languages 
+    - Example interpreter vs compiler using C++ and Python
+      - General difference discussed between compiler and interpreter
+        - Interpreter runs code slower than compiled code
+        - Debugging is possible before code is ran with a compiler
+        - Compilation may take more time than interpreted code, especially for large code bases
+        - Interpreter DOES NOT SAVE the machine code (runs on the fly and doesn’t keep it around)
+  - Skip history part (READ ON OWN TIME PLEASE)
+  - Intro to python
+    - Installation
+    - Hello World In IDLE
+    - IDE's
+      - IDLE
+      - Visual Studio Code
+      - Pycharm
+      - MORE
+    - Where things are stored!!!!!! 
+    - Simple code (BACK TO SLIDE SHOW)
 
 ---
 
-- **Other**
+- BREAK
+- Lab 
