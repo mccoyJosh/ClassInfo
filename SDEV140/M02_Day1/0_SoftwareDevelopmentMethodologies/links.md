@@ -1,4 +1,8 @@
-# For
+# LINKS
+
+More Models:
+https://deltanem.com/8-software-development-models-organized-in-charts-and-explained/
+
 
 AGILE MANIFESTO:
 https://agilemanifesto.org/
