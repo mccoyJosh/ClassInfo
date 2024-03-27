@@ -3,7 +3,12 @@
 - ## Best Coding Practices
   - PEP8
 - ## Selection Statements
+  - if 
+  - if else
+  - elif
+  - switch statement
   - 'in' keyword
+  - Short Circuit Boolean expressions
 - ## Formatting Strings
   - Print Functions
 - ## Scope

@@ -52,30 +52,18 @@ print("Whatever you wanted to print out", end='<THIS IS THE NEW END>')
 
 # EXAMPLE
 # Common usage of this is if you want to print multiple things out on the same line
-print("Hello", end=' ')
-print('World')
+for i in range(10):
+    print("hey ya", end=' ')
+print()
 
 
 # If you are making an application where it takes a bit of time to do a process,
 # but don't want the user to think it's not doing anything, you can add a progress bar
 import time
 print('Progress: ', end='')
-# Do something
-time.sleep(1)
-print('.', end='')
-# Do something
-time.sleep(1)
-print('.', end='')
-# Do something
-time.sleep(1)
-print('.', end='')
-# Do something
-time.sleep(1)
-print('.', end='')
-# Do something
-time.sleep(1)
-print('.', end='')
-# Do something
+for i in range(10):
+    time.sleep(0.5)
+    print('.', end='')
 print(' DONE')
 
 

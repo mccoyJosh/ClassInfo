@@ -1,11 +1,7 @@
-# Sometimes, to create better, and more comprehensible print statements, you want to use some formatting tool
 first_name = "John"
 last_name = "Doe"
 
-# We could do this
-print("Name:", first_name, last_name)
-
-# or we could use an f'' formatting string.
+# There is a way for the print function to also utilize formatting
 # This allows us to just place the variable in the string where ever they need to go (given we put them within {}s )
 print(f"Name: {first_name} {last_name}")
 
@@ -21,11 +17,7 @@ print("Name: {0} {1}".format(first_name, last_name))
 print("Name: {1} {0}".format(first_name, last_name))
 
 
-# Formatting also has the ability to format types of data:
-# MOST COMMON USAGE: FLOATS
+# We can also use this print formatting to use the format 'code' we were using earlier:
 val = 40000/3
-print(val)
-# This prints out 13.333333333333334, which, typically you don't care about the exact decimal values.
-# To format the floats to round up the decimal place, use format strings
 print(f'{val:.2f}')
 
