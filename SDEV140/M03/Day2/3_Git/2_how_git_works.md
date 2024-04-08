@@ -18,7 +18,7 @@ Now, if you would like package manager, look at the following package managers p
 
 ## Timeline
 
-![git_workflow.png](..%2Fassets%2Fgit_workflow.png)
+![git_workflow.png](../assets/git_workflow.png)
 
 ---
 
