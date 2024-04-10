@@ -59,14 +59,14 @@ print(len([1, 2, 3]))
 
 # Operators + and ==
 # Just list how you can use the + symbol to combine lists, you can do the same thing with lists
-list_1 = [1, 2,3]
+list_1 = [1, 2, 3]
 list_2 = [4, 5, 6]
 list_3 = list_1 + list_2
 
 print(list_3)
 
 # You can also use the == operators to see if two lists are the same, just like for strings
-list_1 = [1, 2,3]
+list_1 = [1, 2, 3]
 list_2 = [1, 2, 3]
 print(list_1 == list_2)
 
@@ -130,14 +130,14 @@ print(ex)
 
 
 # We can also add an entire list of items to a current list of items
-list_1 = [1, 2,3]
+list_1 = [1, 2, 3]
 list_2 = [4, 5, 6]
 list_1.extend(list_2)
 print(list_1)
 
 # Now, you wouldn't want to use insert or append here as an attempt to add all the items
 # from one list to another, as it would just add the whole list as one item
-list_1 = [1, 2,3]
+list_1 = [1, 2, 3]
 list_2 = [4, 5, 6]
 list_1.append(list_2)
 print(list_1)
