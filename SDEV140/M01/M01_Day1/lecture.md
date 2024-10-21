@@ -2,6 +2,7 @@
 
 ## ***Introduction***
 - **Dumb Slideshow**
+
 - **Syllabus**
   - Contact Info
   - Book (Textbooks* & Available in Library)
@@ -93,7 +94,7 @@ For instance, letters (and symbols).
 In ASCII, we assign each symbol a number, and just store the number. When we want to display a previously stored message,
 we have the computer reads these numbers, convert them to symbols that it displays for us.
 
-https://www.rapidtables.com/code/text/ascii-table.html
+![ascii.png](../M01_Day2/assets/ascii.png)
 
 This is an example of encoding: "converting data from one form into a proper form required for a certain process"
 
@@ -231,22 +232,47 @@ Also, since these languages do not typically produce an executable file, they ne
 
 ----
 
-#### Application Software Vs System Software
+# Application Software Vs System Software
 
-Operating System
-BOOOK
-System Software
-BOOK
-Application Software
-BOOK
+## System Software
 
+This is the underlying programs that communicates to the hardware.
+
+> These are the programs that write and execute other programs including operating systems
+
+### Operating System
+
+> Large programs that allow the user to communicate with the hardware adn perform various management risks, such as Windows, macOS, linux, and Android
+
+Typically, computers are shipped with these operating systems so that users have no need to figure out how to actually talk to the hardware,
+and can simply work within the framework of the OS.
+
+Sometimes this might come in the form of Drivers. For instance, if you get a new graphics card, your given operating system may not
+in it of itself know how to communicate the hardware, so you download specialized software for that said system, which is typically called a driver.
+
+
+## Application Software
+
+> AKA applications or apps
+
+> Programs that allow human users to accomplish specialized tasks, such as word processing or database management. 
+
+Think of Microsoft Word, or Chrome, or Firefox, or the calculator app on your phone.
+These can often be specific per operating system, as the executable file created may have specifically been made to communicate
+specifically with like the Windows operating system.
+
+Most operating systems come with a whole slew of applications, but a lot of them are not necessary to communicate with the hardware.
+
+----
 
 Skip history part (READ ON OWN TIME PLEASE)
 
+----
 
 
 - Intro to python
   - Installation
+  - Running via command line
   - Hello World In IDLE
   - IDE's
     - IDLE
@@ -254,7 +280,8 @@ Skip history part (READ ON OWN TIME PLEASE)
     - Pycharm
     - MORE
   - Where things are stored!!!!!! 
-  - Simple code (BACK TO SLIDE SHOW)
+  - Simple code
+    - print("Hello World")
 
 ---
 
@@ -262,5 +289,6 @@ TALK ABOUT EXPECTATIONS FOR CODE AND WHAT MAY BE OVER DOING IT
 
 ----
 
-- BREAK
 - Lab 
+
+doing mod 1 choosing python ide and submitting it.
