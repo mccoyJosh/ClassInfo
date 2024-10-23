@@ -1,5 +1,3 @@
-import sys
-
 # integers are just digits that are whole numbers
 10
 0
@@ -35,3 +33,12 @@ print(oct(38527))
 # denote hexadecimal values using the prefix 0x or 0X
 print(0x967f)
 print(hex(38527))
+
+################################################################################
+################################################################################
+
+
+# Operators
+# Now there are operators for integers as well
+# we can add them, subtract them, multiply them, and a few more things, but we will get to them in just a moment,
+# to understand them fully, FIRST WE NEED TO TALK ABOUT FLOATING POINT VALUES

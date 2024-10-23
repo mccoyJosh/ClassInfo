@@ -1,4 +1,27 @@
 Week 1 Day 2 Lecture
+
+## ***Software Development Methodologies***
+
+Software development is the process in which software is created, and many people have very passionate 
+opinions on how one should go about creating it.
+
+
+
+### ***Waterfall***
+
+![waterfall.png](assets/waterfall.png)
+
+
+As we go down the waterfall, the cost of correcting is increasing down each step. For example, it
+is going to cost more to fix something when we are in the maintenance phase when compared to the cost of fixing
+a mistake while we are in the design phase. 
+
+>THIS IS WHY IT IS VERY IMPORTANT TO HAVE THROUGH PLANNING AS TO FIX AS MANY MISTAKES AS YOU CAN IN EARLY STAGES.
+
+-----
+
+-----
+
 ## ***Types***
 
 ### **Literal Types**
@@ -14,8 +37,6 @@ Week 1 Day 2 Lecture
   - Show off bitwise operators
   - #### Mathematical & Boolean Operator Precedence
   - ![precedence.png](assets%2Fprecedence.png)
-
-- Expressions
 
 - Chars
   - ACSII
@@ -66,7 +87,4 @@ General process
 
 ---
 
-## ***Software Development Methodologies***
-
-
-### ***Waterfall***
+# LAB
