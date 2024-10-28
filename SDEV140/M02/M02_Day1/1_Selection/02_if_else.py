@@ -16,6 +16,9 @@ else:
 '''
 
 
+############################
+############################
+
 # For instance, you could use an else statement for the previous example
 
 dividend = float(input("Please enter dividend: "))

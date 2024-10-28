@@ -1,4 +1,4 @@
-# So currently we've covered 'if' statements, and 'for' and 'while' loops
+# So currently we've covered 'if' statements
 # Each of these have a rule for what is contained within the loop 1 tab over from the header of the statement
 # For example:
 n = input('Enter a thing: ')
@@ -25,8 +25,8 @@ if n == "Something":
 
 # You can have multiple scopes contained within each other
 # For example:
-
-for char in n:
+char = 'x'
+if char in n:
     # Only within the scope of the 'for' loop
     if char == 'x':
         # Within the scope of both the 'if' statement AND 'for' loop
