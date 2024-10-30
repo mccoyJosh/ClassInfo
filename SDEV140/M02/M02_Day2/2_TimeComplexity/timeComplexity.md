@@ -124,3 +124,7 @@ an alright introduction.
 
 ![bigochart.png](..%2Fassets%2Fbigochart.png)
 
+
+------
+
+# Compare Binary Search vs Non-Binary Search
