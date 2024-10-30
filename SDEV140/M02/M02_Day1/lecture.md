@@ -1,7 +1,8 @@
 # Module 2 Day 2 Lecture Notes
 
----
----
+----
+
+----
 
 ## Selection Statements
 - if 
