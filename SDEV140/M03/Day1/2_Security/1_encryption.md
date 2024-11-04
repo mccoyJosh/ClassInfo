@@ -106,6 +106,21 @@ When you don't know the key, decrypting the message is SIGNIFICANTLY HARDER than
 what you want from an encrypting process. Again, the caesar cipher is not that complicated, but more complicated
 more processes of encryption, decrypting can literally take years to accomplish.
 
+-----
+
+# Modern Day Encryption methods and processes:
+
+- AES 
+- DES
+- Triple DES
+- RSA
+- ECC
+- Diffie Hellman 
+- MD5
+- SHA
+- Argon2
+
+-----
 
 
 # Potential Problems

@@ -28,7 +28,7 @@ for line in file:
 file.close()
 
 
-# You could easily get the number of characters in a file with code like this:
+# You could easily get the number of characters per line in a file with code like this:
 file = open("fileToRead.txt", 'r')
 print("Number of characters per line:")
 for line_num, line in enumerate(file):

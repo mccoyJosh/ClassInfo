@@ -3,7 +3,7 @@
 
 I don't know if you have noticed or not, but everything on your computer is organized into 
 directories, aka, folders. This is true whether you are on windows/mac/linux/etc.
-Directories are a hierarchical strcuture for storing data. There is the 
+Directories are a hierarchical structure for storing data. There is the 
 'top' directory from which all other directories are stored, which is called the root directory.
 
 In mac/linux, this directory is just:
