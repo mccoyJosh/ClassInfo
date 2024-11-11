@@ -19,6 +19,10 @@ for person in phone_numbers:
 
 # This would get Tiffany's phone number, BUT THERE'S GOT TO BE A BETTER WAY!
 
+# Some sort of ways to quickly located particular data based on some sort of key value??????
+
+######################################################################
+######################################################################
 
 # DICTIONARIES
 
@@ -42,6 +46,11 @@ GENERAL FORMAT
 }
 '''
 
+# WITH DICTIONARIES, WE CAN CREATE TABLETS AND ASSOCIATION LISTS
+
+######################################################################
+######################################################################
+
 # An empty dictionary looks like:
 {}
 
@@ -64,7 +73,11 @@ GENERAL FORMAT:
 <dictionary_name>[<key_value>]
 '''
 
-# Using this same format also allows us change the value at this key.
+######################################################################
+######################################################################
+# MUTABLE
+
+# Using this same format also allows us to change the value at this key.
 # This is because dictionaries are MUTABLE!
 # If we wanted to change Tiffany's phone number, it would look like this:
 phone_numbers['Tiffany'] = '919191919'
@@ -86,6 +99,11 @@ print(phone_numbers['George'])
 phone_numbers.pop('George')
 print(phone_numbers)
 
+# ATTEMPTING TO POP AN KEY FROM THE DICTIONARY THAT IS NOT IN THE DICTIONARY
+# WILL RESULT IN AN ERROR
+
+######################################################################
+######################################################################
 
 # TRAVERSING DICTIONARY
 # Just like lists, we can go through the entirety of a dictionary if need be
@@ -104,6 +122,8 @@ for value in phone_numbers.values():
 for (key, value) in phone_numbers.items():
     print(key, value)
 
+######################################################################
+######################################################################
 
 # Dictionaries' keys do not need to all be the same type as well, so, this is valid
 convert_num = {
@@ -111,7 +131,7 @@ convert_num = {
     1:  1,
     'two': 2,
     2: 2,
-    'three': 3,
+    'three': "DOG", # THIS IS ALSO OKAY
     3: 3,
 }
 
@@ -119,3 +139,22 @@ print(convert_num['one'] + convert_num[3])
 
 
 # Also, last little word, keys for a dictionary are UNIQUE
+
+######################################################################
+######################################################################
+
+# Lookup table
+# One important use of a dictionary is a lookup tablet.
+# All a lookup table is IS a conversion table
+# For instance here we convert a hex string to its binary equivalent:
+
+hexToBinaryTable = {'0':'0000', '1':'0001', '2':'0010', '3':'0011', '4':'0100', '5':'0101',
+                    '6':'0110', '7':'0111', '8':'1000', '9':'1001', 'A':'1010', 'B':'1011',
+                    'C':'1100','D':'1101','E':'1110','F':'1111'}
+
+hexStr = '77AE'
+
+for index in hexStr:
+    print(hexToBinaryTable[index], end=' ')
+print()
+

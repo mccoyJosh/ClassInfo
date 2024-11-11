@@ -2,7 +2,7 @@
 # today we are going to talk about MORE DATA STRUCTURES
 # Specifically, Lists, Tuples, and Dictionaries
 
-# Lists is a sequence of data values; each value is called an item of element
+# Lists are a sequence of data values; each value is called an item or element
 # The items inside a list can be of any type!
 
 # You use lists whenever you need to hold multiple values all in one ordered location
@@ -21,7 +21,7 @@ int_list = [1, 2, 3, 4, 5]
 # List with strings:
 string_list = ['a', 'b', 'c', 'd', 'e']
 
-# List of lists:
+# List of lists (two-dimensional array):
 list_o_lists = [[1, 2],  [3, 4]]
 
 # Here is a list with nothing:
@@ -32,12 +32,16 @@ print(string_list[2])  # Prints out c
 
 # You can also print out the entire list with just the print statement!
 print(int_list)
+# THIS MAY NOT BE SO EASY IN OTHER PROGRAMMING LANGUAGES
 
 
 # When creating a list, all the items in the list are first initialized and then the list is created
-# So:
+# So, for instance:
 print([2, math.factorial(7)])
 # The list contains the actual value of math.factorial(7) instead of the function
+
+#########################################################################################################
+#########################################################################################################
 
 
 # List types
@@ -92,9 +96,16 @@ print("Is 500 in list_1:", 500 in list_1)
 # For example, the range function.
 print(type(range(10)))
 
+# Doesn't look nice :/
+print(range(10))
+
 range_list = list(range(10))
 print(type(range_list))
 print(range_list)
+
+
+# Also works on strings!
+print(list("Dog"))
 
 
 # Sort list (.sort())
@@ -103,6 +114,18 @@ print(range_list)
 example_list = [4, 1, 7, 3, 8, 9, 5, 300, 150, 2]
 example_list.sort()
 print(example_list)
+
+
+
+# You can sort the letters in a string like this!
+letter_list = list("here are a bunch of letters")
+letter_list.sort()
+
+print(letter_list)
+
+
+#########################################################################################################
+#########################################################################################################
 
 
 # MUTABLE
@@ -154,6 +177,10 @@ print(list_1)
 
 # You can also remove items by their index if you use the pop method
 list_1.pop(1)
+print(list_1)
+
+# Providing no value to pop will remove the last value of the list by default
+list_1.pop()
 print(list_1)
 
 

@@ -17,7 +17,7 @@
 
 44 questions total
 
-# Worth 5% of your total grade
+# Worth ~5% of your total grade
 
 # 120 Minutes (2 hours)
 

@@ -27,7 +27,9 @@ print(list_a)
 # list_a, so using the methods like pop or append will effect the same list whether you use
 # list_a or list_b
 
-# to avoid copying the pointer,  use the list() function
+# THIS IS ALSO KNOWN AS ALIASING, as the new variable becomes an alias to the object
+
+# to avoid copying the pointer an aliasing altogether,  use the list() function
 
 list_a = ['apple', 'banana', 'cherry']
 list_b = list(list_a)
@@ -43,6 +45,14 @@ list_b = list_a
 print(list_b is list_a) # will be true
 
 
+
+list_a = ['apple', 'banana', 'cherry']
+list_b = ['apple', 'banana', 'cherry']
+print(list_b is list_a) # will be false
+
+
+
+
 list_a = ['apple', 'banana', 'cherry']
 list_b = list(list_a)
-print(list_b is list_a) # will be false
+print(list_b is list_a) # will also be false
