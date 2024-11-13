@@ -32,21 +32,28 @@ import my_math
 print(my_math.add_one(10))
 """
 
+# This code can be seen in the assets/example_1.py file.
+# This works because the file is in the same directory as
+
 # It is quite literally that easy :)
+
+############################################################
+############################################################
+
 # Now, when it gets a bit difficult is
 # when the file may not be in the same folder as the
 # one you are in!
 
-# For instance, if you were in the example_1.py file
+# For instance, if you were in the example.py file
 # Which is one directory out from the directory with my_math.py
 # You need to specifically tell python the path to the file
 
 """
-import Day2.my_math as mm
+import assets.my_math as mm
 
-print(mm.add_one(1))
+print(mm.add_one(10))
 """
 
-# Also, you acn tell python to import ... as X so that you can use
+# Also, you can tell python to import ... as X so that you can use
 # the name provided (X) as where you call the methods you want.
-# This saves time as you don't need to write Day2.my_math everytime!
+# This saves time as you don't need to write assets.my_math everytime!

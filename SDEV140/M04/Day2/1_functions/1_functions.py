@@ -3,7 +3,10 @@
 # but, it has all just been written out in the file without worries as to
 # where what code is written!
 
-# THIS ENDS NOW (hopefully) because we are talking about functions (aka, methods)
+# THIS ENDS NOW (hopefully) because we are talking about functions (aka, methods when they are in class)
+
+################################################################################
+################################################################################
 
 # FUNCTIONS
 
@@ -30,6 +33,9 @@ def <function_name>(<parameter_1>, ..., <parameter_n>):
 <function_name>(<parameter(s)>)
 """
 
+################################################################################
+################################################################################
+
 # Now we have seen the use of functions before. The print statement is literally a function!
 # But, let us quickly make our own:
 
@@ -51,6 +57,10 @@ print(square(5))
 
 # The method name in this case is 'square'. From here on out,
 # you are able to call this function and expect the result defined within.
+
+################################################################################
+################################################################################
+
 # DO NOT try to call the function on the lines before it is called!
 # It won't work! Python doesn't know the function exists (yet).
 
@@ -67,6 +77,10 @@ def y():
 
 
 y()
+
+
+################################################################################
+################################################################################
 
 
 # Moving on from the function names, we have the contents within the
@@ -93,6 +107,8 @@ square(10)
 square(10, 10)
 """
 
+################################################################################
+################################################################################
 
 # Following the parameters is colon, and everything tabbed over
 # is considered inside the scope of the method (just like an if, for, while...)
@@ -151,6 +167,8 @@ def determine_if_even_return(val):
 # the nothing type, None
 print(determine_if_even(5))
 
+################################################################################
+################################################################################
 
 # BOOLEAN FUNCTIONS
 # Some methods only return boolean values
@@ -162,6 +180,8 @@ def odd(x):
     else:
         return False
 
+################################################################################
+################################################################################
 
 # MAIN FUNCTION
 # In lots of other languages, it is necessary to define a method called main to start the code

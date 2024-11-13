@@ -3,6 +3,7 @@
 
 # Use {} to make a set
 # KEEP IN  MIND THAT JUST {} IS ACTUALLY AN EMPTY DICTIONARY
+# Really, a set is a dictionary without the associated values and just has keys (unique, unordered values)
 
 example_set = {'apple', 'banana', 'cherry'}
 
