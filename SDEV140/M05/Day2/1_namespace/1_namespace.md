@@ -1,11 +1,20 @@
 # Namespace
 
+--------
+
+First, a definition
+
+### Namespace
+
+> The set of all of a program's variables and their values
+
 Throughout the course, we have talked briefly about how to properly name variables
 and what not. To the computer, the names of the variables essentially mean nothing...
 the computer technically (sometimes) is going to reassign their names any ways.
 The real purpose of properly naming things correctly is for your and every other developer's sake.
 
 What this section is going to do is explicitly define what is what in a piece of code:
+
 
 Let's take this code for example:
 
@@ -95,11 +104,30 @@ is a break in the _'tab level'_, and more specifically, a break which decreases 
 In the square method, there is a break in the _'tab level'_ for the content of the if statement, BUT, it increases
 the tab level and then return back to the initial _'tab level'_ for the final line ```return value```, which makes it all in the same scope.
 
-Now, we have briefly talked about scope and what variables are available where.
+Now, we have briefly talked about scope and what variables are available where. But here we are specifically talking about the lifetime of variables:
 
-This for instance works just fine :)
+---------
+
+
+
+# Lifetime
+
+The **lifetime** of a variable is the period of time it exists on your computer.
+When a variable is created, storage is allocated for it, when it goes out of existence, the storage is reclaimed by
+the PVM.
+
+Module variables, those found in the global scope, come to into existence when they are assigned in the program
+and are removed when the program is over.
+
+Temporary variables, found inside a function, 
+are only around for as long as the function it is found in is still running
+
+---------
+
+We can see that in action here
+
 Despite the variable being made before the method had begun, the x is considered within the module's (or global) scope,
-which is accessible from anywhere.
+which is accessible from anywhere and 'alive' during the 'f' function
 ```python
 x = 5
 
@@ -120,7 +148,7 @@ print(x)
 
 This code will not run.
 Since x is being assigned within the scope of the method, 'x' is considered a temp variable for f() and f() alone.
-Trying to use it outside the scope of the method will result in an error.
+Trying to use it outside the scope of the method will result in an error as it is 'dead'
 
 Even for an example like this:
 ```python
@@ -187,16 +215,3 @@ going to have a variable be assigned to 'x', and decides that this is going to r
 NOW, once the code is actually run with the line with only ```f()```, it tries to do x.append(999), but it knows that x 
 should only refer to temp variables within the f() function, and it hasn't encountered any, producing an error
 explaining that x has no value.
-
-
-# Lifetime
-
-What this all shows is the **lifetime** of a variable, i.e., the period of time it exists on your computer.
-When a variable is created, storage is allocated for it, when it goes out of existence, the storage is reclaimed by
-the PVM.
-
-Module variables, those found in the global scope, come to into existence when they are assigned in the program
-and are removed when the program is over.
-
-Temporary variables, found inside a function, 
-are only around for as long as the function it is found in is still running
