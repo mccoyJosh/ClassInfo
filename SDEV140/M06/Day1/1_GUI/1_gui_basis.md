@@ -110,6 +110,9 @@ There are many things we need to notice about a GUI:
 
 - ### **Window**
   Everything is contained within the display called a window
+
+  By default, a window is resizeable and has no title   
+
 - ### **Widgets**
   The components found within the window are consider 'widgets'
   - This includes everything from words, buttons, to entry fields
@@ -274,7 +277,8 @@ A few things are happening here:
         # Initializing the object
   ```
   This method, __init__ is the constructor method for any object in python. All that means is that whenever this object type is created in the future,
-  the constructor will be the first thing ran, and typically, it should 'construct', or set up, the object. Again, this isn't super important to 
+  the constructor will be the first thing ran, and typically, it should 'construct', or set up, the object. For our purposes, this method will
+  set up the initial window that the user will view upon opening your program. Again, this isn't super important to 
   fully grasp right now... all you need to know is that you need this method and we will talk about this more later.
 - ```
   def main():

@@ -8,7 +8,7 @@ A window, like as we've seen used in the previous example, is how we view a GUI.
 They have many attributes which you are able to access (these are some important ones):
 
 - **title**, this is the title of the window, which is set to an empty string by default
-- **width and height**, this is the dimensions of a window, by pixel. By default, this will just fit what data it needs to display
+- **width and height** (_geometry_), this is the dimensions of a window, by pixel. By default, this will just fit what data it needs to display
 - **resizability**, this determines whether you can resize the window or not 
 - **background color**, this determines the background color of the window being created. It is white by default. On Mac, it will use dark gray by default if you have your device switched to dark mode.
 

@@ -1,9 +1,9 @@
-# Gui Components
+# Gui Widgets
 
 In Tkinter, as has been said before, everything you are going to make your Gui out of is going to be a
-component object. These all need to be initialized and then added to the root in some way.
+widget . These all need to be initialized and then added to the root in some way.
 We have already seen labels been initialized and added to the root, whether that be .pack()
-or .grid(), but we will look at other components now.
+or .grid(), but we will look at other widgets now.
 
 
 # Images
@@ -196,7 +196,7 @@ if __name__ == "__main__":
 
 - The first thing we did was add methods. The two methods here make the image quality of the picture worse and then re-add it to the grid.
   If we don't re-add it to the grid, the changes are never displayed.
-- Once we have the methods in place, we just need to tell the buttons to call those methods. We use the keyword parameter 
+- Once we have the methods in place, we just need to tell the buttons to call, aka **BIND**, those methods. We use the keyword parameter 
   `command=` to do this. Here we can see we are doing `command=self.make_cat_quality_worse` and `command=self.make_cat_quality_original`.
   When we do this, make sure you pass the function as a variable, as in, don't include the () as part of the function.
   This is also a place where an anonymous function could be utilized if you so pleased.
@@ -240,6 +240,9 @@ if __name__ == "__main__":
 This code simply adds one or subtracts one from a number and displays it. By using a lamda function, both
 buttons can call the same method, but provide different input as to increment and or decrement the original number.
 
+> **IMPORTANT NOTE:** every number is merely being placed on top of the previous number and not replacing it. We can see this if we remove `sticky="NSEW"` from the label and add/subtract a numer large enough to see the difference
+
+------------------------------
 
 ## INSTANCE VARIABLES
 
