@@ -25,7 +25,7 @@ class Account:
             self.__balance -= amount
 
     def __str__(self):
-        return f'ACCOUNT: {self.__account_num}\n\tName: {self.__name} Amount: {self.__balance}\n\tHistory: {', '.join(map(lambda x: str(x), self.__history))}'
+        return f'ACCOUNT: {self.__account_num}\n\tName: {self.__name} Amount: {self.__balance}\n\tHistory: {", ".join(map(lambda x: str(x), self.__history))}'
 
 
 class Bank:

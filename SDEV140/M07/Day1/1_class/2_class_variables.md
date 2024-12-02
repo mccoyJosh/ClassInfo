@@ -22,13 +22,13 @@ i1.SSN = 123456
 print('Name: ', i1.FName, i1.LName)
 ```
 
-First off, this is a terrible way to declare an object (we will fix this in a second).
+First off, this is a terrible way to **_CONSTRUCT_** an object (we will fix this in a second).
 But I want a few things to be spcifically noticed here:
 
 - Within the class, we can see that all the variables are initially declared. The current implementation
   essentially defines default values for these class variables just in case they are not used. 
   This also sets up what type each variable is, even though technically that can be changed.
-- `i1 = Individual()` This line here creates for us an instance of the Individual object, which, we can name `i1`. 
+- `i1 = Individual()` This line here creates for us an instance of the Individual object by calling the CONSTRUCTOR METHOD, which, we can name `i1`. 
   With the object made, we can access and change the variables from within it.
 - We can see that we can assign each variable by doing `<object name>.<variable> = <new value>`. In general, we can access
   an object's variable by doing: `<object name>.<variable>` and this can be used to not only change the value, but get the value, as

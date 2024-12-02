@@ -12,7 +12,7 @@ catches that error properly.
 
 You want to TRY to test every path in your code.
 
-For the sake of this example, I am using the Bank class from before.
+For the sake of this example, I am using a Bank class.
 
 
 

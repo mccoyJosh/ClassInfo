@@ -19,7 +19,7 @@ Some good reasons why you ought to do this are:
     previous work broke due to your changes.
   
 - ## Improving Design:
-  - Writing tests often leads to better code design, as it encourages you to write modula code that is easier to test.
+  - Writing tests often leads to better code design, as it encourages you to write modular code that is easier to test.
 
 - ## Time Savings:
   - While writing tests initially takes time, it can save time in the long run by reducing the time spent debugging and fixing bugs.
