@@ -76,7 +76,7 @@ your problem.
 ### Object-Oriented Programming (OOP) – Not Ideal Use Cases:
 
 1. **Performance-Critical Systems:**
-   - **Example**: Real-time simulations, game engines, or embedded systems with strict resource constraints.
+   - **Example**: Real-time simulations, or embedded systems with strict resource constraints.
    - **Alternative**: **Procedural programming** is better for fine-grained control over memory and performance optimization.
 
 2. **Functional Transformations and Pipelines:**

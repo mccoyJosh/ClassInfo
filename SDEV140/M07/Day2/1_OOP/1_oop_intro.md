@@ -39,7 +39,7 @@ class subclass_name(superclass_name):
 ```
 
 
-Let's say had a class which describes a **Person**.
+Let's say you had a class which describes a **Person**.
 From this class, we can have a class that extends it which gets all of its functions/variables, such as **Student**.
 We could also create a **Teacher** class which extends from **Person**.
 
