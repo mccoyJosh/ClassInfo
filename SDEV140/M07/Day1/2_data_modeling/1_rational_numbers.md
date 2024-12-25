@@ -6,7 +6,7 @@ Python does not have a built-in type for rational numbers, but maybe making one 
 
 ```python
 class Rational(object):
-    def __init__(self, numerator, denominator):
+    def __init__(self, numerator, denominator = 1):
         self.__n = numerator
         self.__d = denominator
         self._reduce()

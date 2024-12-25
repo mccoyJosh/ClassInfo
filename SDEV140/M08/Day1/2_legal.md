@@ -13,11 +13,10 @@
       - Applications like Adobe Photoshop
       - Other software solutions like the Oracle Database System
   - **Open Source Software** is publicly accessible code and the code base can be viewed, modified, and redistributed 
-    - This kind of project means no only can any developer can see (and hopefully gain trust in) the code of the software, but also can be contributed by other developers
+    - This kind of project means that not only can any developer see (and hopefully gain trust in) the code of the software, but also can contribute to it
     - In a perfect scenario, this means that developers from the goodness of their hearts will all work together for the common goal of making safe, good, and trustworthy software. Honestly, this does end up how most open source project goes.
     - This is probably mostly due to the fact that you can be very easily judge in contributing to an opensource project. Lots of open source projects are found on GitHub, where one can view ever commit you have made. This means you ought to act as professional as possible when making code for open source projects. No making badly named variables, include lots of comments, and use the best coding practices. The code you are writing will be accessible and used by many people, so act like it.
     - Examples:
-      - Entire companies: [Novu](https://github.com/novuhq/novu)
       - Game Engines: [Godot](https://github.com/godotengine/godot)
       - Operating systems: [Linux](https://github.com/torvalds/linux)
       - Software solutions: [Git](https://github.com/git/git)
@@ -122,9 +121,4 @@ your software that you are not responsible for damages caused (unless there is *
     - One hand you could argue that 'it is these peoples choice to stay on said app for said amount of time' and Meta is therefore just providing a service that has a market
     - You could also argue that facebook is designed specifically to hook you into the app and to make you stay as long as possible, which would mean Facebook should be treated more like an addictive drug than just a normal product.
     - https://www.msn.com/en-us/money/other/lawsuit-against-meta-asks-if-facebook-users-have-right-to-control-their-feeds-using-external-tools/ar-AA1nZUWV
-- X (Formally Twitter)
-  - **PUBLIC DECENCY**
-  - Australia's government upset with X for allowing "violent and divisive posts".
-  - Issue: X allowing content that most countries just do not allow on public online spaces
-  - https://apnews.com/article/australia-sydney-church-stabbing-terrorist-bishop-bd2eb0e8239cdc2f93ecfffa40b3badb
 

@@ -17,6 +17,10 @@ returns statements, they can be recursive, whatever. The only difference is the 
 
 ## Self
 Now the reason we have this 'self' variable is to have some access point for the object we are currently in.
+
+Anytime we ever call a method, we need an object to call it from. Since we are coding inside the object we may want to call, it is 
+not possible to have a reference to itself, not until we have the 'self' parameter.
+
 From within the method, we can access the other methods and variables that are defined using self. This also
 allows us to use the same name for variables/methods in a method without overwriting the actual value because
 the variables within the scope of the method are different from the ones from `self.`, which will be seen in this next example:
