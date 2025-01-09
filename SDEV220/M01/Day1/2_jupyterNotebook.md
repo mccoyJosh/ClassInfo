@@ -87,3 +87,11 @@ which point you can open the notebook like any other one
 **From within the Home menu of jupyter notebook:**
 
 > Upload -> Find & Select Jupyter File
+
+
+-----
+
+# There is a jupyter notebook plugin for VS Code which allows you to work on notebooks from within the IDE, FYI!!!
+
+https://www.youtube.com/watch?v=suAkMeWJ1yE
+
