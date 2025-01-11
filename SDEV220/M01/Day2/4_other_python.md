@@ -29,3 +29,13 @@ We just aren't assigning it to any variable or anything so it just acts as a pla
 
 
 ## Continuing lines with \
+
+If you have a lot to write on a single line and it just ain't cuttin it, you can use \ to use the next line too!
+
+```python
+value = "Here is my really long string that I want to join with" + \
+        "another string, BUT" + \
+        " that string is on another line but I still want to join them" + \
+        "! SOOOO I can just use the \\ character! YAY!!!!"
+print(value)
+```
