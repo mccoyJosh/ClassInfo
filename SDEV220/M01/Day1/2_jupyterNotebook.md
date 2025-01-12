@@ -66,6 +66,23 @@ This will open the editor from within the directory you run this in, so make sur
 
 > do some documentation
 
+
+----
+
+# Documentation in Jupyter (is MARKDOWN)
+
+The documentation section of jupyter is just markdown.
+
+Markdown is a simple way to encode some formatting on to your text. 
+Instead of using some sort of gui to like, make some text a header (like in microsoft word),
+you simply code the formatting with some simple syntax. This has the added
+benefit of having these files be saved as simple text files. 
+
+All of my notes for this class are in markdown, so, you can see from these how it kinda works.
+
+On top of this, I have left a link to a handy guide to some simple Markdown in the Resources tab on Ivy Learn
+
+
 ----
 
 # Importing/Exporting
