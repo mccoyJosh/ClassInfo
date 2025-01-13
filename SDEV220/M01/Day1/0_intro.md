@@ -1,3 +1,19 @@
+# Class Intro:
+
+- Syllabus
+  - Textbook
+  - Make up policy
+  - Grading
+- Modules
+- Resources
+  - THESE Lecture notes
+  - Markdown
+  - Zoom Recordings
+- "There will be a final project you are working in teams for, so think about it"
+
+
+-----
+
 # Python Intro
 
 A lot of information presenting in these first few lectures is going be review!

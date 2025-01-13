@@ -119,6 +119,38 @@ match month_value:
 
 ```
 
+## Additional Boolean Operations
+
+There are some additional boolean operations we should refresh on:
+
+### AND
+
+When checking if multiple things are all true, you can use the and keyword to 
+check if both values are TRUE
+
+```python
+number = 2
+
+if number > 0 and number % 2 == 0:
+    print('This number is positive and even!')
+
+```
+
+
+### OR
+
+When checking if multiple things have at least one TRUE between them, you can use the 'or'
+keyword to check for it
+
+```python 
+number = 10
+
+if number == 10 or number == 20:
+    print('This number is either 10 or 20')
+
+```
+
+
 ## Expressions with 'in' in it
 
 If you have some sort of list and need to check for a value within it, you can use
