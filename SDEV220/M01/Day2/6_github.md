@@ -15,3 +15,12 @@ I would highly recommend using something like it to plan out your project!
 -> SHOW OFF THE THING!!
 I would also recommend Notion as well!
 
+
+# Working Collaboratively
+
+- Make repo
+- Both individuals pull repo down
+- Both make changes and commit and push changes
+  - Get other person changes with `git pull`
+  - Push changes to repo with `git push`
+- BEWARE OF CHANGING THE SAME FILE (could result in merge conflict)

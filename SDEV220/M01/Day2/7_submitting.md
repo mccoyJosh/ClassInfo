@@ -31,4 +31,4 @@ For many assignments, you need to do a number of things prior to submitting, so 
 - go through submitting
 
 - Gotta let me have access
-- Show how to like add notebook to github repo and then copy gituhb domain to canvas
+- Show how to like add notebook to github repo and then copy GitHub domain to canvas

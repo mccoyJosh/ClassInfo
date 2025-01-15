@@ -121,7 +121,7 @@ EXPLAIN ASCII ENCODING
 -> to write text, we can assign every character a corresponding number
 -> boom bang we have ascii, the characters which correspond to numbers so that the computer only needs to store numbers and some sort of text editor/viewer can translate those to letters on a screen!
 
-show ascii chart
+![Ascii Chart](../../../SDEV140/M01/M01_Day2/assets/ascii.png)
 
 chr(NUMBER) -> 'LETTER'
 

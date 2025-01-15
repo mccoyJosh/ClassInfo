@@ -2,7 +2,7 @@
 |-----|----------------|---------|-------------|------------------------------------------------------------------------------------------------------------------|
 | 1   | 1/13           | 1/15    | 1,2,3       | Python Intro, Data Types, Variables, Numbers, GitHub, IDEs, Jupyter Notebook                                     |
 | 2   | 1/20 (MLK Day) | 1/22    | 4,5,6       | Conditionals, Strings, Loops, Commandline, Django Explanation (No Code)                                          |
-| 3   | 1/27           | 1/29    | 8,9,10,11   | Dictionaries and Sets, Functions, Objects, Classes, Modules, Packages, and Goodies, FINAL PROJECT                |
+| 3   | 1/27           | 1/29    | 8,9,10,11   | Dictionaries and Sets, Functions, Objects, Classes, Modules, Packages, and Goodies, Data Structures & SIMPLE Time Complexity, FINAL PROJECT                |
 | 4   | 2/3            | 2/5     | 11,14,16,18 | "Python In Practice", Files and Directories, Persistent Storage (including databases), Website, Django For Real, |
 | 5   | 2/10           | 2/12    | 17,19       | Networks, "Pythonista", Testing and CI/CD (Continuous Integration & Continuous Delivery), Django Tools           |
 | 6   | 2/17           | 2/19    | 12,13,15    | "Wrangle and Mangle Data", Calendars and Clocks, Processes and Concurrency, "Templating and Dynamic Data"        |
