@@ -17,3 +17,9 @@ of the beginning of the array first, then get the value 1 unit forward, which is
 Once they are made though, we cannot add on more space.
 The computer has probably already added more information in the address next to it anyways.
 
+
+If we wanted to make an array which grows in size, it would require us to make a class which detects when an
+array is about to hit its limit, and if it is, create a new array with more space and copy the pre-existing
+data into the new array. This is not only tedious, but can be slow if there is a LOT of pre-existing data.
+
+So, how can we quickly add data to a structure, let it grow in size (be dynamic), and also be addressed like an array (indices) ---> a linked list
