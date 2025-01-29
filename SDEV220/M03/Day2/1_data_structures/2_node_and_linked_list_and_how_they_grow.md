@@ -20,6 +20,8 @@ The `self.ptr` is a pointer variable to another Node object. Initially, it is No
 Depending on the data structure you are dealing with, the pointer will be utilized in different ways. In this
 node we have a single pointer, but there are other Node varieties with more pointers (which we shall see later).
 
+> NOTE: Sometimes, the node class for a data structure may be defined within the data structure class itself; this is merely ones preference though.
+
 
 # Linked List
 The first data structure we are going to talk about (which uses the above Node class) is a Linked List
@@ -124,3 +126,10 @@ li.delete_value(2)
 
 li.print_list()
 ```
+
+
+By using a linked list, we now have a dynamic data structure which can grow in size as much as we need.
+
+Instead of being limited to the initial space initialized by an array, we create more space with nodes which
+just take up the next available memory slot. This does cost the price of losing INSTANT access to every index (as we now
+HAVE to travel through nodes to find the next, and next, and next nodes). 
