@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/SDEV220/M04/Day1/4_databases.md" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/SDEV220/M04/Day1/database_example/organization.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/SDEV220/M04/Day1/database_example/sqlalchemy_example.py" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/SDEV220/M04/Day1/database_example/sqlite_pack_example.py" dialect="SQLite" />
+  </component>
+</project>

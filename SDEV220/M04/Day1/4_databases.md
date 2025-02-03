@@ -148,21 +148,257 @@ creating is just a file (which will store all of our tables within it)
 
 > Through command ```sqlite3 database_name.db```
 
+> From SQL File: ```sqlite3 database_name.db -init file_name.sql```
+
+The benefit of using a sql file over using just the commands is that you include as many
+commands as needed for the initiation of your database, which can include code to initialize
+your tables as well. This is especially a good idea when you are likely to change where your database is run,
+as creating an SQL file will automatically create the SAME database on whatever device you are utilizing.
+
+
+### CRUD (Create, Read, Update, and Delete)
+
+CRUD API is the term to describe how we interact with the database (how we Create, Read, Update, and Delete
+the information we need).
+Whenever you are working with a system like this, you want to learn how to do this simple actions:
+
+# CRUD TABLES
+
+## Create Table
+
+> These next few commands can also be done from a SQL file 
+
+To create a table, you use the 'CREATE TABLE table_name' to BEGIN creating table.
+
+You then follow this by the columns you want in your table.
+
+There are many identifiers you can use, which you can see where to place them below.
+They really follow the format of starting with the name of the column, then the type, and then 'extra' information like 'NOT NULL'.
+
+A few things to explain:
+- `PRIMARY KEY` designates this value as the primary key to the table
+- `AUTOINCREMENT` will automatically make values for this field (starting from 0 and incrementing to 1, 2 and so on). No need to insert this later
+- `NOT NULL` this makes sure that the user adding an entry actually puts a value for this column. One could leave a column as NULL (or nothing) if NOT NULL is there
+- In the employee table, `FOREIGN KEY (cmp_id) REFERENCES company(id)` actually connects the cmp_id to the company table on the key it is suppose to be associated with
+
+
+```SQL
+CREATE TABLE company (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    address TEXT NOT NULL
+);
 
 
 
+CREATE TABLE employee (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    cmp_id INTEGER NOT NULL,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    dob DATE NOT NULL,
+    FOREIGN KEY (cmp_id) REFERENCES company(id) 
+);
 
-## CRUD (Create, Read, Update, and Delete)
+```
 
+Also, you may notice that all the keywords for SQL are all capitalized. This is merely 
+a very very very common way to write SQL code, but not NECESSARY for it to run. Most sql
+interpreters are not case-sensitive.
+
+## Read Tables
+
+You can view all your tables using 
+```
+.tables
+```
+
+## Update Tables
+
+If you want to change a table once it has been created, you can use the ALTER command. Here is an example:
+```SQL
+ALTER TABLE table_name ADD COLUMN column_name TYPE;
+```
+
+## Delete Tables
+
+To remove a table, you use this command:
+```SQL
+DROP TABLE table_name;
+```
+
+
+
+or more something like this
+
+```SQL
+ALTER TABLE employees ADD COLUMN created_time DATETIME;
+```
+
+
+# CRUD DATA
+
+With tables created, we should now add data.
+
+## Create Data
+
+To insert a single entry, use:
+```
+INSERT INTO table_name (column1, column2,...) VALUES (value1, value2,...)
+```
+The values correspond to the column position, so value1 is filling the space with column1.
+
+You have the option to also not put the column names... it just means you need to insert every column in the table,
+otherwise it will not work. Both of these work:
+
+```sql
+INSERT INTO company VALUES (1,'Big Ads Company', '123 Advertisement Way, LA, CA');
+INSERT INTO company(name,address)  VALUES ('Big Products LLC', '096 Make Money Avenue, LA, CA');
+```
+
+To add multiple values at the same time, it is just a matter of listing every entry after each other with a comma in between.
+Like this:
+
+```sql
+INSERT INTO employee (cmp_id, first_name, last_name, dob)
+VALUES (1, 'John', 'Smith', '1/1/1999'),
+       (1, 'John', 'Smith', '1/1/1999'),
+       (2, 'Bingus', 'Smingus', '1/1/1999'),
+       (2, 'Walter', 'Halter', '1/1/1999'),
+       (1, 'Cherish', 'Clinton', '1/1/1999');
+```
+
+
+## Read Data
+
+The easiest command and the way to see all the 
+content within a table is with the following command:
+
+```SQL
+SELECT * FROM table_name;
+```
+
+We will continue to see the SELECT keyword be used to read data from our tables.
+There is ALOT we are not going to cover here, but just as a basic overview:
+
+### Specific Columns
+
+If you want to, perhaps, just get a single column, it is just a matter of
+replacing * from the last command with said column name. For instance this will get
+all the names of all the employees from various companies
+
+```sql
+SELECT first_name FROM employee;
+```
+
+### WHERE command
+
+Sometimes you only need certain values meeting a set of criteria.
+If you just want the employees working at the company id of 1, you would do this:
+
+```sql
+SELECT first_name, last_name FROM employee WHERE cmp_id = 1;
+```
+
+If you only wanted the users whose first name is not Cherish and from the same company, do this:
+
+```sql
+SELECT * FROM employee WHERE cmp_id = 1 and first_name != 'Cherish';
+```
+
+## Searching across tables
+
+So, sometimes, you don't know the id's of things we are searchign for.
+For instance, if all we knew was the company's name was Big Products LLC and you
+wanted the employees names from that company.
+
+Problem is, the information we need to search by (company name) is in
+a different table.
+
+What we do is join the tables.
+
+By joining the tables, it is essentially combining the entries on the
+specified ids that match.
+
+Here is the code that accomplishes that initial task.
+
+It joins the tables 'on' the cmp_id in the employees table
+and the id in the company table.
+
+ALSO, notice that we are table to abbreviate the table names using the `as` keyword.
+
+```sql
+SELECT e.first_name, e.last_name FROM employee as e 
+    INNER JOIN company c on c.id = e.cmp_id 
+    WHERE c.name = 'Big Products LLC';
+```
+
+
+## Update Data
+
+Here is how you update information in a table
+
+```sql
+UPDATE table
+SET column_1 = new_value_1,
+    column_2 = new_value_2
+WHERE
+    search_condition;
+```
+
+## Delete Data
+
+Here is how you delete data in a table
+
+```sql
+DELETE FROM table
+WHERE search_condition;
+```
 
 ------
 
 ------
 
-# ORM
+# SQLite3 Package
 
-## SQLite3
+SQLite can be used within python by using the SQLite3 package.
+It allows you to simply use sql commands within python and call it a day.
 
-## SQLAlchemy
+See database_example/sqlite_pack_example.py
+
+# SQLAlchemy and ORM
+
+Sometimes, things like SQLite packages do not cut it. 
+That's when we move to an ORM (Object Relational Mapper). They have many benefits,
+but first and foremost, they kinda make it easier to communicate to a database, ESPECIALLY
+if you don't know SQL.
+
+Essentially, it adds an extra layer of abstraction where you only need to worry about
+your types and code instead.
+
+Also, specifically for SQLAlchemy, the ORM we are going to be using in python, it is also compatible
+to other databases. SO, if you wanted to change the type of database you wanted to use a different one, you
+can easily transfer over.
+
+To use it, first we need to install it:
+
+```
+pip install sqlalchemy
+```
+
+To see the code in use, see
+
+database_example/sqlalchemy_example.py
 
 
+-----
+
+-----
+
+# Database Access in Jetbrains Products
+
+If you are using IntelliJ or Pycharm or any other Jetbrains IDE's, you
+should have access to the database tool on the right-side of the screen.
+
+By opening up, adding a data source and connecting it to your existing SQLite,
+you will be able to see the available tables in your database and the values within!
