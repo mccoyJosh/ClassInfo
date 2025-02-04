@@ -52,6 +52,40 @@ These are those:
 
 
 ### Idempotency
+Pregnant cows are idempotent!
+
+
+# Frontend and Backend
+
+When talking about various services and servers and databases, a few terms arise:
+
+- Frontend
+- Backend
+- Fullstack
+
+These are terms mostly used by developers to describe themselves and what they work on, but it is also 
+a way to describe the system itself in a general sense.
+
+These terms are pretty self-explanatory, but they shall be explained:
+
+### Frontend
+
+The frontend is the services that actually provide some output to the user.
+If you are making a website, this would be the portion of your code base delivering the web pages to
+a browser.
+
+If it was some service delivering information via endpoints, the service hosting the endpoints would be your frontend.
+
+### Backend
+
+The backend is refers to the services in the background, doing alot of the heavy lifting to collect, calculate 
+and deliver data. One's database system is often placed within the realm of the backend, but it can include
+anything else doing work behind the scenes.
+
+### Full stack is just, both of these, both front nad backend of a server. A 'fullstack developer' is simply saying they can work on both.
+
+Now, the line between what is considered frontend and backend can sometimes 
+be a bit fuzzy depending on the service you are creating, 
 
 
 
