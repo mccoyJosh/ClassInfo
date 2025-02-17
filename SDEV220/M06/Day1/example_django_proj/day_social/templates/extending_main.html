@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Epic App</h1>
+        <nav>
+            |
+            <a href="/trending">
+                Trending
+            </a> |
+            <a href="/search">
+                Search
+            </a> |
+            <a href="/login">
+                Login
+            </a> |
+        </nav>
+    </header>
+
+    <main>
+        <em>Welcome to the super awesome social media here!</em>
+        <em>I am glad social media is always so wholesome and epic and awesome and good for society</em>
+        <br>
+        <em>Here are our top posts from today:</em>
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div> 
+    </main>
+
+    <footer>
+        <hr/>
+        FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER
+    </footer>
+</body>
+</html>

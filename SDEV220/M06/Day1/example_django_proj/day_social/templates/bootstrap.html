@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="page-header">
+        <h1 class="title">Epic App</h1>
+        <nav class="container">
+            |
+            <a href="/trending">
+                Trending
+            </a> |
+            <a href="/search">
+                Search
+            </a> |
+            <a href="/login">
+                Login
+            </a> |
+        </nav>
+    </header>
+
+    <main>
+        <em>Welcome to the super awesome social media here!</em>
+        <em>I am glad social media is always so wholesome and epic and awesome and good for society</em>
+        <br>
+        <em>Here are our top posts from today:</em>
+        <div container>
+            <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3" >
+                {% for post in posts %}
+                    <div style="padding: 20px;" class="col">
+                        <div class="card">
+                            <div class="card-header">
+                                <a>{{ post.epic_value }} </a>
+                                <a href="" >EPIC</a>
+                                <a href="topics/{{post.topic}}"> {{ post.topic }} </a> / <a> {{ post.author }}  </a>
+                            </div>
+                            <div class="card-body"> {{ post.text }} </div>
+                    </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div> 
+    </main>
+
+    <footer>
+        <hr/>
+        FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER
+    </footer>
+</body>
+</html>
