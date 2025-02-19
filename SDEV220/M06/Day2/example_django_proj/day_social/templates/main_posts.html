@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <em>Welcome to the super awesome social media here!</em>
+    <em>I am glad social media is always so wholesome and epic and awesome and good for society</em>
+    <br>
+    <em>Here are our top posts from today:</em>
+    <div>
+        {% for post in posts %}
+            <div id="outer_post">
+                <div id="post">
+                    <div id="post_header">
+                        <a id="epic">{{ post.epic_value }} </a>
+                        <a href="" id="button" >EPIC</a>
+                        <a href="topics/{{post.topic.id}}"> {{ post.topic }} </a> / <a> {{ post.author }}  </a>
+                    </div>
+                    <p> {{ post.text }} </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
