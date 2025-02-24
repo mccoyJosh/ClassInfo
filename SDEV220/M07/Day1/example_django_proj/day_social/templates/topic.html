@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <h1 id="topic_header">
+        Welcome to /{{ topic }}/
+        <a href="/make/post" class="button">
+            CREATE POST
+        </a>
+    </h1>
+    <div>
+        {% for post in posts %}
+        <div id="outer_post">
+            <div id="post">
+                <div id="post_header">
+                    <a class="epic">{{ post.epic_value }} </a>
+                    <a href="" class="button" >EPIC</a>
+                    <a href="topics/{{post.topic}}"> {{ post.topic }} </a> / <a> {{ post.author }}  </a>
+                </div>
+                <p> {{ post.text }} </p>
+                <div class="post_footer">
+                    <a href="">
+                        Edit
+                    </a>
+                    <a href="">
+                        Delete
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
