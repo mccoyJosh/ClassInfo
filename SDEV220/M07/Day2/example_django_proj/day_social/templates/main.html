@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Epic</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+<header>
+    <img src="/static/images/epic.png" alt="Epic">
+    <h1>Epic App</h1>
+    <nav>
+        |
+        <a href="/">
+            Home
+        </a>
+        |
+        <a href="/search">
+            Search
+        </a>
+        |
+        {% if user.is_authenticated %}
+        <a href="/make/topic">
+            Make Topic
+        </a>
+        |
+        <a href="/make/post">
+            Make Post
+        </a>
+        |
+        <a href="/account">
+            Account
+        </a>
+        |
+        {% else %}
+        <a href="/accounts/login/">
+            Login
+        </a>
+        |
+        {% endif %}
+    </nav>
+</header>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer>
+    <hr/>
+    FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER
+</footer>
+</body>
+</html>

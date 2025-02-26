@@ -1,0 +1,14 @@
+<div>
+    {% for post in posts %}
+    <div id="outer_post">
+        <div id="post">
+            <div id="post_header">
+                <a class="epic">{{ post.epic_value }} </a>
+                <a href="" class="button" >EPIC</a>
+                <a href="topics/{{post.topic.id}}"> {{ post.topic }} </a> / <a> {{ post.author }}  </a>
+            </div>
+            <p> {{ post.text }} </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>

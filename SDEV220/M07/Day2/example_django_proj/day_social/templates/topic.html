@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <h1 id="topic_header">
+        Welcome to /{{ topic }}/
+        <a href="/make/post" class="button">
+            CREATE POST
+        </a>
+    </h1>
+    <div>
+        {% include 'list_posts.html' %}
+    </div>
+{% endblock %}
