@@ -1,13 +1,11 @@
 # Week 1 Day 1 Lecture
 
 ## ***Introduction***
-- **Dumb Slideshow**
-
 - **Syllabus**
   - Contact Info
   - Book (Textbooks* & Available in Library)
   - What is this course? (Learn python and software development principles)
-  - Attendance & Discuss Blended courses (Please attend 5 days throughout the semester)
+  - Attendance & Discuss Learn Anywhere courses
   - Due Dates & Makeup Policy
   - Withdrawal/Non-Attendance Drop Dates
   - Grades
@@ -106,7 +104,7 @@ When you run something on your device, whether that be the web browser to access
 knows it is doing is processing a very long string of 0's and 1's. These strings of 1s and 0s that the computer execute is known as **_machine code_**.
 
 To load in these machine codes into their proper places, the computer utilizes a program called the **loader**. 
-It is "a software program that copies program code and data from secondary memory into primary memory before the program execution beings".
+It is "a software program that copies program code and data from secondary memory into primary memory before the program execution begins".
 This is better than the alternative, manually putting the 1s and 0s into the correct place by hand for the computer to understand it.
 
 Now, obviously, in this class we are not about to write millions upon millions of 0s and 1s to attempt to tell the computer what to do.
@@ -136,39 +134,75 @@ Some are awesome and cool and fun to work with. And then there's NASM, which is 
 ## Low Level Programming Languages
 Low level programming languages look and are closer to machine code than higher level programming language.
 In these languages, you are often call specific registers from CPUs and instruct the computer to work within them.
-A Hello World program in NASM would look like this:
+A Hello World program in the Netwide Assembly programming language (NASM) would look like this:
 
 ```nasm
-extern	printf
+SECTION .DATA
+	hello:     db 'Hello world!',10
+	helloLen:  equ $-hello
 
-section .data 
-msg:	db "Hello World", 0
-fmt:    db "%s", 10, 0
+SECTION .TEXT
+	GLOBAL _start 
 
-section .text
+_start:
+	mov eax,4            ; 'write' system call = 4
+	mov ebx,1            ; file descriptor 1 = STDOUT
+	mov ecx,hello        ; string to write
+	mov edx,helloLen     ; length of string to write
+	int 80h              ; call the kernel
 
-global main
-main:
-  push    rbp 
-  
-  mov		rdi, fmt 
-  mov		rsi, msg 
-  mov		rax, 0
-  call 	printf  
-  
-  pop		rbp     
-  
-  mov		rax,0	
-  ret
+	; Terminate program
+	mov eax,1            ; 'exit' system call
+	mov ebx,0            ; exit with error code 0
+	int 80h              ; call the kernel
 ```
 
 This is kinda human-readable, but it reads more like a human sending a text message to a CPU more than anything else.
-Even this is simpler than most low level code, as it utilizes a printf package code to do some of the heavy lifting.
+
+Now, this code is very particular for the devices it can work on. specifically being
+devices with CPUs of x86 architecture. Furthermore, this specific NASM code
+on linux systems due to the different system calls made from the Linux OS compared to that of mac/windows.
+This is ALSO dependent on if you are working with a 32 bit machine, compared to a 64 bit machine.
+
+Running it on Mac would look something like this (in 64 bit):
+```nasm
+          global    _start
+
+section   .text
+
+_start:   mov       rax, 0x2000004          ; system call for write
+          mov       rdi, 1                  ; file handle 1 is stdout
+          mov       rsi, msg                ; address the string message
+          mov       rdx, msg.len            ; number of bytes
+          syscall                           ; invoke operating system to do the write
+
+          mov       rax, 0x2000001          ; system call for exit
+          mov       rdi, 0                  ; exit code 0
+          syscall                           ; invoke operating system to exit
+
+section   .data
+
+ msg:     db        "Hello, World!", 10      ; note the newline at the end
+.len:     equ        $ - msg
+```
+
+Notice the different registries (rax, instead of eax, for instance) for the 64 bit machine
+and notice the different system calls for Mac.
+
+Now, this would be VERY annoying to do and make work for all computers.
+
 It is a very good thing that we are not messing with this type of coding in this class.
 
 ## High Level Programming Languages 
 
 High level programming languages make operating and creating programs for the masses far more accessible.
+High level programming languages are TYPICALLY machine agnostic, as they should run the same irregardless of the machine
+you are working on.
+
+This is accomplished through a number of steps, but this usually involves running the much simpler
+code through a compiler/interpreter into assembly code (or something similar) which corresponds to the
+machine you are one, and THEN making the executable file.
+
 In any high level programming language, printing hello world is far easier.
 
 ### Python
@@ -186,7 +220,7 @@ public class example {
 ```
 
 ### C++
-```C++
+```cpp
 #include <iostream>
 
 int main() {
@@ -226,9 +260,9 @@ Also, since these languages do not typically produce an executable file, they ne
 
 - General difference discussed between compiler and interpreter
   - Interpreter runs code slower than compiled code
-  - Debugging is possible before code is ran with a compiler
-  - Compilation may take more time than interpreted code, especially for large code bases
-  - Interpreter DOES NOT SAVE the machine code (runs on the fly and doesn’t keep it around)
+  - MORE Debugging is possible before code is ran with a compiler
+  - Compilation may take more time initially than interpreted code to get converted to running code, especially for large code bases
+  - Interpreter DOES NOT SAVE the machine code (runs on the fly and doesn’t keep it around), while compiled code produces a reusable executable file
 
 ----
 
@@ -242,7 +276,7 @@ This is the underlying programs that communicates to the hardware.
 
 ### Operating System
 
-> Large programs that allow the user to communicate with the hardware adn perform various management risks, such as Windows, macOS, linux, and Android
+> Large programs that allow the user to communicate with the hardware and perform various management risks, such as Windows, macOS, linux, and Android
 
 Typically, computers are shipped with these operating systems so that users have no need to figure out how to actually talk to the hardware,
 and can simply work within the framework of the OS.
