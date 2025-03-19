@@ -51,6 +51,6 @@ print('If you were 10 years older, you would be: ', (age + 10))
 # There are more helpful functions that help show some returning values along with parameters
 
 len("dog") # returns an integer of the length of the string
-'hhhh dog'.count('h') # returns an integer of the number of h's that appear in the stirng
+'hhhh dog'.count('h') # returns an integer of the number of h's that appear in the string, BUT THIS IS TECHNICALLY A METHOD!!
 
 

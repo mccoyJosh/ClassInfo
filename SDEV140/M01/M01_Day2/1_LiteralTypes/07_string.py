@@ -40,7 +40,7 @@ print("This is a string"[0])  # getting a single character from a string
 # Just like the mathematical operands, there are operators that can applied to strings
 
 # concatenation (adding strings together)
-# just put the + operator between two stirngs:   <str> + <str>
+# just put the + operator between two strings:   <str> + <str>
 print("Hi " + "bro")
 
 print("Here" + " " + "I" + " " + "am adding a bunch of strings together")

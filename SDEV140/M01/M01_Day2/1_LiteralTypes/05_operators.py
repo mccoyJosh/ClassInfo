@@ -120,3 +120,8 @@ print(bin(0B001100<<2))
 #ord(1)
 #chr('x')
 
+
+
+# Look up and show operator precedence!!!!
+
+
