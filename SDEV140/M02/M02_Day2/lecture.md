@@ -12,9 +12,9 @@
   - Already discussed
 - There other processes made:
   - Spiral Model (1986)
-  - ![spiral.png](assets%2Fspiral.png)
+  - ![spiral.png](assets/spiral.png)
   - Rational Unified Process (RUP) (1999~2003)
-  - ![RUP.png](assets%2FRUP.png)
+  - ![RUP.png](assets/RUP.png)
 - Agile Manifesto created 2001
 
 

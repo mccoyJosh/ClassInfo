@@ -1,5 +1,8 @@
 # Time Complexity
 
+
+# STRESS THAT "LESS EXECUTIONS = MORE EFFICIENT CODE (obviously)"
+
 # No loop example
 ```python
 val = 10
@@ -62,7 +65,7 @@ This is considered a 'linear problem'. As the input size increase, the number of
 linearly.
 If we add up all the exeuctions (1 + 1 + n + 1 + n + 1) we get 2n+4. Looks like this on a graph
 
-![linear_problem.png](..%2Fassets%2Flinear_problem.png)
+![linear_problem.png](../assets/linear_problem.png)
 
 This equation will give us the exact number of times the code we have created will execute depending on 
 the size of the list.
@@ -104,7 +107,7 @@ Let's get an equation from this:
 2 + 2N + N^2 + N + N^2
 2N^2 + 3N + 2
 
-![exponential_problem.png](..%2Fassets%2Fexponential_problem.png)
+![exponential_problem.png](../assets/exponential_problem.png)
 
 You may notice that this code has a much more "dramatic" graph.
 The number of executions increases exponentially when compared to the input provided.
@@ -122,7 +125,7 @@ We looked at linear time and exponential time, but, there are worse (and better)
 really get to get too deep into time complexity in the course due to time restraints, but this should be
 an alright introduction.
 
-![bigochart.png](..%2Fassets%2Fbigochart.png)
+![bigochart.png](../assets/bigochart.png)
 
 
 ------
