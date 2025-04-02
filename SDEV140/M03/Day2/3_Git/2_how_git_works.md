@@ -24,7 +24,7 @@ Now, if you would like package manager, look at the following package managers p
 
 # Commands
 
-![git_cmds.png](..%2Fassets%2Fgit_cmds.png)
+![git_cmds.png](../assets/git_cmds.png)
 
 
 ## Git Init
@@ -197,3 +197,30 @@ If you wanted to clone down THIS repository, use the following command:
 ```
 git clone https://github.com/mccoyJosh/ClassInfo.git
 ```
+
+# Checking out previous Commits
+
+See you current list of commits:
+```
+git log
+```
+
+This should provide you the unique id of all commits... you can use these in conjunction with the checkout command to
+see the project at that point in time. Use the command like this:
+
+```
+git checkout <commit-id>
+```
+
+To return to the most current branch, you could do another checkout to the most current branch or:
+
+```
+git checkout -
+```
+
+or if your main branch is called **main**, you can do this:
+
+```
+git checkout main
+```
+
