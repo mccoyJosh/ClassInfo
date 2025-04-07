@@ -118,7 +118,7 @@ for key in phone_numbers:
 for value in phone_numbers.values():
     print(value)
 
-# If you want both, use the items() function while also pattern matching the tow items into a tuple:
+# If you want both, use the items() function while also pattern matching the two items into a tuple:
 for (key, value) in phone_numbers.items():
     print(key, value)
 
