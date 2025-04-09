@@ -2,6 +2,46 @@
 
 -------
 
+## Alternative Sorting Algo (especially if missed in monday's lecture)
+
+Hypothetically, if you need to sort values and get top 3 numbers, this is one solution to doing so!
+
+```python
+numbers = [9, 4, 1, 10, 0, 2, 3, 7, 5, 2]
+print(f"Original List: {numbers}")
+
+# This will go from highest to lowest
+sorted_list = []
+
+# Goes through OG list
+for new_number_to_add in numbers:
+    # If it doesn't find a number it is smaller than, it is put at the end of the line
+    append_index = len(sorted_list)
+    
+    # Goes through current "sorted list"
+    for index, current_number_in_sorted_list in enumerate(sorted_list):
+        # If it finds a number it is greater than, it inserts itself before it
+        if new_number_to_add >= current_number_in_sorted_list:
+            append_index = index
+            break
+    
+    # Inserts the new number regardless of what happens! 
+    sorted_list.insert(append_index, new_number_to_add)
+
+# Prints out result
+print(f"Sorted List:   {sorted_list}")
+print(f"#1: {sorted_list[0]}")
+print(f"#2: {sorted_list[1]}")
+print(f"#3: {sorted_list[2]}")
+```
+
+If you were perhaps doing this with the values associated with numbers in a dictionary, you would simply store
+the keys in your 'sorted list' and when you do the >= comparison, you just grab the associated values
+from the dictionary using these keys.
+
+
+-------
+
 ## Mixing
 
 > Make code to mix the colors red, blue, and yellow together and output their result... USING FUNCTIONS

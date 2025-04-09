@@ -3,7 +3,7 @@
 # but, it has all just been written out in the file without worries as to
 # where what code is written!
 
-# THIS ENDS NOW (hopefully) because we are talking about functions (aka, methods when they are in class)
+# THIS ENDS NOW (hopefully) because we are talking about functions (aka, methods when they are in a class/object)
 
 ################################################################################
 ################################################################################
