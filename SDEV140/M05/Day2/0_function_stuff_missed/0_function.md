@@ -170,7 +170,7 @@ print(summation(0, 20, initial_value=10))
 
 ```
 
-### THIS IS EXACTLY WHAT WE'VE BEEN DOING WITH THE PRINT() METHOD UP TO THIS POINT
+### THIS IS PARTIALLY WHAT WE'VE BEEN DOING WITH THE PRINT() METHOD UP TO THIS POINT
 
 The print method header actually looks like this:
 ```
@@ -184,3 +184,36 @@ it is because we are just explicitly telling python I want the end parameter to 
 ```python
 print('Dog', end='not a new line')
 ```
+
+
+
+### What about the * parameters! What does that mean!
+
+This addition to a parameter means we can have a potentially infinite number of arguments
+for said parameter and the function will take these as a list:
+
+```python
+def receives_many_arguments(*args):
+    print(f"Received {len(args)} arguments")
+    for item in args:
+        print(item, end=' ')
+    print()
+    print('------------')
+
+receives_many_arguments(1,2,3,4,5)
+
+receives_many_arguments(1,2)
+```
+
+This is what the print function does, along with functions 
+like **RANGE** (taps nose to indicate this is IMPORTANT).
+
+
+This is why strings can take a potentially infinite number of arguments
+```python
+print('a', 'b', 'c')
+
+print('one string')
+```
+
+
