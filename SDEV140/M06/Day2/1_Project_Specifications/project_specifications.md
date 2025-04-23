@@ -2,7 +2,7 @@
 # Project Specification:
 
 I wanted to briefly go over what is expected for the final project:
-[Link to it here!](https://ivylearn.ivytech.edu/courses/1276055/assignments/20921909?module_item_id=51157539)
+[Link to it here!](https://ivylearn.ivytech.edu/courses/1312577/assignments/21738628?module_item_id=53385934)
 
 ----
 
