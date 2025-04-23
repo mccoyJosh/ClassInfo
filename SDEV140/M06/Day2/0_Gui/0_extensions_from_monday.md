@@ -101,15 +101,19 @@ pip install pygame
 
 
 This should work
-(untested)
+
 ```python
 import pygame
 
 
 pygame.mixer.init()
-pygame.mixer.music.load("sound.mp3")
+pygame.mixer.music.load("Day2/assets/sound.mp3")
 pygame.mixer.music.set_volume(1)
 pygame.mixer.music.play(loops=0)
+
+
+while pygame.mixer.music.get_busy():
+    pass
 ```
 
 
@@ -120,11 +124,10 @@ by just converting your image to PNG, or we can use this other
 package to fix our problem!
 
 Do it like this instead!
-(untested)
 
 ```python
 import tkinter as tk
-from PIL import Image
+from PIL import Image, ImageTk
 
 
 class ExampleProject(tk.Tk):
@@ -139,10 +142,10 @@ class ExampleProject(tk.Tk):
         super().__init__()
         root.init_window()
 
-        root.dog_image = ImageTk.PhotoImage(Image.open("dog.jpg"))
+        root.dog_image = ImageTk.PhotoImage(Image.open("Day2/assets/dog.jpg"))
 
         tk.Label(root, image=root.dog_image).grid(row=0, column=0, sticky="NSEW")
-        tk.Label(root, text="Here is a cat", font=("Helvetica", 20)).grid(row=1, column=0, sticky="NSEW")
+        tk.Label(root, text="Here is a dog", font=("Helvetica", 20)).grid(row=1, column=0, sticky="NSEW")
 
 
 
