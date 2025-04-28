@@ -5,7 +5,9 @@ Rational numbers are simply numbers which can be represented using a numerator a
 Python does not have a built-in type for rational numbers, but maybe making one would be good :)
 
 ```python
-class Rational(object):
+import math
+
+class Rational:
     def __init__(self, numerator, denominator = 1):
         self.__n = numerator
         self.__d = denominator
@@ -17,14 +19,8 @@ class Rational(object):
     def denominator(self):
         return self.__d
 
-    def _gcd(self, a, b):
-        (a, b) = (max(a, b), min(a, b))
-        while b > 0:
-            (a, b) = (b, a % b)
-        return a
-
     def _reduce(self):
-        divisor = self._gcd(self.__n, self.__d)
+        divisor = math.gcd(self.__n, self.__d)
         self.__n = self.__n // divisor
         self.__d = self.__d // divisor
 

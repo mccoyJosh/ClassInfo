@@ -18,6 +18,6 @@ For the sake of this example, I am using a Bank class.
 
 # LOOK AT EXAMPLE_TEST_PROJECT
 
-Run this command from root directory:
+Run this command from the example_test_project directory:
 
-`python -m unittest SDEV140.M07.Day1.t3_UnitTesting.example_test_project.tests.test`
+`python -m unittest tests.test`

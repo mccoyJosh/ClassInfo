@@ -1,5 +1,5 @@
 import unittest
-from SDEV140.M07.Day1.t3_UnitTesting.example_test_project.src.file import Bank, Account
+from src.file import Bank, Account
 
 
 class TestBank(unittest.TestCase):
