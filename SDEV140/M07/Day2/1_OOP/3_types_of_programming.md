@@ -1,5 +1,23 @@
 # Types of progrmaming
 
+----
+
+These definitions of imperative/procedural/functional programming styles
+are taken from the book.
+
+In these definitions, they treat each type as their own 
+exclusive type of programming, where every
+other reference on this earth lays it out differently.
+
+See the geeksforgeeks reference at the end, but really imperative programming is
+a broader term to describe a slew of other types of programming types, which both
+procedural and OOP are under, while functional programming is within the
+declarative programming schema.
+
+So, take this with a grain of salt!
+
+----
+
 ## **Imperative programming**:
 is an approach where code consists of commands for input, 
 output, assignments, and control flow, suitable for simple 
@@ -82,3 +100,9 @@ your problem.
 2. **Functional Transformations and Pipelines:**
    - **Example**: Data processing pipelines, map-reduce tasks, or functional transformations.
    - **Alternative**: **Functional programming** excels in these scenarios. Functions as first-class citizens and immutability simplify data transformations.
+
+
+# Here are some websites which really explain this well:
+
+- https://www.scoutapm.com/blog/functional-vs-procedural-vs-oop
+- https://www.geeksforgeeks.org/what-is-imperative-programming/

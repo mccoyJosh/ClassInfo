@@ -128,3 +128,14 @@ print(f"Is square1 smaller than square2? {square1 < circle1}")
 This shows the Shape method as more of an interface, ready for its subclasses to 
 do most of the implementation and really just ready to describe how to compare
 shapes in general!
+
+
+----
+
+# THIS IS SUPER IMPORTANT IN OTHER PROGRAMMING LANGUAGES WHERE YOU ARE REQUIRED TO 
+# PUT THE TYPES OF VARIABLES BEFORE USIN' THEM
+
+For instance, by using subclassing, you could make
+a list which holds the type of a super class, and that list would
+allow the subclasses to be stored within it. Otherwise though,
+you could not store different types in a list.

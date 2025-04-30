@@ -1,7 +1,7 @@
 # Object Oriented programming
 
-Object-oriented programming is the idea of modeling real world ideas, systems a objects as, well
-objects in code. This is what we were doing last lecture, but
+Object-oriented programming is the idea of modeling real world and abstract objects as code where we assign attributes and actions to them. 
+This is what we were doing last lecture, but
 we are going to more go over conceptually what is the point and extend upon the idea of subclasses
 and superclasses.
 
@@ -147,7 +147,7 @@ Maybe I need to represent Students specifically in this class SDEV140.
 
 
 
-```
+```python
 class SDEV140Student(Student):
     def __init__(self, name, gender, dob, id, year):
         super().__init__(name, gender, dob, id, year)
