@@ -88,17 +88,6 @@ When things like this happen, you may need some protection to protect you from l
 This is why you might want to use the Licenses showed before, as they lay out to the end user of
 your software that you are not responsible for damages caused (unless there is **"deliberate and grossly negligent acts"**)
 
-###  Some Examples
-
-- Therac-25
-  - https://en.wikipedia.org/wiki/Therac-25
-  - The Therac-25 was a radiation therapy machine from 1982.
-  - This machine was controlled by a computer.
-  - A bug in the software caused massive amounts of radiation to be shot into patients' bodies
-  - Ended up causing 6 accidents, 4 of which resulted in death.
-  - The company was liable for these damages cause by their machine (and software) and paid out families due to the damages.
-
-
 -----
 
 ## **Lawsuits and Other Legal Examples**
@@ -107,18 +96,8 @@ your software that you are not responsible for damages caused (unless there is *
     - Google faces legal struggle as it has monopoly over search engine
     - Biggest antitrust case since microsoft case
     - https://www.msn.com/en-us/news/technology/multibillion-dollar-apple-deal-looms-large-in-google-antitrust-trial/ar-AA1o5Bg9
-- TikTok
-  - **(FOREIGN) USER DATA**
-    - Countries have banned TikTok in various different ways, including specifically on government devices.
-    - Privacy and cybersecurity concerns (specifically concerning the company owning TikTok, ByteDance, handing U.S. user data to the Chinese government)
-    - This has more to do with national security than user's privacy, technically. US citizens is shared with the US government and sold to (advertising) companies all the time, so the only difference here is that TikTok is a foreign company.
-    - Now obviously I don't know if TikTok is sharing your data with the Chinese Government, but the main thing to get from this it that **you as a developer have a legal responsibility with user data which can even become the concern of national security**
-    - https://www.msn.com/en-us/news/other/these-are-the-countries-where-tiktok-is-already-banned/ar-AA1nHPgB
-- Facebook
-  - **USER SAFETEY**
-    - Lawsuit filed against Meta concerning an extension that would stop facebook feed.
-    - Issue: Meta's Bottom line (more time scrolling through fee = more ads to user = more money for facebook) VS User's mental health and time wasted
-    - One hand you could argue that 'it is these peoples choice to stay on said app for said amount of time' and Meta is therefore just providing a service that has a market
-    - You could also argue that facebook is designed specifically to hook you into the app and to make you stay as long as possible, which would mean Facebook should be treated more like an addictive drug than just a normal product.
-    - https://www.msn.com/en-us/money/other/lawsuit-against-meta-asks-if-facebook-users-have-right-to-control-their-feeds-using-external-tools/ar-AA1nZUWV
 
+
+- Meta AI Lawsuit
+  - Issues about using created materials to train AI models without any sort of compensation for the OG creators
+  - https://www.reuters.com/legal/litigation/judge-meta-case-weighs-key-question-ai-copyright-lawsuits-2025-05-01/
