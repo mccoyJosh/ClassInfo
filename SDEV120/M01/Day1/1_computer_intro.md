@@ -34,9 +34,11 @@ MUCH of this class if simply focused on *logically* solving problems.
 
 ### System Software
 
+> **_Application Software:_** the programs that help users with tasks (e.g., accounting or word processing). Contrast with system software.
 
 ### Application Software
 
+> **_Application Software:_** the programs that help users with tasks (e.g., accounting or word processing). Contrast with system software.
 
 -------
 

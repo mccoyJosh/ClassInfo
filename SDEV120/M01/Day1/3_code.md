@@ -21,20 +21,29 @@ to multiply any given number.
 It would look something like this:
 
 ```
-input aNumber           # input
-result = aNumber * 2    # processing
-output result           # output
+start
+    input myNumber
+    myAnswer = myNumber * 2
+    output myAnswer
+stop
 ```
+
+This is a piece of psuedocode... we will talk about this in more detail in just a moment.
+Simply put though, psuedocode is simple english to show
+the steps in which code takes to perform a task.
+
+(See the next 4_psuedocode_intro.md file for the rest of the explanation and formal definition)
+
 
 ## Variable
 
-The word "aNumber" here is our first representation of a "variable" as it
+The word "myNumber" here is our first representation of a "variable" as it
 is known in coding. It is very SIMILAR to variable known in mathematics, as in
 they represent a value.
 
 In mathematics, the value being represented by a variable is "unknown" and is used to help calculate
 whatever we are working with. This is what we are doing here in this problem. Whatever
-is inputted is put inside of this "aNumber" variable; this can then be used for whatever we need.
+is inputted is put inside of this "myNumber" variable; this can then be used for whatever we need.
 
 In this case, we just use it to multiply by 2.
 
