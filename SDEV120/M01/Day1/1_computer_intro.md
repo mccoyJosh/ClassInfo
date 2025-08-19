@@ -59,8 +59,26 @@ MUCH of this class if simply focused on *logically* solving problems.
 (generally, obviously elaborate)
 COMPUTER <--- MACHINE CODE <---- ASSEMBLY CODE (low level lang) <---- HIGH LEVEL CODE
 
+High Level Programming Languages:
+- Java
+- Visual Basic
+- C++
+- C#
+- Python
+- Javascript
+
+
+Low Level Programming Languages (assembly):
+- NASM
+- 
+
+
 
 ## Compilers and Interpreters and Binary
 
 Basically, we do NOT want to be manually writing 0's and 1's, so
 we make the computer translate human readable stuff to less human readable stuff
+
+The most important task of a compiler or an interpreter is to translate a 
+programming language (which we can read and understand) into machine language (which
+the computer can read and understand)
