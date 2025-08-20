@@ -2,16 +2,16 @@
 
 
 
-| Week / Module | Mon        | Wed        | Learning Objectives ID's                               | Various Other Topics | Ch         |
-|---------------|------------|------------|--------------------------------------------------------|----------------------|------------|
-| 1             | 8/25/2025  | 8/27/2025  | 01 (Flowcharts, Pseudocode)                            |                      | 1          |
-| 2             | 9/1/2025   | 9/3/2025   | 01 (Flowcharts, Pseudocode), 08 (SDLC), 04 (variables) |                      | 2          |
-| 3             | 9/8/2025   | 9/10/2025  | 05 (HEX, BIN, DEC), 11 (logic gates), 06 (all of it)   |                      | Appendix A |
-| 4             | 9/15/2025  | 9/17/2025  | 02 (rational operators), 03 (testing, debugging)       |                      | 3          |
-| 5             | 9/22/2025  | 9/24/2025  | 01 (UML)                                               |                      | Appendix B |
-| 6             | 9/29/2025  | 10/1/2025  | 02 (MORE rational operators??), 07 (lang i.e. python)  | Python               | 4          |
-| 7             | 10/6/2025  | 10/8/2025  |                                                        | Arrays and Loops     | 5 & 6      |
-| 8             | 10/13/2025 | 10/15/2025 | 04 (functions)                                         | Files, More Arrays   | 7 & 8      |
+| Week / Module | Mon                        | Wed        | Learning Objectives ID's                               | Various Other Topics | Ch         |
+|---------------|----------------------------|------------|--------------------------------------------------------|----------------------|------------|
+| 1             | 8/25/2025                  | 8/27/2025  | 01 (Flowcharts, Pseudocode)                            |                      | 1          |
+| 2             | 9/1/2025 **_[LABOR DAY]_** | 9/3/2025   | 01 (Flowcharts, Pseudocode), 08 (SDLC), 04 (variables) |                      | 2          |
+| 3             | 9/8/2025                   | 9/10/2025  | 05 (HEX, BIN, DEC), 11 (logic gates), 06 (all of it)   |                      | Appendix A |
+| 4             | 9/15/2025                  | 9/17/2025  | 02 (rational operators), 03 (testing, debugging)       |                      | 3          |
+| 5             | 9/22/2025                  | 9/24/2025  | 01 (UML)                                               |                      | Appendix B |
+| 6             | 9/29/2025                  | 10/1/2025  | 02 (MORE rational operators??), 07 (lang i.e. python)  | Python               | 4          |
+| 7             | 10/6/2025                  | 10/8/2025  |                                                        | Arrays and Loops     | 5 & 6      |
+| 8             | 10/13/2025                 | 10/15/2025 | 04 (functions)                                         | Files, More Arrays   | 7 & 8      |
 
 
 
