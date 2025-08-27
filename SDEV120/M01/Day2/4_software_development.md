@@ -88,6 +88,10 @@ Things still can go wrong, so you need to be there to fix them!
 Does not include the step about compiling the code...
 I think this is insinuated by testing it
 
+# Discuss the jobs/positions in each step... similar to this:
+
+![sdlc_other1.png](assets/sdlc_other1.png)
+
 
 # Official Software Development methodology
 
