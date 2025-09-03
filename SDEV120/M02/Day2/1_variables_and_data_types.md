@@ -81,7 +81,13 @@ for characters and strings and just denote any type of character as 'string' (se
 ### An potentially infinite number of custom data types
 
 
-# Actually Storing Specific Data Types Within Variables
+# Declarations
+
+In most programming language, before you use a variable, you must DECLARE it. Sometimes this involves giving it a specific data type.
+
+# Initializing
+
+Once a variable is declared, you can then assign a starting value to it. This is called initializing it.
 
 Within MANY, MANY programming language you HAVE to provide a new variable you are making with
 a data type.
@@ -162,11 +168,3 @@ variable type: floating point value
   - example_variable
 - Hungarian Casing (prefixes variable with it's type, among other things such its context)
   - flExampleVariable
-
-# Declarations
-
-In most programming language, before you use a variable, you must DECLARE it. Sometimes this involves giving it a specific data type.
-
-# Initializing
-
-Once a variable is declared, you can then assign a starting value to it. This is called initializing it.
