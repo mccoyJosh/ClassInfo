@@ -22,6 +22,8 @@ Notice:
 - the same methods will have their corners filled in so you can easily tell what two parts of code will change
 - only major/modules are written out; not every line is part of the hierarchy chart, just major features
 
+# House Keeping, Detail Loop, and End Of Job Tasks, three main parts of many programs
+
 
 # Top Down Design Example (is kinda similar)
 

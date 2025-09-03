@@ -142,3 +142,31 @@ This is done by using a list of integer values to store certain parts of the LAR
 SO, the data type will tell the computer how to interpret the bits. For instance, if we try to 
 store a character inside an integer type variable, the computer will try its best, but it will
 fail to properly do what you need to do.
+
+
+# Naming variables
+
+- i've never seen a programming language that lets you put spaces in variable names
+- make them MAKE SENSE; don't use 'val1' or 'calculation'; name them for the purpose this variable is being used for!
+
+### Types of casing:
+
+varable name: example variable
+variable type: floating point value
+
+- Pascal Casing
+  - ExampleVariable 
+- Camel Casing
+  - exampleVariable
+- Snake Casing
+  - example_variable
+- Hungarian Casing (prefixes variable with it's type, among other things such its context)
+  - flExampleVariable
+
+# Declarations
+
+In most programming language, before you use a variable, you must DECLARE it. Sometimes this involves giving it a specific data type.
+
+# Initializing
+
+Once a variable is declared, you can then assign a starting value to it. This is called initializing it.
