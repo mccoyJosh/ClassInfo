@@ -1,9 +1,0 @@
-# Measuring Storage
-
-
-# Bit
-
-# Bytes
-
-
-
