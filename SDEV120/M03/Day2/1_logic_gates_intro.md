@@ -45,6 +45,8 @@ if and only if both are TRUE. If either or both booleans are FALSE, you will res
 
 > For our sake, this means that an AND gate will result in 1 only if both inputs are 1, and 0 otherwise
 
+> NOTICE THIS IS VERY SIMILAR TO MULTIPLICATION FOR MATH
+
 **AND is represented in many ways:**
 - conjunction
 - ^

@@ -76,8 +76,118 @@ DECIMAL VALUES TO CONVERT TO DECIMAL:
 
 # Binary Math
 
+Doing math with binary is very similar to normal math, but we have 2 digits.
+Really, we can easily represent all possibilities in a small amount of time.
+
+Just to be very clear, the results, mathematically, are always going to be the same as they are 
+in decimal values. So the 7 + 8 (in binary) is obviously still going to result in 15.
+
+## Addition
+
+Adding is exactly what you think, in most cases. 0+1, 1+0, it results in 1, as you would suspect.
+The only real difference is when we add two ones. Since, again, we are only working with 1 and 0, our answer CAN'T be
+two. It just carries over into the next position. We just looked at 2 as binary, and this is that same thing!
+
+![bin_add.png](assets/bin_add.png)
+
+With this in mind, we should be able to do any sort of binary math,
+but, what about with multiple digits?
+
+What is the solution here?
+```
+   10001
+   +1001
+--------
+   11010
+```
+
+note: this is 5 + 9
+
+So, as we can see, we just carry the 1 to the next position.
+Now, this is pretty simple. This is very simple due to the carried 1 going to a column with 
+just 0 and 0, but what if that wasn't the case:
+
+```
+ 0110
++ 010
+------
+ 1000
+```
+
+As we can see from this example, the 1 is carried to the
+next position, where we NOW HAVE two 1', so, we carry the 1 once more.
+
+We only have one scenario to really cover. This is the situation where we already have two
+ones. So, we carry a 1 to the 1 + 1. REALLY, this is just like the last example, where we carry a 1
+to the next position, BUT, we have one extra 1. So, we leave that 1 behind.
+
+```
+ 0110
++ 110
+------
+ 1100
+```
 
 
+Here is a more clear example:
+```
+  11
++ 11
+------
+ 110
+```
+
+That is basically all the possibilities; other examples are just longer iterations of this.
+
+
+## Subtraction
+
+Subtraction works as you might expect:
+
+![bin_sub.png](assets/bin_sub.png)
+
+
+EXAMPLE:
+```
+ 1100
+ - 10
+-----
+ 1010 
+```
+
+```
+  1011
+ - 101
+------
+   110
+```
+
+The only thing is that we begin seeing negative values.
+
+```
+   10
+ -111
+-----
+ -101  
+```
+
+
+
+## Multiplication
+
+As with most of these, this works as you might expect:
+
+> Works suspiciously like "AND"... which we will get to WEDNESDAY
+
+![bin_mul.png](assets/bin_mul.png)
+
+## Division
+
+Barely even worth talking about at all, but here are the rules.
+
+![bin_div.png](assets/bin_div.png)
+
+(mostly showing this show off all the main operators)
 
 # Why would we even do this:
 
