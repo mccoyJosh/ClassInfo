@@ -84,3 +84,68 @@ FALSE otherwise.
 | 0 | 0 | 0     |
 
 
+
+----------------------------
+
+----------------------------
+
+# Special Gates
+
+
+## XOR
+
+The XOR logical gate also take 2 operands; XOR results in TRUE only if 1 of the two operands are TRUE; it will
+result in FALSE otherwise
+
+**XOR is represented in many ways:**
+- ![xor.png](assets/xor.png)
+
+**Truth Table Representation:**
+
+| A | B | A XOR B |
+|---|---|---------|
+| 1 | 1 | 0       |
+| 1 | 0 | 1       |
+| 0 | 1 | 1       |
+| 0 | 0 | 0       |
+
+## NOR (Not Or)
+
+NOR is shorthand for NOT OR, so it first does a OR operation, then not.
+That is to say, it results in TRUE only if both operands are FALSE, and results in FALSE otherwise.
+
+**NOR is represented in many ways:**
+- ![nor.png](assets/nor.png)
+
+**Truth Table Representation:**
+
+| A | B | ¬(A V B) |
+|---|---|----------|
+| 1 | 1 | 0        |
+| 1 | 0 | 0        |
+| 0 | 1 | 0        |
+| 0 | 0 | 1        |
+
+* NOTE: instead of `¬(A V B)`, one could have used `A NOR B`
+
+
+## NAND (Not And)
+
+The NAND logical gate result in TRUE when there is at least 1 FALSE boolean operand;
+if all the operands are TRUE, then the NAND results in FALSE.
+
+Similarly to NOR, NAND is just negating the result of AND
+
+**NAND is represented in many ways:**
+- ![nand.png](assets/nand.png)
+
+**Truth Table Representation:**
+
+| A | B | ¬(A ^ B) |
+|---|---|----------|
+| 1 | 1 | 0        |
+| 1 | 0 | 1        |
+| 0 | 1 | 1        |
+| 0 | 0 | 1        |
+
+* NOTE: instead of `¬(A ^ B)`, one could have used `A NAND B`
