@@ -40,5 +40,24 @@ But first, let us briefly return to logic gates
 ------
 
 
+# Representing Logic Gates With Transistors:
+
+With these complicated simple devices, we can actually represent the logic gates we had
+previously discussed!
+
+# AND GATE
+
+![transistor_and.png](assets/transistor_and.png)
 
 
+# OR GATE
+
+![transistor_or.png](assets/transistor_or.png)
+
+
+# NOT GATE
+
+![transistor_not.png](assets/transistor_not.png)
+
+
+We can now represent logical ideas with these constructs. What this allows us to do it abstract them out to their ideas

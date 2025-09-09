@@ -13,3 +13,6 @@ So how can we save both a 0 and 1 in a logical gate?
 
 ![saved_data_gate.png](assets/saved_data_gate.png)
 
+
+
+
