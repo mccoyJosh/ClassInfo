@@ -314,7 +314,7 @@ will read in EOF and then try multiplying THAT, which don't work!
 
 What we need to do is PRIME THE INPUT
 
-> Priming Input/Priming Read: the statement that reads the first input data record
+> Priming Input/Priming Read: the statement that reads the first input data record; THIS is part of our housekeeping!
 
 ![ex_08.png](assets/ex_08.png)
 
@@ -369,3 +369,14 @@ Here are our only "real" rules when using structures:
 - Structures can be stacked or connected to one another only at their entry or exit points. (No connecting to outside/alternative routes of path(s))
 
 - Any structure can be nested within another structure.
+
+
+
+# Old days: go to's
+
+These allowed us to jump around to different parts of code immeditly. For
+instance, you could 'go to' line 6 in a given program if you would like. 
+
+This would allow us to break many of these structures, for you could just have a go to in the middle
+of a selection/loop and that would be breaking out code!
+
