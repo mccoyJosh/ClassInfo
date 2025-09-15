@@ -68,7 +68,7 @@ disappointed if they aren't.
 
 -----
 
-## Efficiency
+## Efficiency / Converting to REAL code
 
 Most programming languages today have these structures 
 built into the language. Knowing the proper uses will
@@ -78,6 +78,9 @@ Even if the programming language doesn't support it (like in the instance of
 older programming languages), you can typically recreate these within 
 the tools the language does give you.
 
+Sometimes, if you do not have properly structured code, it is impossible to write in a given programming
+language, as working within these structures is just part of writing the language
+and they do not support an alternative writing. 
 
 -----
 
