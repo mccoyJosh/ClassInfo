@@ -147,7 +147,56 @@ do not match and a person would HAVE to assume which variable is which.
 > This program ALSO fails to run initially as the loop cannot start, nor can the if statement, since we never inputted the first value.
 
 
-## Example 4
+# Example 4 
+
+This problem actually contains a special kind of selection statement called
+a cases. In this type of structure we can compare multiple different explicit values
+to a variable. This structure is also referred to as a switch statement (both switch and case
+are used to represent this)!
+
+```
+// This program will represent a module for a
+// game which translates a integer into the condition
+// it repsents in game. So, perhaps, a 'fight' is occuring,
+// and a character is 'poisoned'. We COULD save all the information about
+// being POISONED in an object and pass that around, although, every single time
+// a thing is POISONED, we would need to transfer all that data all the time,
+// and this would be the case for all "conditions", so, instead, we can ascribe a number
+// to point to said condition in some sort of dictionary, and then all we need to transfer is
+// that number value for each condition. 
+//
+// In this hypothetical code, we would still need a way to see what condition this is, so, this hypothetical module is doing that
+getConditionName condVal
+    string name
+    
+    switch condVal
+        case 1
+            name = "poisoned"
+                endcase
+        case 2
+            name = "bleeding"
+            endcase
+        case 3
+            name = "sleepy"
+                endcase
+        case 4
+            name = "sad"
+            endcase
+        case 5
+            name = "crazy"
+        endcase
+    endswitch
+return name
+```
+
+The problem here is one of indention. 
+Although this may be the first time seeing a switch/case structure, one can see
+the use of indention on 'endcase' is inconsistent.
+
+We should always be indenting the end'structure_name' at the same level of indention that it starts on.
+
+
+## Example 5
 
 This has two problems... but we are just going to focus on one for a moment
 

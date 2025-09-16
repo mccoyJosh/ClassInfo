@@ -39,7 +39,68 @@ With this example we can see the main features of this simulation:
 
 That is really the whole point of this simulation.
 
+![robot_1.png](assets/robot_1.png)
+
+The drag and drop coding style is honestly nothing too crazy, so
+all you really need to see is how to use the different parts, and you
+should be all good.
+
+# Opening and Closing Gripper
+
+![robot_2_grip.png](assets/robot_2_grip.png)
+
+# Placing blocks
+
+![robot_4_block.png](assets/robot_4_block.png)
+
+# How to make loop
+
+There are two types of loops; one which is conditional and one which 
+just runs for a certain number of times:
+
+Here, we are using the loop which runs for 10 times; this one is much easier!
+
+![robot_5.png](assets/robot_5.png)
+
+For conditionals in roxsi, we really do not have a lot of options.
+Although, you can easily tell what you can use by what fits into socket it provides.
+
+This program is a little buggy and dumb though, so some things seem like
+they can fit within the socket, but they cannot.
+
+![robot_7_while.png](assets/robot_7_while.png)
 
 
+# If statement
+
+![robot_6_if.png](assets/robot_6_if.png)
+
+# Using joint angles
+
+
+What you need to understand today is that initially, the example 
+gives us the way to move the robot using absolute positions,
+but for the assignment we need to translate this
+position into the correct angles to reach the box instead.
+
+So, how do we do that?
+
+Well, we use the rotate joint move command instead of the 
+position move command block.
+
+On the robot, there exists 6 joints, all of which can be moved. This
+does give us incredible range for what we can accomplish, BUT, it 
+can often be difficult to use.
+
+# Which joint angle is which?
+
+![robot_3_angles.png](assets/robot_3_angles.png)
+
+# The assignment:
+
+Do what the example is doing, but use the joint angles instead of the 
+position mover!
+
+That's basically it!
 
 
