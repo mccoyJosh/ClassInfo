@@ -11,10 +11,24 @@ and uses networking tools.
 
 So, how does one connect a computer to another?
 
-Well, it works a whole lot like mail!
+Well, it works a lot like mail!
+
+When you want to send a piece of mail, you need
+to first "write it", and then send the packet/package/message/letter
+to the ADDRESS.
+
+When we want to communicate to another computer, we just need to know "where it is"
+on the network/internet!
 
 # IP Addresses
 
+An IP Address is just that!
+
+IP (aka Internet Protocol) Address is a number which is assigned to every 
+device connected to a computer network (which uses IP Addressing).
+
+When you want to send a message or communicate to another device, you address
+them to the IP address.
 
 ## IPV4
 
@@ -26,6 +40,9 @@ subnet mask?
 
 What we see is that your device will have multiple IP Address, 
 but of different types!
+
+
+# Why do we have both
 
 # NAT (Network Address Translation)
 
