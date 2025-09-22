@@ -112,19 +112,92 @@ This can helps us locate generally what this data set is getting.
 
 Example:
 
+```
+5, 1, 0, 4, 3
 
-
+SUM = 5 + 1 + 0 + 4 + 3 = 13
+COUNT = 5
+MEAN = 13 / 5  = 2.6 
+```
 
 ## Median
 
+The median is the middle number in an ordered set of data.
+
+Now, if this is an odd numbered set of data, this is pretty easy.
+Just, put em in order and get the one in the middle.
+
+Only thing to even note is when there is an even numbered set of data.
+In this case, located the two middle most values, add em together, and divide by 2.
+This is basically just finding the mean/average of the two numbers.
+
+Odd Example:
+```
+1, 5, 7, 9, 19
+
+      ^
+      |
+      This value is in the middle: 7
+```
+
+
+Even Example:
+```
+5, 8, 10, 12, 14, 55
+      ^    ^
+      |    |
+      These two values are in the middle.
+
+      To find the median, you
+      median = 10 + 12 / 2
+      median =  22 / 2
+      median = 11
+
+```
 
 
 ## Mode
 
+The mode is the most common value found within a set of data.
+
+If there are multiple numbers which all have the same number of appearances,
+then they are all the modes.
+
+Example:
+```
+1, 4, 6, 3, 78, 1 , 3, 22, 3, 2, 1, 1
+
+mode: 1
+It appears the most
+```
+
+Example 2:
+
+```
+7, 9, 6, 11, 20, 20, 41, 3, 9
+
+Modes: 9, 29
+
+```
 
 
 ## Range
 
+The range is the difference between the maximum and minimum value.
+The range shows how far spread a set of data is.
+
+Example:
+
+```
+188, 64, 23, 34, 66, 124, 223
+
+min value: 23
+max value: 223
+
+range = max - min
+      = 223 - 23
+      = 200
+```
 
 
 ## Variance (?)
@@ -140,6 +213,8 @@ Example:
 
 ## Converting between Celcius and Fahrenheit
 
+![Temperature Conversions](assets/temp.png)
+
 - F -> C
 - C -> F
 
@@ -149,10 +224,55 @@ you can find the other
 
 ## Converting units
 
-maybe do something like inches to cm
+Being able to convert from 
+one type of data to another is very important in many situations..
 
+Understanding the basics is important.
+
+Here we are using inches to centimeters.
+
+1 in  =  2.54 cm
+
+When you have one of the two types, you need to set up
+a small equation where you are 'getting rid of' your type in a
+dision problem.
+
+Just look at this example and understand:
+
+Example 1:
+
+```
+8 in
+
+I want it in cm
+
+
+8 in      2.54 cm
+     *   --------- = 20.32 cm
+            1 in
+```
+
+Example 2:
+
+```
+8 cm
+
+I want it in inches
+
+
+8 cm       1 in
+     *   --------- =  3.14 in
+          2.54 cm  
+```
 
 ## Sorting set of data
 
+There are multiple ways or sorting data.
 
+The following sorting method is called bubble sort and
+it is pretty ineffcient.
+
+But it is a simple way to understand sorting
+
+![Bubble Sort](assets/bubble_sort.png)
 
