@@ -5,8 +5,24 @@ akin to the blueprints used in various engineering fields. UML diagrams are util
 visually illustrate the workings of a system, aiding software engineers, business 
 professionals, and system architects in modeling, designing, and analyzing systems.
 
+These will, just like flowcharts, connect a few parts together to show the flow / way / functions
+to take in input/outputs to solve a given problem.
+
+Instead of representing algorithms, we are representing where an algorithm/system is located a larger
+group of database, people, and things in the real world.
+
 
 # Parts of UML Diagrams
+
+![UML Symbols](assets/UML_Symbols.png)
+
+When creating these diagrams, we use many symbols to represent different parts of a
+system.
+
+Now, honestly, there are not many parts to this.
+
+UML diagrams are very much less describing the specifics, and instead describe general ways things work.
+Here are those parts:
 
 ## Actor
 
@@ -22,7 +38,8 @@ Use Case show specific functions of a system. This is normally equivalent to eit
 modules, or "greater" purposes. Maybe this would be a larger system with many
 inner modules all being part of it.
 
-This should normally be bigger ideas, such as a "Submit Order" function
+This should normally be bigger ideas, such as a "Submit Order" function.
+
 
 ## System
 
@@ -30,6 +47,76 @@ When describing these smaller functions, they are all typiocally part of larger 
 systems. These should all be bounded together within the parameters of a System Boundary
 and labeled accordingly. Typically depicted by a rectangular shape encompassing all system use cases,
 the system boundary helps define the system's scope and limitations.
+
+
+## Packages
+
+Packages  are basically the same thing as systems. They contain UseCases to be grouped.
+We are not going to be really using them for this class though; just know they exist!
+
+<br>
+
+------------
+
+# Relationships
+
+When connecting and combining these elements, we have five ways to do so:
+
+1. Associate between an actor and a use case
+    - actors must be associated with at least 1 use case
+    - can be associated with multiple use cases
+    - multiple actors can be associated with a single use case
+    - ![Use Case Actor connection](assets/actor_use_case.png)
+2. Generalization of an actor
+    - Generalizations allow us to connect one actor to another so they 'inherit' all the traits about that actor, but can have a few special traits of their own
+    - ![Actor Genreralization](assets/actor_generalization.png)
+3. Extend relationship betwwen two use cases
+    - e
+4. Include relationship between two use cases
+    - e
+5. Generalization of a use case
+    - e
+
+
+
+
+# Use Case Diagrams
+
+Per canvas
+> Use Case Diagrams are utilized to visually represent the functionality of a system or  
+> specific components within a system. They are commonly employed to demonstrate the  
+> functional requirements of the system and how it interacts with external agents, also  
+> known as actors. A use case diagram portrays various scenarios in which the system may  
+> be utilized. By providing a broad overview, a use case diagram showcases the  
+> capabilities and actions of the system without delving into specific implementation  
+> details.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+------------
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 
 --------
 
@@ -100,16 +187,6 @@ Per canvas
 > Essentially, they depict workflows in a visual format, focusing on the condition of  
 > flow and the specific sequence in which activities occur.
 
-# Use Case Diagrams
-
-Per canvas
-> Use Case Diagrams are utilized to visually represent the functionality of a system or  
-> specific components within a system. They are commonly employed to demonstrate the  
-> functional requirements of the system and how it interacts with external agents, also  
-> known as actors. A use case diagram portrays various scenarios in which the system may  
-> be utilized. By providing a broad overview, a use case diagram showcases the  
-> capabilities and actions of the system without delving into specific implementation  
-> details.
 
 # Sequence Diagram
 
