@@ -200,13 +200,204 @@ range = max - min
 ```
 
 
-## Variance (?)
-
-
-
 ## Standard Deviation
 
+The standard deviation is a measure of the amount of variation of the values aroud it's mean.
 
+This standard deviation tells us many things about a population.
+
+First of all, we have already discussed the mean; the mean
+tells us the central point of our data... aka the average.
+
+Although, it does not tell us how close our data is to that point. This is
+what standard deviation DOES tell us. So, a large standard deviation value means that our
+data is spread out away from the mean, which, if we are trying to use that mean to
+do some data, maybe it is less useful.
+
+Otherwise, a small standard deviation means the data is more closely packed around our mean.
+
+So, instead of keeping yapping about it, let's look at a formula and solve an example.
+
+
+### Population
+
+Here is the formula, and yes it can look intimidating, but it is really not that bad:
+
+> explain it, obviously.
+
+$$
+X_i =  \text{The value in the data set} \\
+\mu =  \text{Population mean } \\
+n =  \text{Total number of observations (count)} \\
+\sigma  = \text{Standard Deviation} \\
+
+-----------------------\\
+
+\sigma = \sqrt {
+      \frac{
+            \sum_{i}^{n} (X_i - \mu)^2
+      }{
+            n
+      }
+}
+$$
+
+So, lets us this on some data.
+
+Let's say I want to find the standard deviation for the times people arrive to a breakfast joint
+that I have been wanting to eat at (so perhaps, I can eat food)
+
+
+```
+4, 5, 6, 6, 8, 8, 8, 8, 9, 9, 10, 10, 11, 12, 12
+
+So, we first need to find the mean of these values.
+Count: 15
+Sum: 126
+Mean: 8.4
+
+With this, we need to 
+- find the difference from this mean for every value
+- square it
+- add it all up
+```
+
+Difference       |  to power of c   |   count
+-----------------|------------------|------------------
+4 - 8.4 = -4.4   |   19.36          | 1
+5 - 8.4 = -3.4   |   11.56          | 1
+6 - 8.4 = -2.4   |   5.76           | 2
+8 - 8.4 = -0.4   |   0.16           | 4
+9 - 8.4 = 0.6    |   0.36           | 2
+10 - 8.4 = 1.6   |   2.56           | 2
+11 - 8.4 = 2.6   |   6.76           | 1
+12 - 8.4 = 3.6   |   12.96          | 2
+
+
+
+$$
+SUM = 19.36\ +11.56+\left(5.76\cdot2\right)+\left(0.16\cdot4\right)+\left(0.36\cdot2\right)+\left(2.56\cdot2\right)+6.76+\left(12.96\cdot2\right) \\
+SUM = 81.6
+$$
+
+$$
+\sigma = \sqrt {
+      \frac{
+            \sum_{i}^{n} (X_i - \mu)^2
+      }{
+            n
+      }
+}
+$$
+
+becomes
+
+
+$$
+\sigma = \sqrt {
+      \frac{
+            81.6
+      }{
+            15
+      }
+}
+$$
+
+$$
+\sigma = \sqrt{5.44}
+$$
+
+$$
+\sigma = 2.3323
+$$
+
+So, our standard deviation is
+
+Really, this formula we used is the "population" standard deviation. All this means is that
+we would need the entire population we are trying to find the standard of.
+
+In most situations, you probably don't have that. You are probably taking a small sample from a 
+larger set of data. In which case, we use a slightly altered formula ---> see next section
+
+### Sample
+
+Unless we have literally
+
+$$
+X_i =  \text{The value in the data set} \\
+\overline{X} =  \text{Sample mean } \\
+n =  \text{Total number of observations (count)} \\
+\sigma  = \text{Standard Deviation} \\
+
+-----------------------\\
+
+\sigma = \sqrt {
+      \frac{
+            \sum_{i}^{n} (X_i - \overline{X})^2
+      }{
+            n - 1
+      }
+}
+$$
+
+So, for the last calculation, it would be mostly the same, although, the n is substracted by 1
+
+$$
+\sigma = \sqrt {
+      \frac{
+            81.6
+      }{
+            15 - 1
+      }
+}
+$$
+
+this becomes
+
+$$
+\sigma = 2.41424
+$$
+
+
+### Bell Curve
+
+So, once we have the standard deviation, we can interpret lots of data from this.
+Most importantly, is seeing how many data points fall within specific ranges.
+
+This is where the bell curve comes from:
+
+![bell curve help explain stuff](assets/sd_bell_curve.png)
+
+From the mean, we can now add/subtract a certain number of standard deviations to see
+how many people fall between certain number of percentage ranges! WOO!
+
+NOW, all these calculations are great and all, but if we are working with HUGE sets of data, then
+this would be very annoying to find out. So, this is why this is a common
+computer problem because this would be trivial to solve with code.
+
+## Variance
+
+The variance is the standard deviation squared.
+Or... it is the same forumla but you don't
+squareroot it.
+
+It is also helpful in some situations apparently
+to use this infor to analyze data.
+
+$$
+X_i =  \text{The value in the data set} \\
+\mu =  \text{Population mean } \\
+n =  \text{Total number of observations (count)} \\
+\sigma^2  = \text{Variance} \\
+
+-----------------------\\
+
+\sigma^2 = \frac{
+            \sum_{i}^{n} (X_i - \mu)^2
+      }{
+            n
+      }
+$$
 
 -------
 # Others
