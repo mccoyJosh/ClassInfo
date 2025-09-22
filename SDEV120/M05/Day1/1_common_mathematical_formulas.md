@@ -232,7 +232,9 @@ n =  \text{Total number of observations (count)} \\
 \sigma  = \text{Standard Deviation} \\
 
 -----------------------\\
+$$
 
+$$
 \sigma = \sqrt {
       \frac{
             \sum_{i}^{n} (X_i - \mu)^2
@@ -330,7 +332,9 @@ n =  \text{Total number of observations (count)} \\
 \sigma  = \text{Standard Deviation} \\
 
 -----------------------\\
+$$
 
+$$
 \sigma = \sqrt {
       \frac{
             \sum_{i}^{n} (X_i - \overline{X})^2
@@ -391,7 +395,9 @@ n =  \text{Total number of observations (count)} \\
 \sigma^2  = \text{Variance} \\
 
 -----------------------\\
+$$
 
+$$
 \sigma^2 = \frac{
             \sum_{i}^{n} (X_i - \mu)^2
       }{
