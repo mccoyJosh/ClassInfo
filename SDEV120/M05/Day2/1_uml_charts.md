@@ -71,11 +71,18 @@ When connecting and combining these elements, we have five ways to do so:
     - Generalizations allow us to connect one actor to another so they 'inherit' all the traits about that actor, but can have a few special traits of their own
     - ![Actor Genreralization](assets/actor_generalization.png)
 3. Extend relationship betwwen two use cases
-    - e
+    - Extended use case is dependednt on the use case extended upon
+    - Extended use case is (usually) optional (see the conditional statement)
+    - The use case extended upon (the base use case) must be meaningful on its own
+    - ![Extends Example](assets/extend.png)
 4. Include relationship between two use cases
-    - e
+    - Unlike extends, the includes is MANDATORY and NOT optional
+    - This describes feature step of use case; this is often used when the included use case is something mulitple other BASE use cases NEED to do
+    - ![Include Example](assets/includes.png)
 5. Generalization of a use case
-    - e
+    - This is similar to generalization of an actor.
+    - Used to inherit everything about a use case, but gives it its own special spin.
+    - ![Use Case Generalization](assets/use_case_generalization.png)
 
 
 
@@ -91,13 +98,30 @@ Per canvas
 > capabilities and actions of the system without delving into specific implementation  
 > details.
 
+Before even creating your UML chart to begin representing larger systems, you need to
+make sure you get everything you need!
+
+## Identifying Actors
+
+
+## Identifying Use Cases
+
+
+## Look for Common Functionality (i.e. <<includes>>)
+
+
+## Anything to generalize
+
+
+## Optional Functions (extend)
 
 
 
+ 
 
 
 
-
+ # Examples
 
 
 
