@@ -65,7 +65,7 @@ Example:
 
 the sum would be 6!
 
-Summation can also be represetented with the sigma symbol and some identifiers:
+Summation can also be represented with the sigma symbol and some identifiers:
 
 ![Sum](assets/sum.png)
 

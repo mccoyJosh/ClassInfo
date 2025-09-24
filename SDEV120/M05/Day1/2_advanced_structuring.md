@@ -20,19 +20,18 @@ the speghetti method!
  like you may do to strands of spaghetti.
 
  So, we go step by step, recreating the 
- the flowchart, and have it still LOGICALLY
+ flowchart, and have it still LOGICALLY
  perform the algorithm.
 
  ![Steps 1 through 5](assets/s_02_steps_1_to_5.png)
 
 So, at this point, we need to do the yes of
-of B?, and currently, the way they do this is messed up.
+B?, and currently, the way they do this is messed up.
 
-It looks likes it wants to loop based off of B, although, if that was the case,
+It looks like it wants to loop based off of B, although, if that was the case,
 it would loop right before B, but it doesn't. It loops around to A.
 
-Now, trying to resolve this by putting the needed steps inside
-of B has a small problem!
+Now, trying to resolve this by putting the needed steps inside B has a small problem!
 
 ![Attempting resolving B](assets/s_03_infinite_step_which_is_no_good.png)
 
