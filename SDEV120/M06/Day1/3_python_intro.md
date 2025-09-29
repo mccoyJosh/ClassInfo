@@ -16,5 +16,8 @@ Erm... it is an interpreter
   - Simple code
     - print("Hello World")
 
-
+- Discuss
+  - Creating Variables
+  - Printing stuff
+  - String Conjuction
 ---------------
