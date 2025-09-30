@@ -37,3 +37,7 @@ Notice that the "yes" path on the single alternative NEEDS to be the path with c
 being executed. Otherwise, this would not be a valid selection structure.
 
 These are the basics which we already have discussed.
+
+
+
+# MOST OF THIS LECTURE IS TAKEN FROM CHAPTER 4 Making Decisions IN THE BOOK!
