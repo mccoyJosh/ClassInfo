@@ -3,6 +3,16 @@
 The NOT logical statement does what we have already talked about... i.e.
 negates from true to false or false to true.
 
+## Unary Operator
+
+So most operators take two values to work. These are considered binary operators. Like
+1 == 12
+
+The NOT operator only needs to take 1 operator, this makes it a **UNARY OPERATOR**
+
+
+
+
 ## Common Errors
 
 Negating Two things and combining with AND/OR and it doesn't mean what you expect.
