@@ -151,7 +151,7 @@ can see nester loops can cause inefficiencies in code.
 It is very easy to not initialize your variable, like the one found above. In most programming
 langauges, this would result in a errored out program. In our code here, it just doesn't make sense.
 
-### Mistake: Failing to Initialize the Loop Control Variable
+### Mistake: Failing to Update the Loop Control Variable
 
 ![no_changing_variable.png](assets/no_changing_variable.png)
 
