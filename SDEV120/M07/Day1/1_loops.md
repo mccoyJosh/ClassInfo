@@ -60,6 +60,8 @@ If we do not properly create these loops, we can accidently create an infinite l
 
 > a loop for which the number of repetitions is a predetermined value.
 
+### TALK ABOUT DEFINITION OF INCREMENTING AND DECREMENTING
+
 ![count_controlled_loop.png](assets/count_controlled_loop.png)
 
 

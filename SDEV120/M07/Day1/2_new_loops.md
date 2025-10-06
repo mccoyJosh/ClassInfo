@@ -4,6 +4,8 @@ Up to this point, we have only discussed the while loop. There are more loop tho
 
 # For loop
 
+### THESE MAKE FOR GREAT DEFINITIVE LOOPS!
+
 For loops are used to do increments. They simplify the process of initializing a variable
 to just us it to count to a number.
 
