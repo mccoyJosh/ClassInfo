@@ -50,13 +50,3 @@ this case, if 0 is our number, an empty string is returned.
 This is our missed boundary; we would want to make sure all values are included,
 so we would want to add a check for 0 as well!
 
-
-## Unary Operator
-
-So most operators take two values to work. These are considered binary operators. Like
-1 == 12
-
-The NOT operator only needs to take 1 operator, this makes it a **UNARY OPERATOR**
-
-
-

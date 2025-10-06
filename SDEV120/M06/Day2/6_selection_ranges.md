@@ -22,16 +22,16 @@ This would be a good way to bread down grades in a class ranges.
 
 ## THIS IS BETTER FOR A BINARY RANGE
 
-Here is how you would do it with OR:
+Here is how you would do it with OR... and it be wrong:
 
 ```
 num = input()
-if  (NOT num < 0) OR (NOT num > 100):
+if  num >= 0 OR num <= 100:
     output "It is between 0 and 100"
 endif
 ```
 
-This is kinda a bad way to do it, so you should probably use AND
+This is a bad way to do it, since it wouldn't work, so you should probably use AND
 
 Here is how you would do it with AND:
 
