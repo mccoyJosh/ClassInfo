@@ -8,7 +8,7 @@ Per, the internet:
 > **Data Structure**: An organization in software of data that allows more optimal searching, categorizing, or storage of information.
 
 
-# What is it?
+# An array... what is it?
 
 Per the book:
 > a series or list of variables or constants in contiguous computer memory locations, all of which have the same name but are differentiated with subscripts.
@@ -17,6 +17,16 @@ Typically, arrays are implemented with these contrictions:
 - list of items
 - these items are the same type
 - the number of items in this list does not change
+
+Rules per the textbook:
+
+- An array is a list of data items in contiguous memory locations.
+- Each data item in an array is an element.
+- Each array element is the same data type; by default, this means that each element is the same size.
+- Each element is differentiated from the others by a subscript, which is a whole number. (WE WILL SEE SUBSCRIPT BE CALLED INDEX AS TIME GOES ON)
+- Usable subscripts for an array range from 0 to one less than the number of elements in an array.
+- Each array element can be used in the same way as a single item of the same data type.
+
 
 Typically, they are represented like this:
 
@@ -92,16 +102,6 @@ class thing {
 
 
 # Storing Data in Arrays, like actually on a computer
-
-Rules per the textbook:
-
-- An array is a list of data items in contiguous memory locations.
-- Each data item in an array is an element.
-- Each array element is the same data type; by default, this means that each element is the same size.
-- Each element is differentiated from the others by a subscript, which is a whole number.
-- Usable subscripts for an array range from 0 to one less than the number of elements in an array.
-- Each array element can be used in the same way as a single item of the same data type.
-
 
 Within a computer, arrays are organized one after each other.
 If variables are just references to a specific address in the computer
