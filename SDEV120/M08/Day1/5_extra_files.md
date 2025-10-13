@@ -50,6 +50,14 @@ Per the book:
 
 # Merging Files
 
+Let's say we want to do a very common task, merging data from two files, as shown below.
+
+![merging_data_results.png](asset/merging_data_results.png)
+
+We first want to make sure they have the same fields, otherwise this wouldn't really want to make sense.
+Otherwise, look below:
+
+
 Merging files from two sequential sources might be a bit complicated, but we are going to look exactly how it is done 
 here:
 
