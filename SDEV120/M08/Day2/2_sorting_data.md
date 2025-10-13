@@ -33,5 +33,10 @@ def swap(*int var1, *int var2):
 
 ## Ascending VS Descending (show descending example)
 
+Per the book:
+> **Ascending Order**: describes the arrangement of data items from the lowest value to highest.
+
+> **Descending Order** : describes the arrangement of data items from the highest value to lowest.
+
 
 # Other Sorting Algorithms

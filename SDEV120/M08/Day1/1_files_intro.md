@@ -88,6 +88,18 @@ Binary Files can be many things:
     - Apple uses .dmg and .app a lot of times for different types of executables
     - REALLY, most computers can execute a file as long as it is set in the systems as an executable with permissions
 
+## Encoding Schemes
+
+Some of these files, such as images and things, things which are BINARY, need to be read in a certain way.
+For instance, if you try opening an image with the text editor, it will try to interpret the image info as characters,
+and you will be left with nonsense on your screen. 
+
+The same thing would occur if you opened a text file with an image reader.
+
+This is because they have different encoding schemes, that is, they are read by the computer in different fashions.
+
+
+
 ## More:
 
 - Python Files (.py)

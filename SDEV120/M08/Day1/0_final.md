@@ -6,7 +6,7 @@ This is as late as you can turn it in. Grades are due shortly after, so I need t
 
 ## Here are the facts:
 
-- 41 questions
+- 36 questions
   - 35 multiple choice questions
   - 1 big question where you make a flowchart/psuedocode
 - 150 points (17% of your grade!)
