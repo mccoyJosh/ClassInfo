@@ -1,13 +1,12 @@
 # Lab
 
-(Inspired heavily from chapter 3 in the textbook)
 
 ------
 
-> Implement a guessing game where the computer makes up a number from a provided range and the user is expected to guess that value. 
+> Implement a guessing game where the computer makes up a number from a provided range and the user is expected to guess that value.
 > Have the user the ability to continuously guess until they get the number while letting them know if each guess is greater or less than the
 > number they are guess. When they found the correct number, let them know and print out the number of guesses they tried.
-> 
+>
 > Please validate the users input and limit the user to guess only log(range_diff)*1.5 (as an integer)
 
 Good example of allowing a user to keep doing 'something' and validating the user input!

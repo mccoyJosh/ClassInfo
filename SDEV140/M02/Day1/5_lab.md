@@ -1,6 +1,5 @@
 # Lab
 
-(similar to chapter 3)
 
 ----------
 

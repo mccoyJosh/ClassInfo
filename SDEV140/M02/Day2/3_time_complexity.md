@@ -67,7 +67,7 @@ If we add up all the exeuctions (1 + 1 + n + 1 + n + 1) we get 2n+4. Looks like 
 
 ![linear_problem.png](../assets/linear_problem.png)
 
-This equation will give us the exact number of times the code we have created will execute depending on 
+This equation will give us the exact number of times the code we have created will execute depending on
 the size of the list.
 
 
@@ -121,7 +121,7 @@ The whole point try to get across is that the way in which you design your code 
 (i.e. make more executions). There are many ways to solve specific coding problems, and some of these solutions
 are slower when compared to others. So, just keep in mind what you are coding.
 
-We looked at linear time and exponential time, but, there are worse (and better) rates of code. We don't 
+We looked at linear time and exponential time, but, there are worse (and better) rates of code. We don't
 really get to get too deep into time complexity in the course due to time restraints, but this should be
 an alright introduction.
 
