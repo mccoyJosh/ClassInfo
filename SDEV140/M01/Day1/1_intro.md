@@ -16,6 +16,7 @@
     - Course Layout (It is all open)
     - Talk about Midterm, Final and project Due Dates Specifically
     - Mention THIS repository
+    - Brief Overview of "Final Project"
 - **Other**
   - Zoom
     - Access it within the home page, syllabus, or Zoom tab in sidebar!
