@@ -1,3 +1,5 @@
+##  Functions, Methods, and Modules
+
 # Functions, Methods and Modules
 
 --------
@@ -57,7 +59,7 @@ example = "word"
 example.upper() # This is the upper METHOD being called on the string object
 ```
 
-If the object did not exist and contain the information about the 
+If the object did not exist and contain the information about the
 string, the method would have nothing to work on.
 
 For instance the print() method simply can be called without an object tied to it
