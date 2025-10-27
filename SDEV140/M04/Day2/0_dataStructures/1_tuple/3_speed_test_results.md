@@ -1,1 +1,0 @@
-![speedTestResults.png](../../assets/speedTestResults.png)

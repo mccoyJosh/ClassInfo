@@ -3,7 +3,7 @@
 Package managers are useful tools for getting 3rd party software
 to use for whatever programming problem you are solving.
 
-We briefly talked about this when discussing git, as git can be obtained through 
+We briefly talked about this when discussing git, as git can be obtained through
 package managers. Here are those package managers discussed previously (for your given operating system):
 
 - MacOS:   [Homebrew](https://brew.sh/)
@@ -12,15 +12,15 @@ package managers. Here are those package managers discussed previously (for your
 But, today, we are more talking about package installers. Now, this is a coding
 language specific type of package installation software program.
 
-Package managers will install software, like git, that is available to use anywhere on your device. 
+Package managers will install software, like git, that is available to use anywhere on your device.
 It delivers you system-wide software tools. Package installers will install additional
-packages for whatever languages you are using. This is typically additional code 
+packages for whatever languages you are using. This is typically additional code
 made by someone else in your given langauge which will do some functionality which you would like.
 
 
 - For Golang, there is a built-in package installer, so you can just run a command and get the packages you need.
-- For langauge like Java, there are build systems you can use which work as package installers. For instance, 
-gradle will install packages for your java project.
+- For langauge like Java, there are build systems you can use which work as package installers. For instance,
+  gradle will install packages for your java project.
 
 - Now, for python, this is pip.
 
@@ -45,3 +45,24 @@ this one is the most common. Here is the page for that package of matplotlib.
 Typically, they tell you everything you need to know to get started :)
 
 https://pypi.org/project/matplotlib/
+
+# Example
+
+```python
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
+
+# Plotting the data
+plt.plot(x, y)
+
+# Adding labels and title
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Simple Line Plot')
+
+# Display the plot
+plt.show()
+```

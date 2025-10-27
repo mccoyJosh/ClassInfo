@@ -71,7 +71,7 @@ For instance, letters (and symbols).
 In ASCII, we assign each symbol a number, and just store the number. When we want to display a previously stored message,
 we have the computer reads these numbers, convert them to symbols that it displays for us.
 
-![ascii.png](../M01_Day2/assets/ascii.png)
+![ascii.png](../Day2/assets/ascii.png)
 
 This is an example of encoding: "converting data from one form into a proper form required for a certain process"
 
