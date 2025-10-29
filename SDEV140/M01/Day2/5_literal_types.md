@@ -339,7 +339,7 @@ print(bin(0B001100<<2))
 
 
 ## PYTHON IS A STRONGLY TYPED LANGUAGE
-before applying operators to operands, it ensures it is allowed to do that, and if not, it results in an erro
+before applying operators to operands, it ensures it is allowed to do that, and if not, it results in an error
 These all results in errors due to this:
 
 ```python
@@ -396,11 +396,14 @@ So, we can use a few special rules to actually use these in our code!
 '\n'
 print('dog\ncat')
 ```
+
+
 ### backspace
 ```python
 '\b'
 print('dog\b')
 ```
+
 
 ### tab character
 ```python
@@ -408,17 +411,20 @@ print('dog\b')
 print('dog\tcat')
 ```
 
+
 ### single quote/ double quote
 ```python
 '\''
 "\""
 ```
 
+
 ### backslash
 ```python
 '\\'
 print('\\thing')
 ```
+
 
 -----------------
 
@@ -467,7 +473,7 @@ print(type(var))
 print("This is just a string being printed out")  # just a long string
 ```
 
-Each character in a string is at an index starting from 0
+Each character in a string is at an index starting from 0... although we will talk about indexes more next weeek!
 
 ```python
 print("This is a string"[0])  # getting a single character from a string

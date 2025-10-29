@@ -17,6 +17,29 @@ So, how do we do them in python?
 print("hello")
 ```
 
+Within the strings here, it will put your strings exactly as they appear, so, for instance:
+
+```python
+print("h    e    l   l  o")
+```
+
+This means you can also print things in shapes and what not....
+this is typically considered ASCII art
+
+* I am not super talented: this whale is from: https://www.asciiart.eu/animals/fish
+
+```python
+print('''
+       .
+      ":"
+    ___:____     |"\\/"|
+  ,'        `.    \  /
+  |  O        \___/  |
+~^~^~^~^~^~^~^~^~^~^~^~^~
+''')
+```
+
+
 ## Input....  input()
 
 ```python
