@@ -21,7 +21,9 @@ len('dog')
 print("Here is the length of 'dog':", len('dog'))
 
 ```
-Again, as previously mentioned, we can access any single char from a string by using its index
+
+
+We can access any single char from a string by using its index
 
 
 ```
@@ -131,7 +133,8 @@ else:
 ```
 
 
-ALSO
+# Immutable
+
 Strings are immutable, meaning you cannot change them once they are created
 This doesn't mean the variable can't be changed
 BUT, you can't change the individual characters in a string

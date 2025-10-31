@@ -114,13 +114,7 @@ print(type(var))
 print("This is just a string being printed out")  # just a long string
 ```
 
-Each character in a string is at an index starting from 0... although we will talk about indexes more next weeek!
-
-```python
-print("This is a string"[0])  # getting a single character from a string
-
-```
-
+# Operators
 
 Just like the mathematical operands, there are operators that can applied to strings
 
@@ -151,5 +145,3 @@ print("Z" * 0)  # results in an empty string
 
 print('abc ' * 10)  # works with any size string
 ```
-
-------

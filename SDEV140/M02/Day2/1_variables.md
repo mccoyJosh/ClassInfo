@@ -92,7 +92,6 @@ We will look at a few more ways to name stuff when we get to styling on WEDNESDA
 
 
 
-
 # How they are Stored
 
 
@@ -150,6 +149,7 @@ number = 10
 We will discuss object-oriented programming WAY later in this course, but this is the first time we really begin to see variables
 be referred to in this manner!
 
+### Discuss how strings are objects
 
 
 # Garbage Collection
@@ -160,7 +160,7 @@ automatically be given back to the system to use for other problems.
 In other programming languages, this was something which needed to be done by 
 the user manually.
 
-Python, along with some other programming langauges, will detect when values go out of scope, and therefore not being used, and
+Python, along with some other programming languages, will detect when values go out of scope, and therefore not being used, and
 therefore can be reallocated back to memory!
 
 # Mutable VS Immutable
@@ -173,8 +173,6 @@ We will see this in action later with lists/dictionaries/tuples/sets next week!
 
 
 
-
-
 # Incrementing
 
 
@@ -182,3 +180,29 @@ With the creation of variables, we can use them to do many things.
 
 One of the simplest use cases is "INCREMENTING" and its brother "DECREMENTING"
 
+The simplest way to show incrementing is with code like this:
+
+```python
+val = 0
+
+while val < 10:
+  print(val)
+  val = val + 1  # THIS LINE IS INCREMENTING
+
+```
+
+This works perfectly fine, but python has a way to make incrementing any variable 
+slightly easier:
+
+> using the += (or -=) operator
+
+```python
+val = 0
+
+while val < 10:
+  print(val)
+  val += 1  # THIS LINE IS INCREMENTING
+
+```
+
+This prevents wasting time from just re-writing the variable name over and over again

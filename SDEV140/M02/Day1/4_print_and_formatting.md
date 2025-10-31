@@ -1,4 +1,8 @@
 
+# Print Statement and Formatting
+
+------
+
 # Printing
 
 ## Print Function
@@ -141,7 +145,11 @@ print(summation)
 
 ---------------
 
-## Format Strings
+---------------
+
+
+
+# Format Strings
 
 
 In many circumstances, you will need to format your strings so the data being presented can be more easily read

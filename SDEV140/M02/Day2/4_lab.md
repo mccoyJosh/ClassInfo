@@ -31,11 +31,12 @@ print("Here is the number with tax: $", final_rounded_number)
 > and then outputs the sphere's diameter, circumference, surface area, and volume
 > 
 ```python
+import math
 radius = float(input("What is the radius of the sphere: "))
 
 diameter = 2 * radius
 
-pi = 3.14159
+pi = math.pi
 
 circumference = 2 * radius * pi
 surface_area = 4 * pi * (radius ** 2)
@@ -51,18 +52,3 @@ Note: we could have imported math and use math.pi for this if we wanted greater 
 
 
 -----
-
-## Get the Hundreds Place!
-
-> Write a program that will get the digit in the hundreds place of a given number and print it out.
-> (Assume all numbers given are integers which are >= 100)
-
-```python
-number = int(input("Input number: "))
-
-hundreds_digit = (number % 100) / 10
-
-print("Here is the digit in the hundreds place: ", hundreds_digit)
-```
-
-This really is to show a good use of the modulo operator

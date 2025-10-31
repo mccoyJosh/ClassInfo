@@ -1,4 +1,4 @@
-# Software Development Methodology
+# Software Development Methodology (not necesarry per course)
 
 ## History
 - There were obviously older software development methodology
