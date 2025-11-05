@@ -23,7 +23,7 @@ problems is called **_stepwise refinement_**.
 
 ## Design of Text-Analysis Program
 
-In chapter 4, there was a program discussed called Text Analysis. The goal of the program
+The goal of a hypothetical program
 is to measure text readability that is determined by the Flesch Index. It is based off 
 the average number of syllables per word and the average number of words per sentence in a piece of text.
 With these averages, we plug it into Flesch's Formula to get the index:

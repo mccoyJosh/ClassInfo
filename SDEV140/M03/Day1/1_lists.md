@@ -3,7 +3,7 @@
 # Basics
 
 
-Last week we talked about data structures and how strings are data structures
+Last week we briefly talked about data structures and how strings are data structures
 today we are going to talk about MORE DATA STRUCTURES
 Specifically, Lists, Tuples, and Dictionaries
 
