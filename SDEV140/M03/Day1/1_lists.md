@@ -75,7 +75,6 @@ print([2, math.factorial(7)])
 The list contains the actual value of math.factorial(7) instead of the function
 
 
-
 # List types
 Currently, the lists we've seen have been holding only one type of variable
 BUT, lists are not restricted in what they hold.
@@ -91,6 +90,37 @@ You can just do whatever you really want with lists
 ```python
 crazy_list = ['normal item', len([1, 2, 56, 2]), ("a", len("tuple")), 5.76/364, 5]
 ```
+
+-------
+
+# Indexing
+
+Accessing the items in a list just like a string.
+
+Starting at index 0, each position increments from there.
+
+Using these positions, we can address it using brackets []
+
+So, here is a simple example of getting the first value from a list:
+
+```python
+li = ["dog", "cat", "evil creature of the woods"]
+
+first_val = li[0]
+```
+
+If we have a list in a list, we address each internal list after each outer list, so here is an example
+
+```python
+li = [ [9, 8] , [7, 6]  ]
+
+the_seven = li[1][0]
+
+```
+
+
+-------
+
 
 ## Len function
 Just like strings, you can get the length of a list with len()
@@ -126,7 +156,7 @@ list_1 = [100, 200, 300, 400, 455, 555, 123, "last"]
 print(list_1[4:7])
 ```
 
-##List Loops
+## List Loops
 
 Iterate through list with for loop and using in keyword to check if variable is inside of list
 ALSO just like a string, you can use the 'in' keyword to iterate through a list with a for loop
@@ -377,3 +407,74 @@ list_b = list(list_a)
 print(list_b is list_a) # will also be false
 ```
 
+
+# Sorting List
+
+Lists, as an object, has some built in methods.
+
+One such of these is the SORTING method
+
+### .sort()
+
+This one is an easy one. To call the sort method from a list, we just use .sort()
+on it.
+
+```python
+li = [1, 9, 0, -6, 10]
+li.sort()
+print(li)
+```
+
+
+Here we are easily see it sort a list.
+This method also is known as a mutator method, in that is changes the object it is called from.
+
+Sometimes, you need a sorted list without changing the list on hand.
+
+
+### sorted()
+
+This is when we want to use sorted()
+
+When we call sorted, it creates a new list with the items from the given
+list but sorted.
+
+```python
+
+li = [1, 9, 0, -6, 10]
+new_li = sorted(li)
+print(li)
+
+print(new_li)
+```
+
+
+## key argument
+
+Both the sorted and .sort methods have an optional key parameter.
+This is just like print() statement's end and sep keyword.
+
+This will apply a function first and then do the sorting
+
+
+This will not sort the letters like we would expect because some letters are uppercase
+and some are lower case.
+```python
+names =  ["Jeff Will", "bill buff", "alfred Pigman", "Richard reels", "paulo Coelho", "Archer bacht"]
+
+names.sort()
+
+print(names)
+```
+
+
+Instead, we can give the list the str.lower() function to first make the string lowercase
+before it does the sorting.
+
+```python
+names =  ["Jeff Will", "bill buff", "alfred Pigman", "Richard reels", "paulo Coelho", "Archer bacht"]
+
+names.sort(key=str.lower)
+
+print(names)
+```
