@@ -2,7 +2,7 @@
 
 - Online (like everything)
 - Covers concepts from modules 1 through 4
-- 25 questions total, 2 points each
+- 25 questions total, 2 points each TOTAL: 50 points
 - Worth 5% of your total grade
 - No time limit
 - 2 Attempts

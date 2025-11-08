@@ -1,6 +1,10 @@
-# Scope 
+# Scope (i.e. Code Blocks)
 
-So currently we've covered 'if' statements
+So, up to this point, we have covered if statements, while and for loops, all of which need
+indention to tell what is contained inside the structure.
+
+This is referred to as a *code block*, aka, the *scope* of the structure.
+
 Each of these have a rule for what is contained within the loop 1 tab over from the header of the statement
 For example:
 

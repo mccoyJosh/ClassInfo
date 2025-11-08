@@ -48,6 +48,41 @@ If we didn't have some sort of tool to make our code do multiple things, we woul
 very specific programs only able to do one task without the ability to automatically conform to a problem.
 
 
+# Simple Detecting Equal Values
+
+```python
+print("""
+Hi user!
+This program does many things. Type the following commands to have it do that thing:
+
+reverse: reverse a given input
+
+add: add ascii value for all characters of a given input
+
+""")
+
+user_input = input("What would you like to do: ")
+
+
+if user_input == "reverse":
+    user_text= input("Please give text: ")
+    
+    index = len(user_text) - 1
+    while index >= 0:
+        print(user_text[index])
+        index -= 1
+    print()
+    
+
+if user_input == "add":
+    user_text= input("Please give text: ")
+    
+    total = 0
+    for char in user_text:
+        total = ord(char)
+    print(f'Here is the total: {total}')
+```
+
 
 # EVEN/ODD EXAMPLE
 
@@ -62,21 +97,6 @@ if number % 2 == 1:
     print("This number is odd!")
 
 ```
-
-# SCOPE (initial)
-all the scope is IS the content of a given coding construct
-With the introduction of if statements, we get to our first "scope", that being the contents of the if statement
-it is everything tabbed over!
-```python
-val = 1
-if val == 1:
-    print("This is within the scope of the if statement")
-    print("This is within the scope of the if statement")
-    print("This is within the scope of the if statement")
-    print("This is within the scope of the if statement")
-print("This is NOT within the scope of the if statement")
-```
-we WILL talk more about this later
 
 # NESTED STATEMENTS
 
@@ -235,7 +255,9 @@ else:
 
 For instance, if you were making code to get the letter grade of a student based off
 their in-class grade percentage, using a if-elif-else statement would be how you get that done
-# EXAMPLE FIND GRADE
+
+
+# EXAMPLE FIND GRADE (good way to detect ranges!))
 
 ```python
 grade = float(input("Enter your grade: %"))
@@ -250,6 +272,44 @@ elif grade >= 60:
     print("D")
 else:
     print("F")
+```
+# EXAMPLE Simple Ranges
+
+Sometimes you do not need connected ranges like the ones shown below. Maybe you are recording 
+temperatures and you need some alarm to go off if it is too high or too low (but not like, SUPER too high).
+
+This kind of range would look something like this:
+
+```python
+temperature = float(input("Give temp: "))
+
+if temperature >= -2 and temperature < 32:
+    print("TOO COLD")
+elif temperature >= 90 and temperature < 120:
+    print("TOO COLD")
+elif temperature < -2:
+    print("WAY TOO COLD LIKE THIS IS BROKEN")
+elif temperature > 120:
+    print("WAY TOO COLD, LIKE THIS IS BROKEN")
+else:
+    print("temp is fine :P")
+```
+
+When checking for a range like this, we can simplify our boolean expression by only using the variable name once:
+
+```python
+temperature = float(input("Give temp: "))
+
+if -2 <= temperature < 32:
+    print("TOO COLD")
+elif 90 <= temperature < 120:
+    print("TOO COLD")
+elif temperature < -2:
+    print("WAY TOO COLD LIKE THIS IS BROKEN")
+elif temperature > 120:
+    print("WAY TOO COLD, LIKE THIS IS BROKEN")
+else:
+    print("temp is fine :P")
 ```
 
 
@@ -314,11 +374,6 @@ match month_num:
 
 NOTE: if your version of python is not updated past version 3.9, match statements do not work
 
-
-
-
-
-
 ------
 
 
@@ -355,3 +410,10 @@ if num != 0 and 100 / num > 0:
 
 Since it is first check if num is not zero, in the case that it is zero, the boolean check for 100/num > 0
 Is never done which prevents a ZeroDivisionError from occurring
+
+
+
+# Detecting Ranges
+
+
+
