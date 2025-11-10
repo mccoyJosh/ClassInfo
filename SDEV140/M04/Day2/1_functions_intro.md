@@ -8,13 +8,11 @@ where what code is written!
 THIS ENDS NOW (hopefully) because we are talking about functions (aka, methods when they are in a class/object)
 
 
+
 -----------------
 
 # FUNCTIONS
 
-Now I know some of you all have already used functions, but we are
-unfortunately only going to be talking about how to make them, and we will get more
-into their specific uses next week
 
 In very general terms, the purpose of functions is to allow us as developers
 to write specific scripts which can be later utilized in whatever code we are writing
@@ -35,6 +33,127 @@ To call a function is easy, it looks like this:
 <function_name>(<parameter(s)>)
 ```
 
+
+-------
+
+# Why use functions?
+
+- A function is just a chunk of code which can be called (and thus ran)
+- Once a function is made, it can be called anywhere in ones code, including in other functions
+- Functions get data via parameters passed into them. When a function is called, the parameters are evaluated before they are 'copied' into the variables in the function
+- Functions can return values (which can be done using the return keyword). It may return at one or more
+
+It is entirely possible to code any program without using functions
+but, it may quickly become extremely complex, hard to understand, and difficult to maintain.
+
+
+For example, if you do some code which does some process, lets name this process 'x', and
+you do 'x' in 3 different places in your code. This 'works', but let's
+say you want to add something new to said process, or you figure out there's a bug
+in process 'x'. Now, you need to go fix said process in 3 different places, which, is not only
+annoying, but, it also can introduce more errors, as you can easily accidentally
+not do the same code in all 3 places and now one place is messed up.
+
+This all shows how functions eliminate redundancy. We simply don't need to write
+the same code over and over, as we can just create it once and use it.
+
+
+---
+
+# Abstraction (which improves readablity)
+
+The point of a function is to simplify or hide code.
+
+***Abstraction*** is a simplified view of a task or data structure
+that ignores complex data.
+
+Functions gives us the ability to abstract our code.
+We can hide specific functionalities within functions, which, abstracts it.
+Once we properly create a function, we can call it without worry about
+the implementation of it everytime, just getting the result we'd expect from it.
+
+
+
+
+# Division of Labor i.e. *Modular Development*
+
+Ideally, functions should split up the work of the program into
+single coherent tasks.
+
+But how should we go about splitting up the work?
+
+
+# Avoid writing redundant code
+
+
+### WE CAN SEE ALL THESE ASPECTS IN THIS EXAMPLE HERE:
+
+
+If we look at a summation function, we can see abstraction in action.
+
+```python
+def summation(lower, upper):
+    result = 0
+    while lower <= upper:
+        result += lower
+        lower += 1
+    return result
+```
+
+Now, instead of worrying about how exactly one may find the summation
+between two numbers, you can be rest assured that this method will do that action
+for you!
+
+Since this information was abstracted, the complexity of the code it hidden.
+Hiding your code in functions, along with cleaning up your code in general, also
+reduces the overall code you as a developer need to look at.
+
+For example, if we needed to calculate sum of the sum of two
+ranges of numbers WITHOUT using functions, it would look like:
+
+```python
+lower_1 = int(input("Please provide first range lower: "))
+upper_1 = int(input("Please provide first range upper: "))
+lower_2 = int(input("Please provide second range lower: "))
+upper_2 = int(input("Please provide second range upper: "))
+
+
+result_1 = 0
+while lower_1 <= upper_1:
+    result_1 += lower_1
+    lower_1 += 1
+    
+result_2 = 0
+while lower_1 <= upper_1:
+    result_1 += lower_1
+    lower_1 += 1
+
+print(result_1 + result_2)
+```
+
+By just using the summation function, it can be reduced to this:
+
+```python
+def summation(lower, upper):
+    result = 0
+    while lower <= upper:
+        result += lower
+        lower += 1
+    return result
+
+lower_1 = int(input("Please provide first range lower: "))
+upper_1 = int(input("Please provide first range upper: "))
+lower_2 = int(input("Please provide second range lower: "))
+upper_2 = int(input("Please provide second range upper: "))
+
+print(summation(lower_1, upper_1) + summation(lower_2, upper_2))
+```
+
+This code is much friendlier to look at and a whole
+lot more understandable.
+
+
+-------
 
 
 
@@ -164,6 +283,9 @@ print(val)
 We see that 'val' takes on the value that the square method returns
 
 
+---------
+
+
 You are not limited to only one return statement in a method either!
 Some situations may require you to have multiple exits from a method, for instance, this:
 
@@ -237,7 +359,8 @@ def odd(x):
 
 
 
-MAIN FUNCTION
+# MAIN FUNCTION
+
 In lots of other languages, it is necessary to define a method called main to start the code
 Here is java for example:
 
@@ -385,4 +508,28 @@ Also, you can tell python to import ... as X so that you can use
 the name provided (X) as where you call the methods you want.
 This saves time as you don't need to write assets.my_math everytime!
 
+
+
+# Hierarchical Function Calls aka Nested Function Calls
+
+So, we have seen this before, but we have not ascribed a name to
+it.
+
+Sometimes, you need to use two different function calls at the same time
+to accomplish something.
+
+When we use two function calls together, we nest one of them into the other one, 
+creating a "NESTED FUNCTION" which is a "FUNCTION HIERARCHY"
+
+We have seen this plenty of times with casting functions.
+
+For example:
+
+```python
+val = int(input("Please type in a number: "))
+
+print("Result of that number times 2: ", val * 2)
+```
+
+Here, we see the int() function nest the input() function!
 

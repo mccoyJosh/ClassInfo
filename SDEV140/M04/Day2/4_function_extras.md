@@ -12,6 +12,39 @@ def mul(x, y): return x * y
 
 ----
 
+# Function Stubs
+
+When we write code, it is often incremental, and we therefore
+are doing **incremental development**.
+
+This means we are not completing all the parts of
+our code as we plan it out.
+
+For instance, let's say we are making a calculator and one part needs tp
+find the greatest common denominator between two numbers; we may 
+want to PLAN to create a function to do this action, but don't want to invest the
+time to go and make the whole thing.
+
+Instead, we can just temporarily make a function stub where
+we name the function, but only put "pass" inside it as we continue working
+on everything else.
+
+Normally, without any content in our function, it would NOT WORK and 
+error out. Adding pass as the content avoids this.
+
+Here is an example of the code for the thing discussed:
+
+```python
+
+def greatest_common_denominator(num1, num2):
+    pass
+
+
+```
+
+
+----
+
 # Parameter Definitions:
 
 We have talked about providing default values to parameters before.

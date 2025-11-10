@@ -194,25 +194,6 @@ Also works on strings!
 print(list("Dog"))
 ```
 
-## Sort list (.sort())
-Also, in a ton of circumstances, you want your list to be sorted, and instead of
-creating code to sort is yourself, you can just call the sort function!
-
-```python
-example_list = [4, 1, 7, 3, 8, 9, 5, 300, 150, 2]
-example_list.sort()
-print(example_list)
-```
-
-
-You can sort the letters in a string like this!
-
-```python
-letter_list = list("here are a bunch of letters")
-letter_list.sort()
-
-print(letter_list)
-```
 
 ## MUTABLE
 Lists are mutable! This means the contents of a list can be changed (unlike a string)

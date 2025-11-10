@@ -1,3 +1,22 @@
+# What are packages
+
+So, up to now, we have discussed MODULES... that
+is, another name for files in python and
+how it is used to organize our pieces of code to do stuff like
+import them.
+
+Sometimes, you need more than a single file for a project
+or need to organize a whole set of modules together for a project.
+
+The grouping of these files in a directory is called a **package**
+
+
+![book_package_example.png](assets/book_package_example.png)
+
+We have discussed previous modules which we can import, but now we are going
+to talk about getting access to PACKAGES (from the internet)
+
+
 # Package managers/installers
 
 Package managers are useful tools for getting 3rd party software
