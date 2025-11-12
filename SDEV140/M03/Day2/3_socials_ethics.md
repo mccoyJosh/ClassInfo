@@ -22,6 +22,13 @@ https://www.acm.org/code-of-ethics
 Now, this list is long and we are not going to go through the entirety of it.
 But there are a few things we can learn from it.
 
+### IEEE Code of Ethics
+
+https://www.ieee.org/about/corporate/governance/p7-8
+
+Here is another set of ethics to follow!
+
+
 ------
 
 ## Let's say we are shipping Out Code before it is done
@@ -35,7 +42,7 @@ See: 1.3 Be honest and trustworthy.
 
 ------
 
-## Let's say we are a social media company, and we want to advertise
+## Let's say we are a social media company, and we want to advertise and/or sell you data
 
 - We could sell our users data to advertisers so appropriate products get in front of the correct audience
   - This is legal

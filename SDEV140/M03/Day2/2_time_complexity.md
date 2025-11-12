@@ -63,9 +63,8 @@ for num in numbers:   # n + 1
 
 This is considered a 'linear problem'. As the input size increase, the number of executions increases with it
 linearly.
-If we add up all the exeuctions (1 + 1 + n + 1 + n + 1) we get 2n+4. Looks like this on a graph
+If we add up all the exeuctions (1 + 1 + n + 1 + n + 1) we get 2n+4.
 
-![linear_problem.png](../assets/linear_problem.png)
 
 This equation will give us the exact number of times the code we have created will execute depending on
 the size of the list.
@@ -107,11 +106,6 @@ Let's get an equation from this:
 2 + 2N + N^2 + N + N^2
 2N^2 + 3N + 2
 
-![exponential_problem.png](../assets/exponential_problem.png)
-
-You may notice that this code has a much more "dramatic" graph.
-The number of executions increases exponentially when compared to the input provided.
-This is directly due to the nested loops.
 
 ----
 
@@ -125,7 +119,7 @@ We looked at linear time and exponential time, but, there are worse (and better)
 really get to get too deep into time complexity in the course due to time restraints, but this should be
 an alright introduction.
 
-![bigochart.png](../assets/bigochart.png)
+
 
 
 ------

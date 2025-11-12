@@ -3,7 +3,7 @@
 
 # While
 
-let's say yu are trying to code something, such as the Fibonacci sequence
+let's say you are trying to code something, such as the Fibonacci sequence
 
 ```python
 value  = 1
@@ -150,6 +150,22 @@ big_example_list = [
 ]
 for i1, i2 in big_example_list:
     print(i1, " | ", i2)
+```
+
+
+This can also be seen with the dictionary we talked about before:
+
+```python
+ex_dict  = {
+ "one":1,
+ "two":2,
+ "three":3
+}
+
+for key, value in ex_dict.items():
+ print(key, value)
+
+
 ```
 
 
