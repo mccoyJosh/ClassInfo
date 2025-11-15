@@ -80,13 +80,75 @@ Once you actually found the region the bug exists, then you can begin the line-b
 ## Calculation Error
 
 
+This piece of code should find the hypotenuse given the length of the two other
+sides of a triangle.
+
+```python
+import math
+
+a = float(input("Input a: "))
+b = float(input("Input b: "))
+
+aSquared = a * 2.0
+bSquared = b * 2.0
+
+cSquared = aSquared + bSquared
+c = math.sqrt(cSquared)
+print(f'Hypotenuse: is: {c}')
+```
+
+Go through this printing out the results as it goes on to hopefully find the bug
+
+
+(it appears the bug is that they are multiplied by two instead of squared)
+
+
 ## Logic Error
+
+This program should display the value of a discount applied to a purchase
+given an age
+
+```python
+discountPercent = 0.0
+userAge = int(input("Please enter age: "))
+
+if userAge <= 10:
+   discountPercent = 100
+if userAge >= 60:
+   discountPercent = 20
+if (userAge > 10) and (userAge <= 60):
+   discountPercent = 0
+
+print(f"Discount is {discountPercent}%")
+```
+
+Break down into regions to locate bug.
+
+Eventually, it is found that userAge <= 60 should be < 60.
+
+Technically, this should be using if-else statements (elif)
+instead of a bunch of if statements and this could be avoided, so
+maybe avoid this as well!
 
 
 ## Loop Error
 
+This piece of code should do x^x, x being the given import
 
-## Function Error
+```python
+x = int(input("Please enter value to take to the power of itself: "))
+
+total = x
+i = 0
+
+while i < x:
+   total = total * x
+   i = i + 1
+
+print(f'Total {total}')
+```
+
+Again, use a printout statement to  find the bug and eventually find the bug
 
 
 ## Programming Knowledge
