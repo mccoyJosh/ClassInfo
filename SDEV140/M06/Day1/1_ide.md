@@ -13,6 +13,8 @@ are built specifically for specific languages, but this is by no means a rule.
 - [IDLE](https://www.python.org/downloads/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Pycharm](https://www.jetbrains.com/pycharm/)
+- [Thonny](https://thonny.org/)
+- [Jupiter Notebook](https://jupyter.org/)
   
 ---
 

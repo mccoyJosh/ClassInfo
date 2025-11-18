@@ -410,10 +410,3 @@ if num != 0 and 100 / num > 0:
 
 Since it is first check if num is not zero, in the case that it is zero, the boolean check for 100/num > 0
 Is never done which prevents a ZeroDivisionError from occurring
-
-
-
-# Detecting Ranges
-
-
-
