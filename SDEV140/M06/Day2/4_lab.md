@@ -4,6 +4,8 @@
 
 ----
 
+### Caesar Cipher
+
 > Have code perform the Caesar Cipher on any string of text. The code needs to give the option to
 > encrypt or decrypt the code based on an inputted distance value.
 
@@ -49,10 +51,13 @@ for char in text:
 print(f"{resulting_type}: {resulting_text}")
 ```
 
+#### Perhaps add using an input file and resulting in a output file!
 
 -----
 
 -----
+
+## Combine Two Files
 
 > Write code which takes two files and combines them into one file
 
