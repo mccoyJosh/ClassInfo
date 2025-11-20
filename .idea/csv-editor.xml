@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/SDEV140/M06/Day2/asset/example.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/SDEV220/M07/Day2/pandas_example/data.csv">
           <value>
             <Attribute>

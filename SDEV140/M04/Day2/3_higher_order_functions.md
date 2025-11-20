@@ -208,30 +208,3 @@ def summation(lower, upper):
 
 print(summation(0, 10))
 ```
-
-## Creating Jump Tables
-
-If you have some sort of program which changes needs to perform multiple different fucntions depending on some input,
-maybe consider making a jump table where it JUMPS to whatever command you need (using a dictionary), which just
-returns the function to be run.
-
-```python
-
-l = list(range(100))
-
-jumpTable = {
-  "1": l.reverse,
-  "2": lambda : print(l),
-  "3": l.sort,
-}
-
-def runCommand(command):
-    jumpTable[command]()
-
-inp = input("Please enter option: ")
-
-while inp != '0':
-  runCommand(inp)
-  inp = input("Please enter option: ")
-```
-
