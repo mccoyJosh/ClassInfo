@@ -79,7 +79,7 @@ class ExampleProject(tk.Tk):
         self.title("EXMP PRGM")
 
         # Initializes window which will appear first
-        self.cat_picture = tk.PhotoImage(file="Day1/assets/cat.png")
+        self.cat_picture = tk.PhotoImage(file="old_mod7_day1/assets/cat.png")
         self.cat_picture = self.cat_picture.subsample(2)
         self.show_main_window()
 
@@ -163,7 +163,7 @@ class ExampleProject(tk.Tk):
         self.title("EXMP PRGM")
 
         # Initializes cat picture
-        self.cat_picture = tk.PhotoImage(file="Day1/assets/cat.png")
+        self.cat_picture = tk.PhotoImage(file="old_mod7_day1/assets/cat.png")
         self.cat_picture = self.cat_picture.subsample(2)
 
         # Displays header
@@ -242,7 +242,7 @@ class ExampleProject(tk.Tk):
         self.title("EXMP PRGM")
 
         # Initializes cat picture
-        self.cat_picture = tk.PhotoImage(file="Day1/assets/cat.png")
+        self.cat_picture = tk.PhotoImage(file="old_mod7_day1/assets/cat.png")
         self.cat_picture = self.cat_picture.subsample(2)
 
         # Initializes tkinter notebook

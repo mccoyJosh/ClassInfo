@@ -79,7 +79,7 @@ class ExampleProject(tk.Tk):
         super().__init__()
         self.title("CAT PROGRAM")
 
-        self.cat_pic =tk.PhotoImage(file="Day1/assets/cat.png")
+        self.cat_pic =tk.PhotoImage(file="old_mod7_day1/assets/cat.png")
         self.cat_pic = self.cat_pic.subsample(3, 3)
         for i in range(100):
             self.create_pop_up()

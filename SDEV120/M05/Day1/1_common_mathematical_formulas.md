@@ -226,12 +226,10 @@ Here is the formula, and yes it can look intimidating, but it is really not that
 > explain it, obviously.
 
 $$
-X_i =  \text{The value in the data set} \\
+X_i =  \text{The value in the data set } \\
 \mu =  \text{Population mean } \\
-n =  \text{Total number of observations (count)} \\
-\sigma  = \text{Standard Deviation} \\
-
------------------------\\
+n =  \text{Total number of observations (count) } \\
+\sigma  = \text{Standard Deviation } \\
 $$
 
 $$

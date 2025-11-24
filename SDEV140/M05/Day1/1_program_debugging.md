@@ -27,7 +27,7 @@ The most basic sort of way to go about finding a bug it by visual inspection.
 
 > **visual inspection**: looking at each statement one-by-one to try and find the bug. 
 
-The *proper* way to do this is by first process each line with the hypothesis *this statement ahs a bug* and
+The *proper* way to do this is by first process each line with the hypothesis *this statement has a bug* and
 trying to disprove it. If it is disproven, move on; otherwise, fix the bug.
 
 ### Debug Output Statements
@@ -42,13 +42,39 @@ What you can do is use a debug output statement:
 > **Debug Output Statement**: Inserting prints/outputs *around* where a bug exists to hopefully have an output
 > show something to print out incorrectly/not at all to narrow down when the bug begins!
 
-![book_output_example.png](assets/book_output_example.png)
+Equation for converting from Fahrenheit to Celsius:
+
+$$
+^\circ F =  \text{Fahrenheit Temp } \
+^\circ C =  \text{Celsius Temp} \
+$$
+
+$$
+^\circ F = (^\circ C * \frac{ 9 }{ 5 }) + 32
+$$
+
+```python
+celsius_value : float
+fahrenheit_value : float
+temp_value : float
+
+celsius_value = float(input("Enter Celsius Temperature"))
+print(f"DEBUG: celsius_value is: {celsius_value}")
+
+temp_value = celsius_value * (9.0 * 5.0)
+print(f"DEBUG: temp_value is: {temp_value}")
+
+
+fahrenheit_value = temp_value + 32.0
+print(f"DEBUG: fahrenheit_value is: {fahrenheit_value}")
+print(f"Fahrenheit Temperature: {fahrenheit_value}")
+```
 
 The output from this code would look like:
 ```
-Ebter Celcius temperature: 100.0
-DEBUG: celciusValue is: 100.0
-DEBUG: tempValue is: 4500.0
+Enter Celcius temperature: 100.0
+DEBUG: celcius_value is: 100.0
+DEBUG: temp_value is: 4500.0
 ```
 
 This help show us a few features from this debugging method:
@@ -82,6 +108,14 @@ Once you actually found the region the bug exists, then you can begin the line-b
 
 This piece of code should find the hypotenuse given the length of the two other
 sides of a triangle.
+
+
+Formula:
+
+$$
+c = \sqrt{ a^2 * b^2 }
+$$
+
 
 ```python
 import math
@@ -133,7 +167,7 @@ maybe avoid this as well!
 
 ## Loop Error
 
-This piece of code should do x^x, x being the given import
+This piece of code should do x^x, x being the given input
 
 ```python
 x = int(input("Please enter value to take to the power of itself: "))
@@ -148,7 +182,11 @@ while i < x:
 print(f'Total {total}')
 ```
 
-Again, use a printout statement to  find the bug and eventually find the bug
+Again, use a printout statement to  find the bug and eventually find the bug.
+
+i looks like it should start at 1.
+
+Probs should put a printout in the loop itself to see how many times it runs.
 
 
 ## Programming Knowledge
@@ -156,5 +194,5 @@ Again, use a printout statement to  find the bug and eventually find the bug
 Sometimes, the problem is that you simply don't understand what you are working
 with, which is okay! The whole point of all of this and the class is to learn.
 
-Hopefully, but debugging, you discover new things about a programming language or tools
+Hopefully, by debugging, you discover new things about a programming language or tools
 which you did not know before!

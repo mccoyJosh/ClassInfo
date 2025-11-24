@@ -14,7 +14,7 @@ create code to deal with when these arise.
 Now, without anything special, we can create *error-checking code", which is
 like an if-statement which checks for a variable being equal to 0 to avoid dividing by 0.
 
-This is fine and good, but this is not exception handling. When an error this occurs, it will create an exception.
+This is fine and good, but this is not exception handling. When an error like this occurs, it will create an exception.
 
 For problems that the program can identify, we can CATCH that exception and act according to it.
 
@@ -84,6 +84,9 @@ Within python, there are a number of exceptions within python:
 > Most of these can be seen when they are encountered in code. If not caught, the code typically STOPS and prints out
 > this error
 
+When using the try/except block(s), it is best practice to anticipate a specific type of 
+error to occur. So, instead of the general catch-all solution from before, it would be wiser to do something like this:
+
 ```python
 try:
     number = int(input("Please type in a value to add 10 to: "))
@@ -93,6 +96,10 @@ except ValueError:
     print("You did not type in a number!")
 
 ```
+
+The whole point here is to catch specific errors and respond to them. For instance here, we want to
+inform the user that they did not type in a number when the code fails to convert to an integer, which,
+if the code errored out for a different reason, we would not want to just lie to the user!
 
 ## Multiple Handlers
 
@@ -183,7 +190,7 @@ while user_input != "q":
 
 
 Also, note the use of *as* here. It is creating an alias for the ValueError being generated.
-This gives us access to the message being putr inside the error.
+This gives us access to the message being put inside the error.
 
 
 

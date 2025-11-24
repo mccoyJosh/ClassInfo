@@ -25,7 +25,7 @@ class ExampleProject(tk.Tk):
     def __init__(self):
         super().__init__()
         self.init_window()
-        self.cat_picture = tk.PhotoImage(file='Day1/assets/cat.png')  # DOING self. BEFORE THIS IS VERY IMPORTANT
+        self.cat_picture = tk.PhotoImage(file='old_mod7_day1/assets/cat.png')  # DOING self. BEFORE THIS IS VERY IMPORTANT
         self.cat_picture = self.cat_picture.subsample(3,3)    # This will make the image smaller
         #self.cat_picture = self.cat_picture.zoom(3, 3)       # This will make the image bigger
 
@@ -73,7 +73,7 @@ class ExampleProject(tk.Tk):
     def __init__(self):
         super().__init__()
         self.init_window()
-        self.cat_picture = tk.PhotoImage(file='Day1/assets/cat.png')  # DOING self. BEFORE THIS IS VERY IMPORTANT
+        self.cat_picture = tk.PhotoImage(file='old_mod7_day1/assets/cat.png')  # DOING self. BEFORE THIS IS VERY IMPORTANT
 
         self.cat_picture = self.cat_picture.subsample(10, 10)
         self.cat_picture = self.cat_picture.zoom(10, 10)
@@ -116,7 +116,7 @@ class ExampleProject(tk.Tk):
     def __init__(self):
         super().__init__()
         self.init_window()
-        self.cat_picture = tk.PhotoImage(file='Day1/assets/cat.png')  # DOING self. BEFORE THIS IS VERY IMPORTANT
+        self.cat_picture = tk.PhotoImage(file='old_mod7_day1/assets/cat.png')  # DOING self. BEFORE THIS IS VERY IMPORTANT
 
         tk.Label(self, image=self.cat_picture).grid(row=0, column=0, columnspan=2, sticky="NSEW")
         tk.Label(self, text="Here is a cat", font=("Helvetica", 20)).grid(row=1, column=0, columnspan=2, sticky="NSEW")
@@ -170,7 +170,7 @@ class ExampleProject(tk.Tk):
 
 
     def make_cat_quality_original(self):
-        self.cat_picture = tk.PhotoImage(file='Day1/assets/cat.png')
+        self.cat_picture = tk.PhotoImage(file='old_mod7_day1/assets/cat.png')
         tk.Label(self, image=self.cat_picture).grid(row=0, column=0, columnspan=2, sticky="NSEW")
 
 

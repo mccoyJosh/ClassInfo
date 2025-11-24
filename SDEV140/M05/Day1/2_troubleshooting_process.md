@@ -62,8 +62,8 @@ HERE are some NOT hypotheses
 - give up
 - the sky is blue
 
-All of these don't really answer our problem and every but "the sky is blue" are
-action statements, not really causes.
+All of these don't really answer our problem and every "answer" here, excluding "the sky is blue", is an
+action statement, not really a cause.
 
 
 ## Logic of Troubleshooting
