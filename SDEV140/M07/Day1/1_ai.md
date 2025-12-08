@@ -14,9 +14,10 @@ of problems. For instance, one of an AI called **Analogy** which solved geometry
 
 One important thing to know from the history is the **Turing Test** proposed by Alan Turing in the year 1950.
 The test is basically just has a participant determine if they are speaking to a machine or another person during a conversation and
-helps us understand how close a machine has come to imitate the ability to think.
+helps us understand how close a machine has come to imitate the ability to think. Basically, it asks if we can determine whether
+the thing we are communicating to is a human or AI.
 
-Beginning around 2001 1, large data sets became available to train AI on, and in 2017, 
+Beginning around 2001, large data sets became available to train AI on, and in 2017, 
 Google developed a Large Language Model, which
 is what we see today referred to as AI.
 
@@ -38,7 +39,7 @@ statements can be considered "AI" if it does an "okay" job in acting like a huma
 
 But, the books lays out a few specific areas where AI is a part of it, by definition:
 
-- **Machine Learning**: uses algorithms and models to amke predictions and discover patterns in data
+- **Machine Learning**: uses algorithms and models to make predictions and discover patterns in data
 - **Computer Vision**: uses algorithms and models to extract meaning from images and video
 - **Natural Language processing**: uses algorithms and models to
 - **Knowledge Representation**: is a framework for representing how knowledge is stored and processed
