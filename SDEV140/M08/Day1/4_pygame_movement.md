@@ -1,5 +1,66 @@
 # Pygame Movement
 
+Trying to move the "player" by just changing the position and redrawing does not work.
+As shown in this next example, just drawing the player in different positions will
+leave the last copies on the screen still:
+
+```python
+import pygame
+from pygame.locals import *
+
+
+# Initializes the game and gives our window a name
+pygame.init()
+pygame.display.set_caption("My Game")
+
+
+# Creates the dimensions for what will be our game
+HEIGHT = 450
+WIDTH = 400
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+
+
+# Loads in image
+imp = pygame.image.load("assets/test_guy.png").convert()
+
+
+# Using blit to copy content from one surface to other
+screen.blit(imp, (140, 120))
+
+# paint screen one time
+pygame.display.flip()
+
+step_n = 4
+for w in range (0, WIDTH - imp.get_width(), step_n):
+   for h in range (0, HEIGHT - imp.get_height(), step_n):
+      screen.blit(imp, (w, h))
+      pygame.display.flip()
+
+
+# Creates loop so our game will run until we want it to close
+while True:
+   for event in pygame.event.get():
+      if event.type == pygame.QUIT: # if the "X" on the window is pressed
+         pygame.quit()
+
+
+```
+
+The problem of the previous iteration of the screen can be solved with using `screen.fill((0,0,0))`
+```
+step_n = 4
+for w in range (0, WIDTH - imp.get_width(), step_n):
+   for h in range (0, HEIGHT - imp.get_height(), step_n):
+      pygame.time.delay(1)
+      screen.fill((0, 0, 0))
+      screen.blit(imp, (w, h))
+      pygame.display.flip()
+
+```
+
+This essentially clears the previous screen.... although we will look more into this later when we start adding "movement"
+to the character.
+
 ## Properly Updating the screen
 
 So this is shown in the last example but this is a good way to 
