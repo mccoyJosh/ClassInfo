@@ -1,0 +1,2 @@
+# INTRO / Heads up
+Hey all! This info for day 2 is technically relevant for module 3, but since next monday is labor day, we are talking about it today, especially since there was not much to talk about for this module!
