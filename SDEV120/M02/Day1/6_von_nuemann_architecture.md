@@ -21,7 +21,14 @@ of the two actual inventors!
 
 Basically, it is how computers should be structured, under the hood!
 
-If you every heard of a CPU or memory, which I know you have, this is how it is typically organized:
+Generally, prior to this architecture, the computers that individuals worked with were **fixed programs**, that is, 
+they were built to run a specific program and you could not have it do much else. Think about *most* calculators; they
+can add numbers together and multiply, but they can't run DOOM.
+
+This architecture pioneered the way to modern computers by separating the part that does the operations, and the 
+part that stores the program. So, on the same machine, you could do a bunch of operations, but you would change
+what program(s) your computer can do. This makes computers far more capable and reusable. This is why
+your computer can both run a calculator AND DOOM.
 
 ![VonNeumann.png](assets/VonNeumann.png)
 
@@ -31,7 +38,7 @@ It features a few things:
   - registers (small storage areas)
   - a program counter
   - a control unit
-- A main memory system which golds programs to control the computers operation
+- A main memory system which holds programs to control the computers operation
 - an I/O system
 
 In addition, the system:
@@ -47,3 +54,8 @@ In addition, the system:
 4. The ALU execute the instruction and places the results in registers or memory
 
 There are many more things we can discuss concerning this, but we don't really need to, so we aren't!
+
+
+# Do we still use the Von Neumann Architecture?
+
+TODO
