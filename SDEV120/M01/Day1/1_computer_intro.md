@@ -28,13 +28,17 @@ this set of instructions would be the __logic__ of a program.
 
 MUCH of this class if simply focused on *logically* solving problems.
 
+What you will hopefully learn is that the same problem can be solved in multiple 
+different ways OR (more importantly for our sakes here), in multiple different environments/(programming) languages.
+
+
 -------
 
 ## Types of Software
 
 ### System Software
 
-> **_Application Software:_** the programs that help users with tasks (e.g., accounting or word processing). Contrast with system software.
+> **_System Software:_** the programs that are part of the OS you are running to ensure it works. Often used to manage the system's resources, provide GUI interfaces, delegate tasks, organize files, and much, much more. Contrast with application software.
 
 ### Application Software
 
@@ -45,11 +49,13 @@ MUCH of this class if simply focused on *logically* solving problems.
 ## Types of Hardware
 
 ### Input Devices
+Devices/components which GIVE the system information. Think mouse, keyboard, mic, camera.
 
 ### Processing Devices
+Devices/components which take info and transform/process it. Think ram, cpu, controllers.
 
 ### Output devices
-
+Devices/components which take data and GIVE IT BACK TO THE USER. Think monitor/screen, speakers, lights.
 
 
 -------

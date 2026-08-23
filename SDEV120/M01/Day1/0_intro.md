@@ -7,8 +7,8 @@
 Welcome to SDEV 120! We will learn the fundamentals of computers in this course
 so hopefully you get a feel and understanding on how these *generally* work.
 
-In this class, we really do not get into "coding" per se, but see how one should
-go about writing good code.
+In this class, we really don't get into "coding" per se until the near end of the class, but we
+mostly see how one should go about writing good code.
 
 ------
 
@@ -25,3 +25,4 @@ go about writing good code.
 - Access Textbook
 - Modules
   - Layout (Assignments, and quiz every week)
+  - Zoom
