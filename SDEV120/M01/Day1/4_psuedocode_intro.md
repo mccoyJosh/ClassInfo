@@ -15,7 +15,7 @@ completing some basic logical problems.
 Since this obviously is not interpreted by a computer, what does this benefit us?
 
 - Allows us to plan REAL programs on computers
-- Allows us to demonstrate an algorithm without actually writing it to talk and potentially fix it with others (which is kinda another way of planning but whatever)
+- Allows us to demonstrate an algorithm without actually writing it (in code), and potentially fix it with others (which is kinda another way of planning but whatever)
 
 
 # First Steps
@@ -25,6 +25,7 @@ with a computer:
 
 > Double a given number
 
+Okay, okay, we are just returning to the previous example but hey it's simple!
 Let us make a psuedocode to solve this:
 
 ```
@@ -98,7 +99,7 @@ When outputting, just like "input", we can use many different words to describe 
 - write
 
 
-# A few additional things the book desiress
+# A few additional things the book desires
 
 ## indention
 

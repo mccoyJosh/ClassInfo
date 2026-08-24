@@ -54,6 +54,7 @@ The way in which a programming language is written is called its **_syntax_**.\
 
 > **_Syntax:_** the rules of a language
 
+Another way of thinking about it is that it is like the grammar of a language.
 In out recipe example, it's "syntax" is to be formatted as a chronological list in english.
 
 
@@ -100,7 +101,7 @@ int main() {
 This code works just fine! This code is written in C, and
 just prints out to the screen "hello world".
 C is not the simplest language, and part of it is because
-it has strict syntax. One just instance of this is
+it has stricterish syntax. One instance of this is
 each line of code needs to end with a semicolon (;).
 
 If we forget this, and run the code, it will result in a
@@ -121,6 +122,29 @@ file.c:5:12: error: expected ‘;’ before ‘}’ token
 ```
 
 The compiler is even smart enough to explain where the error is!
+
+When writing algorithms and coding, we need to think like a computer (unfortunately).
+Computers don't know how we intend to end instructions all by themselves. They are
+like a baby following our every move, not knowing where we are leading it or what it
+is even accomplishing, just doing "tasks".
+
+Side not: please don't make your baby do tasks like you would a computer.
+
+Consider this example:
+
+```c
+#include <stdio.h>
+int main() {
+   printf("Hello, World!")
+   return 0;
+}
+```
+
+In this previous example, by removing the semicolon, suddenly our baby computer doesn't know
+when 1 line ends and the next line starts and assumes (because we didn't say otherwise) that they are the same line. 
+When it tries to read it as the same line, it fails, because it is not familiar with one instruction being "printf("Hello, World!")return 0;"
+
+Follow a language's rules and you will have correct syntax!
 
 # Logic
 
@@ -153,3 +177,18 @@ get done, but you probably won't end up with the correct result.
 
 Since these errors are (typically) ones that don't stop the program,
 these can be a lot harder to pin down.
+
+Returning back to the C language, if we were writing a program to say "Hello World" and we instead had this
+piece of code:
+
+```c
+#include <stdio.h>
+int main() {
+   printf(87);
+   return 0;
+}
+```
+
+
+.... well, we would have a logic error. This code DOES follow the rules of the language and should run
+just fine, but we will not reach out goal, instead we get some random other answer.

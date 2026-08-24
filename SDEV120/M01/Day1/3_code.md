@@ -42,7 +42,19 @@ is known in coding. It is very SIMILAR to variable known in mathematics, as in
 they represent a value.
 
 In mathematics, the value being represented by a variable is "unknown" and is used to help calculate
-whatever we are working with. This is what we are doing here in this problem. Whatever
+whatever we are working with.
+
+Consider the very simple example:
+
+X = 4
+
+and then I ask,
+"What is X + 10?"
+
+We know that "X" is just reprenting another value... basically acting as a stand-in for it. We would just replace
+"X" here with 4 and solve the problem, i.e. 4 + 10 = 14 
+
+This is what we are doing here in this problem. Whatever
 is inputted is put inside of this "myNumber" variable; this can then be used for whatever we need.
 
 In this case, we just use it to multiply by 2.
