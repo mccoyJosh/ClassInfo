@@ -81,6 +81,26 @@ Let's put these together and make the previously discussed program into a flow c
 
 * erm pretend the last red parallelogram said "output" instead of "input"
 
+# REITERATE: INPUT -> CALCULATION -> OUTPUT
+
+# Perhaps make a mistake during one of these and turn around and be all like "erm did you catch that"
+
+# Better example problem:
+> Write an algorithm which will calculate the area of a rectangle, given its width and height.
+
+# Another optional example:
+> Write an algorithm which, given 2 input numbers, will print out which one is larger between them
+
+# Yet another example problem:
+> Write an algorithm to calculate the tax and tip for a meal, then output the tax and tip and the total amount you owe. Assume the tax to be 7% and it is a nice tip of 25% which is calculated to include the tax.
+> For example, if you paid $100 for your meal, tax would be $7 and the tip would be 25% of $107 which is $26.75. Your output would look like the following:
+
+```
+Tax:   $7
+Tip:   $26.75
+Total: $133.75
+```
+
 -----
 
 # Where to draw these??

@@ -48,8 +48,7 @@ Really anything but IDLE because it is lame, and it sucks, and you should get yo
 
 -----
 
-# SHOW OFF THE DIFFERENT IDEs (maybe)
-
+# SHOWs OFF THE DIFFERENT IDEs IN MODULE 6, but just go through their websites for now
 
 ## Is it necessary
 

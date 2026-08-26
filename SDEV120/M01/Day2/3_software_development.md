@@ -46,7 +46,7 @@ so maybe you are considering what programming language is best suited for this
 project, where this fits in with an existing code base, how will it be deployed, and, most
 important to us, how will the logic in the program work.
 
-This step will include lots of psuedocode/flowcharts... hopefully.
+This step will include lots of **psuedocode/flowcharts**... hopefully.
 
 ## Coding
 > Code the program
@@ -101,10 +101,3 @@ and how the group should work together,
 like Agile and Waterfall, but those are not
 within the bounds of this course
 
-
-# GUI environment vs command-line environment
-
-So really simple programs we have seen here already, that being ones which run on a command line.
-
-> Regardless of whether it is a GUI program or command-line program, 
-> if they are made to do the same task, the logical process behind the scenes will be the same.
