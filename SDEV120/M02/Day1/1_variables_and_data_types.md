@@ -81,6 +81,22 @@ for characters and strings and just denote any type of character as 'string' (se
 ### An potentially infinite number of custom data types
 
 
+# Fun Game: What type of variables are these???
+
+- 1
+- 2
+- 3.2
+- -3
+- True
+- False
+- "dog"
+- 'd'
+- 1801280121241
+- 1801280121241.0  (this usually matters; most programming languages should interpret this as a floating point automatically, but always double check and ensure it doesn't somehow automatically convert it to an integer in the background)
+- "8"
+- "True"
+- Idk like draw a picture of a person, say their name and age. Really, this is to show that duh we can't literally represent every thing in the world by ONLY using these data types from above, but, we can describe them with them. This would be an example of 1 of the infinite number of custom data types we can make, also, is an example of an object!
+
 # Declarations
 
 In most programming language, before you use a variable, you must DECLARE it. Sometimes this involves giving it a specific data type.
