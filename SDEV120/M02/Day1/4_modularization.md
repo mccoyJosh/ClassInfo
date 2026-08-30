@@ -40,7 +40,12 @@ This is essentially saying, HEY OTHER PIECE OF CODE, CAN YOU RUN RIGHT NOW???
 
 So, with all of this context, we can show off examples of simplifying some problems
 
-## Example From Book (figure 2-5, altered)
+
+# Really simple example:
+
+> Program with module to say hello!
+
+## Example From Book (figure 2-5, altered), maybe just show this off but do no write all this out
 This program just prints out user information 
 and modularize the problem of "displaying the address"
 
@@ -57,5 +62,15 @@ Instead of re-writing the code for finding area, we put it in a module and just 
 
 ![area_example.png](assets/area_example.png)
 
+
+
+# Additional Example:
+> Add a bunch of numbers together, module to add :)
+
+# Additional Example:
+
+Distance formula: SQRT( (x2 - x1)^2  +  (y2 - y1)^2 ) 
+
+> Program with module to find the distance between two values. Maybe you have a program which takes inputs for locations in a (3-step) journey, and you want the total distance traveled.
 
 

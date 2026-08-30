@@ -59,7 +59,7 @@ If you do 10 / 3, you can evenly divide 3 into 10 3 times, which results in 9
 The remainder would be 10 - 9, which is 1.
 
 
-# Make sure you stay aware of the precedence of these operations:
+# Make sure you stay aware of the precedence of these operations and other operator changes across programming languages:
 
 This will work nearly identical to PEMDAS that we have always used, the only main difference
 is that the assignment of variables comes AFTER the operations have been carried out.

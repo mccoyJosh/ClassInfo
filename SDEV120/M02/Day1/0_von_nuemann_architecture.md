@@ -34,12 +34,14 @@ your computer can both run a calculator AND DOOM.
 
 It features a few things:
 - A central processing unit, which contains
-  - An arithmetic logic unit
-  - registers (small storage areas)
-  - a program counter
-  - a control unit
-- A main memory system which holds programs to control the computers operation
-- an I/O system
+  - **An arithmetic logic unit** : Part of the CPU which does operations on values. This is where logic is performed, such as +, -, / *, or boolean logic
+  - **registers (small storage areas)** : areas on the CPU to store a single value to do some work with (adding two values together, checking if two values are the same, whateva)
+  - **a program counter** : A register reserved to tell the computer where in a program it is at (what line is it on)
+  - **a control unit** : Does the task of "fetching the instruction, fetching the operands, decoding the instruction, executing the instruction, and then writing the results back to memory"
+- A main memory system which holds programs to control the computers operation (both DATA and INSTRUCTIONS)
+- an I/O system (input and output)
+
+The CPU and main memory would be what compromises what we typically know as a computer
 
 In addition, the system:
 - has the capacity of carry out sequential instruction processing
@@ -58,4 +60,17 @@ There are many more things we can discuss concerning this, but we don't really n
 
 # Do we still use the Von Neumann Architecture?
 
-TODO
+Yes and no. What we use are extensions of this idea but far more advanced.
+
+One change is to the Harvard Architecture:
+
+![HarvardArch.png](assets/HarvardArch.png)
+
+Most computers you interact with will be specifically X86 (or AMD64) architecture or ARM architecture.
+x86 would most likely be the architecture for your computer, while ARM is for your phone.
+x86 architecture lends itself better to a modular set-up (you can change out the RAM, GPU, HardDrive, whatever) while typically the ARM
+is better suited as a highly integrated, pre-built system like your phone.
+
+
+
+# KEEP THIS ARCHITECTURE IN MIND AS YOU CONTINUE THROUGHOUT THIS LECTURE ABOUT DATA AND WHAT NOT!

@@ -16,6 +16,16 @@ example to the result, then we would be changing the value within that spot in m
 
 Using the variable alone in a calculation WILL NOT change the value. Only if we re-assign it.
 
+## Do small example of a program and show how it would be stored in memory in the Von-Neumann Architecture
+
+Like
+a = 1
+b = 4
+c = 4 + 1
+
+Walk through fetch-decode-execute cycle
+
+
 # Data Types
 
 Within programming, the data we are storing and how we store it are very important problems we deal with on a near daily basis.
@@ -101,11 +111,15 @@ for characters and strings and just denote any type of character as 'string' (se
 
 In most programming language, before you use a variable, you must DECLARE it. Sometimes this involves giving it a specific data type.
 
+When you declare it, you are asking the system for the space for this value... and it will give you that space... even though there may be something there already.
+Until you put something in that space, it is technically just random data, or as it is typically known, **GARBAGE**
+
+
 # Initializing
 
 Once a variable is declared, you can then assign a starting value to it. This is called initializing it.
 
-Within MANY, MANY programming language you HAVE to provide a new variable you are making with
+Within MANY, MANY programming languages you HAVE to provide a new variable you are making with
 a data type.
 
 For instance, in both C++ and Java, creating a variable to store an integer looks like this:

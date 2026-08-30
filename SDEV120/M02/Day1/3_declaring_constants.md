@@ -105,7 +105,7 @@ Now in both programs, we have an easily-referencable name for our constant and
 the name describe what it is.
 
 One last thing:
-# CONSTANTS are always labeled as all-in-caps
+# CONSTANTS SHOULD always be labeled as all-in-caps, for the sake of this class plz... 
 
 Some programming languages also have built in ways to FORCE you
 to make constants not change by making the variable a CONST or CONSTANT type.
