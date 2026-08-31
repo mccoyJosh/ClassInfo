@@ -189,6 +189,38 @@ Barely even worth talking about at all, but here are the rules.
 
 (mostly showing this show off all the main operators)
 
+## Some example problems:
+
+```
+   0
+  -1
+-----
+  -1  
+```
+
+```
+   1
+ + 1
+-----
+  10  
+```
+
+
+```
+   10
+ +111
+-----
+ 1001
+```
+
+```
+   11001010
+    -100111
+-----------
+   ?????????
+```
+
+
 # Why would we even do this:
 
 So, within computers, we use things called transistors, which we will talk more about later, BUT,

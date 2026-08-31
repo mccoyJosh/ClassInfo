@@ -29,7 +29,26 @@ operators, and many more (invisible) characters, such as spaces.
 ![ascii_chart.png](assets/ascii_chart.png)
 
 With this agreed upon encoding, most computers had supported code to store characters as numbers, and 
-convert them to the correct letter for viewing. Now, this was not the ONLY way to encode letters
+convert them to the correct letter for viewing. 
+
+
+# Let's do some conversions:
+
+what is this encoded message: 83 105 76 108 89
+
+(SiLlY)
+
+what is this encoded message: 89 65 72 84 90 69 69
+
+(YAHTZEE)
+
+
+what is this message encoded: Cool Dogs
+
+(67 111 111 108 32 68 111 103 115)
+
+
+Now, this was not the ONLY way to encode letters
 
 ### The Extended Binary Coded Decimal Interchange Code (EBCDIC) 
 
