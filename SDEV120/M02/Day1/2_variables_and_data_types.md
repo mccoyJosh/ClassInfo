@@ -19,9 +19,11 @@ Using the variable alone in a calculation WILL NOT change the value. Only if we 
 ## Do small example of a program and show how it would be stored in memory in the Von-Neumann Architecture
 
 Like
+```
 a = 1
 b = 4
-c = 4 + 1
+c = a + b
+```
 
 Walk through fetch-decode-execute cycle
 
