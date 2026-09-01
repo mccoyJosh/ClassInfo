@@ -126,12 +126,14 @@ Let us pretend we are working with a signed 8-bit integer and we are adding:
 ```
 0111 1111
 +
-0000 0001
+0000 0010
 ---------
-1000 0000
+1000 0001
 ```
 
-If we just add these values together, we do not
+If we just add these values together, we do not get the expected value.
+This is 127 + 2, which should be 129, but as a SIGNED integer, this would actually equal -1. 
+This is a result of an overflow into the bit that determines if it is positive or negative
 
 
 # Floating Point Values
