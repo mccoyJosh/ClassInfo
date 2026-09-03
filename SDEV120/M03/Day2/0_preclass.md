@@ -1,0 +1,1 @@
+Cover hexadecimal and encoding!

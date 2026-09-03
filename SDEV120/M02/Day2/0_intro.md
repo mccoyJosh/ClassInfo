@@ -1,3 +1,11 @@
+
+# Some notes from grading assignments
+This is just some things I wanted to make clear, but what I would like to see in future assignments.
+These are not things I took off points for, but will expect in the future
+
+- naming variables (no spaces!)
+- data types when creating variables
+
 # We need to first finish up monday's talk about 
 
 5_modularization.md
