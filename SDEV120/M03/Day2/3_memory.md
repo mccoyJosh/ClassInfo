@@ -1,6 +1,6 @@
 # Saving data
 
-We can simply see use being able to save data using some basic AND/OR gates logic:
+We are now able to save data using some basic AND/OR gates logic:
 
 ![and_or_simple_save.png](assets/and_or_simple_save.png)
 

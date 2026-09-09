@@ -33,10 +33,26 @@ which is more compact and can be convenient sometimes.
 
 # Hexadecimal Conversion
 
+Converting from hexadecimal to decimal is just like binary:
+
 ![hexadecimalToDecimal.png](assets/hexadecimalToDecimal.png)
 
-Convert these values to each other, back and forth
 
+Converting from decimal hexadecimal is also just like binary; instead of continually dividing by 2, we continually divide by 16.
+For example:
+
+```
+Decimal ---> Hexadecimal
+148   -----> ?
+
+148 / 16 = 9 with remainder 4 (16*9 = 144, 148-144 = 4)
+9 / 16 = 0 with   remainder 9
+
+Reading the remainders starting from the bottom going up is 94! 
+That is our answer, 94 
+```
+
+Convert these values to each other, back and forth
 
 | HEXADECIMAL | DECIMAL |
 |-------------|---------|
@@ -49,5 +65,4 @@ Convert these values to each other, back and forth
 | 999         | 2457    |
 
 
-
-
+This is not as important as binary, but still good to know!
