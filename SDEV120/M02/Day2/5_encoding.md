@@ -13,6 +13,8 @@ or
 Now in the context of this discussion, we are going to be more talking about the first 
 definition.
 
+## This is similar to translating from 1 language to another. Let's say someone says something in French to me; I could not understand it until it is ENCODED into english. That is the format I expect
+
 When we store everything on the computer as bits and bytes, we need a way to actually store the data
 we want to see. Now, we have talked about how to store numbers already, but what if
 we wanted to store more important information, like letters?
