@@ -20,7 +20,7 @@ What these programs OFTEN don't include is structure
 > **Unstructured programs:** programs that do not follow the rules of structured logic
 
 So, often when talking about programming, a lot of work and discussion is about
-just getting things to work, and then calling a day.
+just getting things to work, and then calling it a day.
 
 Taking a step back though and looking into the proper rules of 
 designing code is super important.
@@ -87,7 +87,7 @@ and they do not support an alternative writing.
 ## Maintenance
 
 When structured, we can easily modify programs to work
-a bug is introduced.
+if a bug is introduced.
 
 With a common format, we can easily locate the lines within it
 that are just not either following that structure, or if a logical error exists

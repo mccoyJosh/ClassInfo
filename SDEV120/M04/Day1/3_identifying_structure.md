@@ -12,15 +12,18 @@ It is also **structured** fine.
 
 This one is **stacked**, so it is pretty easy here!
 
+
 # Example 2:
 
 ![is_02.png](assets/is_02.png)
 
 This is a 
+- loop
 - selection
-- another selection
 
 This is also structured fine!
+
+### Bonus point, what TYPE of selection is this
 
 This one is nested!
 

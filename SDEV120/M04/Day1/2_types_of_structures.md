@@ -47,6 +47,13 @@ output number
 ...
 ```
 
+## Small examples
+
+- draw something with diverging paths
+- draw something that loops
+- draw something that is really a sequence
+
+
 ------
 
 # Selection Struction (aka Decision Struction)
@@ -181,22 +188,24 @@ more options than this binary decision, you can connect these if/else statements
 Here is an example to print out the grade one receives based on their score value.
 
 
-### Example
+### Example 
+
+> These should all be >=, not >
 
 ![ex_4_if_else_if_else.png](assets/ex_04_if_else_if_else.png)
 
 ```
 ...
-if grade > 90 then
+if grade >= 90 then
     output "A"
 else
-    if grade > 80 then
+    if grade >= 80 then
         output "B"
     else
-        if grade > 70 then
+        if grade >= 70 then
             output "C"
         else
-            if grade > 60 then
+            if grade >= 60 then
                 output "D"
             else
                 output "F"
@@ -237,6 +246,14 @@ This helps get rid of all the endif's and connects them all into one LARGE struc
 We can also see we still end using an else statement at the end; this
 one runs if none of the previous else-if statements were true; so, if EVERYTHING is
 FALSE, the last else runs. Now you don't have to use one if you don't want to!
+
+## Test Knowledge (Are These Structured Selections)
+
+- draw a sequence 
+- draw a normal selection
+- draw a selection with 3 options (like, represent a stop light)
+- write out psuedo code of a single alternative
+
 
 Let's move on from decision-making!
 
@@ -282,7 +299,7 @@ endwhile
 ```
 
 
-## Common Loop Specific Error:
+## Common Loop Specific Errors:
 
 ### THE LOOP HAS TO RETURN TO THE CONDITIONAL TO REPEAT ITSELF
 
@@ -310,7 +327,8 @@ of the input inside the loop immediately, because at first we didn't hit the end
 Don't do this! This breaks at the very end of the loop, when it finally reads the end of the file, it
 will read in EOF and then try multiplying THAT, which don't work!
 
-# When trying to understand your structure, it may be helpful to write out the psuedocode to
+
+### When trying to understand your structure, it may be helpful to write out the psuedocode first, then translate it to a flowchart
 
 What we need to do is PRIME THE INPUT
 
@@ -318,6 +336,8 @@ What we need to do is PRIME THE INPUT
 
 ![ex_08.png](assets/ex_08.png)
 
+
+## THE LOOPING PORTION OF THE CODE NEEDS TO BE THE TRUE PATH
 
 
 -----
@@ -344,7 +364,7 @@ Here we see they are quite literally just combined and left like that.
 
 > **Nesting Structures**: placing a structure within another structure.
 
-![structures_stacked.png](assets/structures_stacked.png)
+![structures_nested.png](assets/structures_nested.png)
 
 Here, we can see that one structure is contained within another.
 This is how we begin to solve "all" the problems. With the combination of these, we can begin making
@@ -359,7 +379,7 @@ let's go through and identify each part... but how!
 
 
 
-Here are our only "real" rules when using structures:
+# Here are our only "real" rules when using structures:
 
 
 - A structured program includes only combinations of the three basic structures—sequence, selection, and loop. Any structured program might contain any number of structures, and they can be one, two, or all three types of structures.
@@ -374,9 +394,11 @@ Here are our only "real" rules when using structures:
 
 # Old days: go to's
 
-These allowed us to jump around to different parts of code immeditly. For
+In modern programming languages, you really cannot break the rules of structure since
+they are baked into the syntax of the programs (it will not run if you write unstructured code).
+
+These allowed us to jump around to different parts of code immediately. For
 instance, you could 'go to' line 6 in a given program if you would like. 
 
 This would allow us to break many of these structures, for you could just have a go to in the middle
 of a selection/loop and that would be breaking out code!
-
