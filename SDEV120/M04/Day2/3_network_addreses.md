@@ -142,7 +142,7 @@ When we view these, they are nearly always shown as a hexadecimal values.
 With this, every computer can have a unique IP address without any worries.
 
 Also, when IPv4 was introduced, it had a sleuth of other benefits when compared to
-IPv4 other than a larger range of numbers. For instance, it improved routing efficiency, but we really are not getting into that here.
+IPv6 other than a larger range of numbers. For instance, it improved routing efficiency, but we really are not getting into that here.
 
 
 # Where do you get an IP address
@@ -172,12 +172,12 @@ Otherwise, we have the IPv6 Addresses to use!
 ## Public IP Address vs Private IP Address
 
 
-| Public IP Address | Private IP Address |
-| :---------------: | :----------------: |
-| Connects to the GLOBAL internet      | Connects to your local network     | 
-| Enables communication ACROSS networks       | Enables communications between devices on the same network   |
-| Wide range of numerical addresses       | Narrow range of addresses   | 
-| TRaceable to user / ISP      | Limited traceability      | 
+|           Public IP Address           |                     Private IP Address                     |
+|:-------------------------------------:|:----------------------------------------------------------:|
+|    Connects to the GLOBAL internet    |               Connects to your local network               | 
+| Enables communication ACROSS networks | Enables communications between devices on the same network |
+|   Wide range of numerical addresses   |                 Narrow range of addresses                  | 
+|        Traceable to user / ISP        |                    Limited traceability                    | 
 
 
 # NAT (Network Address Translation)
