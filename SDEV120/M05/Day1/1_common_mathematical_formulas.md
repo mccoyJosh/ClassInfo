@@ -387,8 +387,6 @@ X_i =  \text{The value in the data set} \\
 \mu =  \text{Population mean } \\
 n =  \text{Total number of observations (count)} \\
 \sigma^2  = \text{Variance} \\
-
------------------------\\
 $$
 
 $$
