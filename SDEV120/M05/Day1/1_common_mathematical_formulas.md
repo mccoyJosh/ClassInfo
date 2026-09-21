@@ -458,7 +458,7 @@ I want it in inches
           2.54 cm  
 ```
 
-## Sorting set of data
+## Sorting set of data (not necessary)
 
 There are multiple ways or sorting data.
 
