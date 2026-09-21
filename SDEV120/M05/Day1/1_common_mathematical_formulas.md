@@ -219,7 +219,7 @@ Otherwise, a small standard deviation means the data is more closely packed arou
 So, instead of keeping yapping about it, let's look at a formula and solve an example.
 
 
-### Population
+### Technically, Population Standard Deviation
 
 Here is the formula, and yes it can look intimidating, but it is really not that bad:
 
@@ -262,18 +262,16 @@ With this, we need to
 - add it all up
 ```
 
-Difference       |  to power of c   |   count
------------------|------------------|------------------
-4 - 8.4 = -4.4   |   19.36          | 1
-5 - 8.4 = -3.4   |   11.56          | 1
-6 - 8.4 = -2.4   |   5.76           | 2
-8 - 8.4 = -0.4   |   0.16           | 4
-9 - 8.4 = 0.6    |   0.36           | 2
-10 - 8.4 = 1.6   |   2.56           | 2
-11 - 8.4 = 2.6   |   6.76           | 1
-12 - 8.4 = 3.6   |   12.96          | 2
-
-
+| Difference     | to power of 2 | count |
+|----------------|---------------|-------|
+| 4 - 8.4 = -4.4 | 19.36         | 1     |
+| 5 - 8.4 = -3.4 | 11.56         | 1     |
+| 6 - 8.4 = -2.4 | 5.76          | 2     |
+| 8 - 8.4 = -0.4 | 0.16          | 4     |
+| 9 - 8.4 = 0.6  | 0.36          | 2     |
+| 10 - 8.4 = 1.6 | 2.56          | 2     |
+| 11 - 8.4 = 2.6 | 6.76          | 1     |
+| 12 - 8.4 = 3.6 | 12.96         | 2     |
 
 $$
 SUM = 19.36\ +11.56+\left(5.76\cdot2\right)+\left(0.16\cdot4\right)+\left(0.36\cdot2\right)+\left(2.56\cdot2\right)+6.76+\left(12.96\cdot2\right) \\
@@ -328,8 +326,6 @@ X_i =  \text{The value in the data set} \\
 \overline{X} =  \text{Sample mean } \\
 n =  \text{Total number of observations (count)} \\
 \sigma  = \text{Standard Deviation} \\
-
------------------------\\
 $$
 
 $$
@@ -402,6 +398,10 @@ $$
             n
       }
 $$
+
+# Example fun:
+
+> Make up a bunch of numbers and find the following: count, min, max, range, sum, median, mode, mean, standard deviation, variance
 
 -------
 # Others
