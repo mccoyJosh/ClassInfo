@@ -70,14 +70,14 @@ When connecting and combining these elements, we have five ways to do so:
 2. Generalization of an actor
     - Generalizations allow us to connect one actor to another so they 'inherit' all the traits about that actor, but can have a few special traits of their own
     - ![Actor Genreralization](assets/actor_generalization.png)
-3. Extend relationship betwwen two use cases
-    - Extended use case is dependednt on the use case extended upon
+3. Extend relationship between two use cases **(OPTIONAL LOGIC)**
+    - Extended use case is dependent on the use case extended upon
     - Extended use case is (usually) optional (see the conditional statement)
     - The use case extended upon (the base use case) must be meaningful on its own
     - ![Extends Example](assets/extend.png)
-4. Include relationship between two use cases
+4. Include relationship between two use cases **(MANDATORY LOGIC)**
     - Unlike extends, the includes is MANDATORY and NOT optional
-    - This describes feature step of use case; this is often used when the included use case is something mulitple other BASE use cases NEED to do
+    - This describes feature step of use case; this is often used when the included use case is something multiple other BASE use cases NEED to do
     - ![Include Example](assets/includes.png)
 5. Generalization of a use case
     - This is similar to generalization of an actor.
