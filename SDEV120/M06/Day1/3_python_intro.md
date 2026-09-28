@@ -12,7 +12,7 @@ Erm... it is an interpreter
     - Visual Studio Code
     - Pycharm
     - MORE
-  - Where things are stored!!!!!! 
+  - Where things are stored!!!!!! (Like, how to get a python file to upload for an assignment)
   - Simple code
     - print("Hello World")
 
