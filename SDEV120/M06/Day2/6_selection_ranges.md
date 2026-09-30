@@ -41,3 +41,21 @@ if num >= 0 AND num <= 100:
     output "It is between 0 and 100"
 endif
 ```
+
+
+# The general rule of thumb is, if you need a range between values, use an AND statement; if you need to include number outside of a range of values, use an OR statement.
+
+Like we saw, if we want to check if an input is between 0 and 100, we can use an AND statement to do so:
+
+```
+if num >= 0 AND num <= 100:
+...
+```
+
+and if we wanted to check if something falls outside that range, i.e. less than 0 and greater than 100, we can use OR:
+```
+if num < 0 OR num > 100:
+...
+```
+
+Technically, you can also get these by negating whatever it is you are trying to exclude

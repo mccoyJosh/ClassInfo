@@ -25,8 +25,8 @@ if NOT (customerId = 1) OR NOT (customerId = 2) then
 endif
 ```
 
-If we just input 2 as an example value, we can see this fail.
-It DOES get inside the if statement.
+If we just input 2 as an example value, we can see this fails.
+It DOES get inside the if statement when it should not.
 
 This comes a faulty way to convert NOT statements between AND/OR
 

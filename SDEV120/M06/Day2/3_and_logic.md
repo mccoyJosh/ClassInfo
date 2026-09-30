@@ -63,7 +63,7 @@ stop
 
 
 
-# Mistakes that can be made
+# Mistakes that can be made (impossible AND statements)
 
 - if you meant to have statements nested with steps in between, you should not replace these two if's with 1 as you now don't have the extra step running in the proper place!
 - make sure they are not trivial statements by accident:

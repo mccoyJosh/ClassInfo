@@ -3,6 +3,7 @@
 We have obviously already discussed selection statements before, but let's quickly rehash the basics
 so we can begin discussing more advanced topics:
 
+## AND WE ARE GOING TO LEARN HOW TO DO IT IN PYTHON ALONG THE WAY
 
 So, selection statements are decision-making steps which will diverge
 our path to another option.
