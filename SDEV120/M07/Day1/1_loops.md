@@ -12,7 +12,6 @@ As we know, a loop is a structure which runs as long as it's conditional is TRUE
 
 - They allow us to repeat code.
 - Structurally, the TRUE/YES path needs to be the one which loops
-- 
 
 
 ### Flowchart
@@ -74,7 +73,7 @@ This is kinda most programs.
 
 Think of video games, browsers, text editors and most applications. You start them, and they keep on running until you turn them off.
 To REALLY simplify them, they are all indefinitive loops,  as you can't really predict when the program ends because it will
-be when you jkust close the application.
+be when you just close the application.
 
 ![indefinitive_loop.png](assets/indefinitive_loop.png)
 
