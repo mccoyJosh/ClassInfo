@@ -3,7 +3,10 @@
 # Describe How Arrays can Replace nested decisions
 
 So, up to this point, if we wanted to compare a single variable with number of specific values, we could make a 
-piece of code like the following (or use a SWITCH/CASE structure):
+piece of code like the following (or use a SWITCH/CASE structure).
+
+In this example, we are keeping the count for the number of employees in many of our departments. We could organize our
+data like the following, but it would be such a mess when trying to implement code for it:
 
 ![bad_not_using_array.png](assets/bad_not_using_array.png)
 
@@ -19,7 +22,11 @@ This part needs to check whether to add to a running total for numbers 0 to 5.
 Instead of having 5 selection statements, we can just make an array with specific indices
 representing those values, like shown here:
 
+This piece of code is ERRONEOUS:
+
 ![using_array_instead_of_selection.png](assets/using_array_instead_of_selection.png)
+                                       
+## With something like this created, it would make getting info like the total number of employees relatively easy; all you would need to do is total the values in the list
 
 #  Use Constants with Arrays
 
