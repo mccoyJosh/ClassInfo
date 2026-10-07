@@ -66,27 +66,6 @@ In this piece of code, we find that we can test if one value in the array is wit
 
 ![range_match.png](assets/range_match.png)
 
-# Remaining Within Array Bounds
-
-Book Def:
-
-> Out Of Bounds: describes an array subscript that is not within the range of acceptable subscripts.
-
-When working with arrays, you may wonder: what if I try to go outside the bounds of an array?
-An error. 
-
-This would result in an error.
-
-In nearly all programming language, this means that we would be trying to access memory not reserverd for
-our array and this is not allowed!
-
-We would be stretching into random data at this point!
-
-![out_of_bounds.png](assets/out_of_bounds.png)
-
-To prevent this, we can add additional checks to our loops/controls of walking through arrays to ensure that
-the index variable (or the subscript, as the book describes it) just do not exceed the allowable bounds.
-
 
 # Using for loop to process an array
 

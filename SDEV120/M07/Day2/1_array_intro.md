@@ -13,10 +13,6 @@ Per, the internet:
 Per the book:
 > a series or list of variables or constants in contiguous computer memory locations, all of which have the same name but are differentiated with subscripts.
 
-Typically, arrays are implemented with these contrictions:
-- list of items
-- these items are the same type
-- the number of items in this list does not change
 
 Rules per the textbook:
 
@@ -26,7 +22,7 @@ Rules per the textbook:
 - Each element is differentiated from the others by a subscript, which is a whole number. (WE WILL SEE SUBSCRIPT BE CALLED INDEX AS TIME GOES ON)
 - Usable subscripts for an array range from 0 to one less than the number of elements in an array.
 - Each array element can be used in the same way as a single item of the same data type.
-
+- TYPICALLY, the number of items in the list does not change
 
 Typically, they are represented like this:
 
@@ -36,6 +32,23 @@ Typically, they are represented like this:
 
 This is to say, you use brackets to surround the values in the array.
 Within the array, the values are seperated by commas.
+
+# Storing Data in Arrays, like actually on a computer
+
+To get a better understanding of how array work, it is super helpful to see exactly how computers handle them
+
+Within a computer, arrays are organized one after each other.
+If variables are just references to a specific address in the computer
+where your value is held,
+
+all an array is IS a reference to a space in memory which has more of the same type after it.
+
+That is to say, the other elements in an array are simply offsets from that original position.
+
+
+![array_memory.png](assets/array_memory.png)
+
+
 
 ## Initializing
 
@@ -73,6 +86,7 @@ We can set the value for a position and get the value at a position
 by using the array's reference (variable) followed by a pair of brackets and the position
 desired inside.
 
+
 So, here is setting a value in an array:
 
 ```java
@@ -100,18 +114,25 @@ class thing {
 }
 ```
 
+# Remaining Within Array Bounds
 
-# Storing Data in Arrays, like actually on a computer
+Book Def:
 
-Within a computer, arrays are organized one after each other.
-If variables are just references to a specific address in the computer
-where your value is held,
+> Out Of Bounds: describes an array subscript that is not within the range of acceptable subscripts.
 
-all an array is IS a reference to a space in memory which has more of the same type after it.
+When working with arrays, you may wonder: what if I try to go outside the bounds of an array?
+An error.
 
-That is to say, the other elements in an array are simply offsets from that original position.
+This would result in an error.
 
+In nearly all programming language, this means that we would be trying to access memory not reserverd for
+our array and this is not allowed!
 
-![array_memory.png](assets/array_memory.png)
+We would be stretching into random data at this point!
+
+![out_of_bounds.png](assets/out_of_bounds.png)
+
+To prevent this, we can add additional checks to our loops/controls of walking through arrays to ensure that
+the index variable (or the subscript, as the book describes it) just do not exceed the allowable bounds.
 
 
