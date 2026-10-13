@@ -1,6 +1,6 @@
 # Final
 
-## PLEASE DO THE MIDTERM (and the rest of the assignments) BY: 10 - 19 - 2025!
+## PLEASE DO THE MIDTERM (and the rest of the assignments) BY: 10 - 18 - 2026!
 
 This is as late as you can turn it in. Grades are due shortly after, so I need to be able to set up the grades
 
