@@ -44,7 +44,7 @@ largest values will sink to the bottom (end) of the list like INVERTED BUBBLES!
 
 Here is a visualization to show off this.
 
-https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/
+https://coddy.tech/visualize/sorting/bubble-sort?view=bars&speed=2&size=14
 
 ## Psuedocode:
 
